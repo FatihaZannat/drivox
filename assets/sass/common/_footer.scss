@@ -1,0 +1,113 @@
+/*=======================================================================
+ 07. Footer Section
+=========================================================================*/
+.cs_footer_style_1 {
+  .cs_newsletter_widget {
+    width: min(395px, 100%);
+
+    .cs_newsletter_style_1 {
+      input {
+        width: 100%;
+        background-color: transparent;
+        border: 1px solid #dedede;
+        padding: 15px 20px;
+        outline: none;
+      }
+    }
+  }
+
+  .cs_contact_widget {
+    padding-left: 50px;
+
+    .cs_footer_menu {
+      list-style: none;
+      padding: 0;
+    }
+  }
+
+  .cs_footer_menu {
+    li {
+      color: var(--white-color);
+      opacity: 0.6;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+
+      &:hover {
+        opacity: 1;
+        letter-spacing: 0.32px;
+      }
+    }
+  }
+
+  .cs_footer_bottom {
+    padding: 40px 0;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: var(--gray-color2);
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0.2;
+    }
+  }
+
+  .cs_bottom_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px 40px;
+
+    .cs_copyright_text {
+      letter-spacing: 0.32px;
+    }
+  }
+  .cs_bottom_menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    a {
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  .cs_shape_style_1 {
+    bottom: 0;
+    left: 0;
+  }
+
+  @media (max-width: 1199px) {
+    .cs_contact_widget {
+      padding-left: 0;
+    }
+    .cs_service_widget {
+      align-items: start;
+    }
+  }
+}
+
+.cs_social_icons {
+  display: flex;
+  gap: 14px;
+
+  .cs_social_icon {
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    border: 1px solid currentColor;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: var(--accent-color);
+    }
+  }
+}

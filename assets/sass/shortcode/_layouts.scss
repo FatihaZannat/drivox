@@ -1,0 +1,165 @@
+.cs_layout_style_1 {
+  .cs_left {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .cs_right {
+    padding-bottom: 30%;
+    .cs_contact {
+      .cs_phone,
+      .cs_email {
+        display: flex;
+        gap: 11px;
+        align-items: center;
+        color: var(--primary-color);
+
+        i {
+          color: var(--accent-color);
+        }
+      }
+    }
+    .cs_img {
+      border: 1px solid var(--primary-color);
+
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .cs_shape_1 {
+      position: absolute;
+      bottom: 10%;
+      right: 50px;
+
+      > img {
+        animation: rotation 9s linear infinite;
+      }
+
+      .cs_star {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        // animation: counter-rotation 9s linear infinite;
+      }
+
+      &:hover {
+        animation-play-state: paused;
+      }
+    }
+  }
+}
+
+/*================================================
+  Video Block
+==================================================*/
+
+.cs_video_block_1 {
+  padding: 150px 0 300px;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.3;
+  }
+}
+
+/*================================================
+  CTA SECTION
+==================================================*/
+
+.cs_cta_style_1 {
+  padding: 120px 0;
+}
+
+.cs_cta_style_2 {
+  padding: 190px 0 166px;
+  position: relative;
+
+  .cs_cta_content {
+    width: min(725px, 100%);
+    position: relative;
+    z-index: 2;
+
+    .cs_btn_style_1 {
+      border-color: transparent;
+
+      &:hover {
+        border-color: currentColor;
+      }
+    }
+  }
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.6;
+  }
+}
+
+/*================================================
+  Newsletter Section
+==================================================*/
+
+.cs_newsletter_style_2 {
+  width: min(424px, 50%);
+  background-color: var(--gray-color);
+  padding: 40px;
+  position: absolute;
+  right: 0;
+  bottom: -166px;
+  z-index: 2;
+
+  input {
+    width: 100%;
+    padding: 14px 20px;
+    border: 1px solid var(--gray-color2);
+    outline: none;
+    margin-bottom: 20px;
+  }
+
+  textarea {
+    width: 100%;
+    outline: none;
+    border: 1px solid var(--gray-color2);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.cs_why_choose_us {
+  padding: 120px 0;
+
+  .cs_why_choose_us_details {
+    width: min(655px, 100%);
+    margin-left: auto;
+
+    .cs_subtitle_style_1 {
+      color: var(--white-color);
+
+      .cs_lines {
+        span {
+          background: currentColor;
+        }
+      }
+    }
+  }
+}
