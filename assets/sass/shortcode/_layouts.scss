@@ -57,6 +57,40 @@
   }
 }
 
+.cs_layout_style_2 {
+  .cs_left {
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .cs_img_side {
+    padding-right: 13%;
+  }
+  .cs_right {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    height: 100%;
+
+    .cs_img {
+      height: 63%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .cs_experience_card {
+    padding: 41px 34px;
+  }
+}
+
 /*================================================
   Video Block
 ==================================================*/

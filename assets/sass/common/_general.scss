@@ -574,21 +574,48 @@
   color: var(--accent-color);
   position: relative;
 
-  .cs_lines {
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
+  // .cs_lines {
+  //   display: flex;
+  //   flex-direction: column;
+  //   gap: 3px;
 
-    span:first-child {
-      width: 60px;
-      height: 2px;
-      background: var(--accent-color);
-    }
+  //   span:first-child {
+  //     width: 60px;
+  //     height: 2px;
+  //     background: var(--accent-color);
+  //   }
 
-    span:last-child {
+  //   span:last-child {
+  //     width: 30px;
+  //     height: 2px;
+  //     background: var(--accent-color);
+  //   }
+  // }
+
+  .cs_lines_right,
+  .cs_lines_left {
+    width: 60px;
+    height: 2px;
+    background: var(--accent-color);
+    position: relative;
+    top: -3px;
+    left: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
       width: 30px;
       height: 2px;
       background: var(--accent-color);
+      left: 0;
+      top: 4px;
+    }
+  }
+
+  .cs_lines_left {
+    &::after {
+      right: 0 !important;
+      left: unset;
     }
   }
 }

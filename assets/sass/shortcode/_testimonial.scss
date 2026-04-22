@@ -59,6 +59,29 @@
   }
 }
 
+.cs_testimonial_style_3 {
+  padding: 40px;
+
+  .cs_rating {
+    width: 128px;
+    letter-spacing: 3px;
+  }
+  blockquote {
+    font-size: 20px;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  .cs_avatar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-top: 30px;
+  }
+}
+
 .cs_slider.cs_style_1 {
   .swiper-slide-active {
     border-color: transparent;
@@ -66,17 +89,18 @@
   }
 }
 
-.cs_slider_bottom_text {
+.cs_bottom_text {
   color: black;
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 20px;
 
   &::after,
   &::before {
     content: "";
-    width: min(465px, 100%);
+    width: min(25%, 100%);
     height: 1px;
     display: block;
   }
