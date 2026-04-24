@@ -22,16 +22,10 @@
       width: 50px;
       height: 50px;
       border-radius: 50%;
-      background: var(--white-color);
-      color: var(--accent-color);
+      transition: all 0.3s ease;
 
       &:hover {
-        background-color: var(--secondary-color);
-        color: var(--white-color);
-      }
-
-      svg {
-        pointer-events: none;
+        border: 1px solid currentColor;
       }
     }
   }

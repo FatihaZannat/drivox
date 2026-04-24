@@ -4,15 +4,23 @@
 .cs_footer_style_1 {
   .cs_newsletter_widget {
     width: min(395px, 100%);
+  }
+  .cs_newsletter_style_1 {
+    input {
+      width: 100%;
+      background-color: transparent;
+      border: 1px solid #dedede;
+      padding: 15px 20px;
+      outline: none;
+    }
 
-    .cs_newsletter_style_1 {
-      input {
-        width: 100%;
-        background-color: transparent;
-        border: 1px solid #dedede;
-        padding: 15px 20px;
-        outline: none;
-      }
+    .cs_sent_icon {
+      width: 30px;
+      height: 30px;
+      background-color: var(--accent-color);
+      top: 50%;
+      right: 15px;
+      transform: translateY(-50%);
     }
   }
 
@@ -83,6 +91,7 @@
   .cs_shape_style_1 {
     bottom: 0;
     left: 0;
+    z-index: 1;
   }
 
   @media (max-width: 1199px) {

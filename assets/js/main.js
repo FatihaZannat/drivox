@@ -66,6 +66,8 @@
     progressBar();
     cardHoverActive();
     dateTimePicker()
+    imageZoom()
+
     // gsapAnimation();
     dynamicContactForm();
     $(".tom_select").each(function () {
@@ -1037,6 +1039,14 @@
     console.log("GSAP animations initialized successfully");
   }
   /*===============================================================
+    19. zoom image
+  =================================================================*/
+  function imageZoom() {
+    $(".cs_zoom_plus").zoom({
+      cursor: "zoom-in",
+    });
+  }
+  /*===============================================================
     19. Dynamic contact form
   =================================================================*/
   function dynamicContactForm() {
@@ -1084,4 +1094,5 @@
       });
     }
   }
+  
 })(jQuery); // End of use strict
