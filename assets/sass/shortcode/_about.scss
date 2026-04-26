@@ -1,4 +1,5 @@
-.cs_about_style_1 {
+.cs_about_style_1,
+.cs_about_style_2 {
   .cs_about_list {
     list-style: none;
     padding: 0;
@@ -80,62 +81,6 @@
 
 .cs_about_style_2 {
   .cs_about_right {
-    .cs_phone_number {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      transition: all 0.3s ease;
-
-      .cs_phone_icon {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background-color: var(--gray-color);
-      }
-
-      &:hover {
-        color: var(--accent-color);
-        h3 {
-          color: var(--accent-color);
-        }
-      }
-    }
-
-    .cs_about_img {
-      display: flex;
-      align-items: center;
-      gap: 24px;
-
-      img {
-        width: calc(50% - 12px);
-        object-fit: cover;
-      }
-    }
-  }
-
-  .cs_about_left {
-    .cs_about_img {
-      margin-right: 12%;
-
-      img {
-        width: 100%;
-        object-fit: cover;
-      }
-    }
-    .cs_about_stat {
-      width: min(312px, 100%);
-      padding: 22px 40px;
-      right: 0;
-      bottom: 60px;
-    }
-  }
-
-  @media (max-width: 767px) {
-    .cs_about_left {
-      .cs_about_stat {
-        width: min(250px, 100%);
-        padding: 18px 20px;
-      }
-    }
+    padding-left: 40px;
   }
 }

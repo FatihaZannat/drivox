@@ -317,3 +317,64 @@
     gap: 10px;
   }
 }
+
+/*===========================================================
+  Layer Image box
+=============================================================*/
+
+.cs_layer_img_box {
+  position: relative;
+  padding-right: 16%;
+  padding-bottom: 18%;
+
+  .cs_layer_img_2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-left: 32%;
+
+    img {
+      border: 5px solid var(--white-color);
+    }
+  }
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+/*===========================================================
+  Service Details
+=============================================================*/
+.cs_service_list_style_1 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 50px;
+
+  li {
+    position: relative;
+    padding-left: 34px;
+
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+}
+.cs_service_thumbnails {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.cs_service_banner,
+.cs_service_thumbnails {
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}

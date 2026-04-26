@@ -65,33 +65,53 @@
     <!-- Start Header Section -->
     <header
       class="cs_site_header cs_style_1 cs_sticky_header" aria-label="Main header">
-      <div class="cs_main_header">
+      <div class="cs_main_header cs_white_bg">
         <div class="container-fluid">
           <div class="cs_main_header_in">
             <div class="cs_main_header_left">
               <a href="index.html" aria-label="Home page" class="cs_site_brand">
-                <img src="assets/img/logo.svg" alt="Brand logo" />
+                <img src="assets/img/logo.svg" alt="Brand logo"/>
               </a>
             </div>
             <div class="cs_main_header_center">
               <nav class="cs_nav" aria-label="Main navigation">
                 <div class="cs_nav_list_wrapper">
                   <ul class="cs_nav_list cs_primary_color cs_medium cs_mp_0">
-                    <li><a href="index.html" aria-label="Home">Home</a></li>
-                    <li>
-                      <a href="about-us.html" aria-label="About">About</a>
+                    <li class="menu-item-has-children">
+                      <a href="index.html" aria-label="Home">Home</a>
+                      <ul class="cs_dropdown_list cs_mp_0">
+                        <li><a href="index.html" aria-label="Home v1">Home V1</a></li>
+                        <li><a href="home2.html" aria-label="Home v2">Home V2</a></li>
+                        <li><a href="home3.html" aria-label="Home v3">Home V3</a></li>
+                      </ul>
                     </li>
                     <li>
-                      <a href="about-us.html" aria-label="Services">Services</a>
+                      <a href="about.html" aria-label="About">About</a>
                     </li>
                     <li>
-                      <a href="about-us.html" aria-label="Pages">Pages</a>
+                      <a href="service.html" aria-label="Services">Services</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                      <a href="#" aria-label="Pages">Pages</a>
+                      <ul class="cs_dropdown_list cs_mp_0">
+                        <li><a href="pricing.html" aria-label="our price">Our Price</a></li>
+                        <li><a href="blog.html" aria-label="our blog">Our Blog</a></li>
+                        <li><a href="blog-details.html" aria-label="blog details">Blog Details</a></li>
+                        <li><a href="cart.html" aria-label="cart">Our Cart</a></li>
+                        <li><a href="checkout.html" aria-label="Checkout">Checkout</a></li>
+                        <li><a href="faq.html" aria-label="FAQ & Answer">FAQ & Answer</a></li>
+                        <li><a href="shop-list.html" aria-label="Shop List">Shop List</a></li>
+                        <li><a href="shop-details.html" aria-label="Shop Details">Shop Details</a></li>
+                        <li><a href="team.html" aria-label="Our Team">Our Team</a></li>
+                        <li><a href="team-details.html" aria-label="Team Details">Team Details</a></li>
+                        <li><a href="terms-condition.html" aria-label="Terms & Condition">Terms & Condition</a></li>
+                      </ul>
                     </li>
                     <li>
-                      <a href="about-us.html" aria-label="Car listing">Car listing</a>
+                      <a href="car-listing.html" aria-label="Car listing">Car listing</a>
                     </li>
                     <li>
-                      <a href="contact-us.html" aria-label="Car Details">Car Details</a>
+                      <a href="car-details.html" aria-label="Car Details">Car Details</a>
                     </li>
                   </ul>
                 </div>
@@ -99,9 +119,9 @@
             </div>
             <div class="cs_main_header_right">
               <div class="cs_header_btns_wrapper">
-                <button type="button" aria-label="Search" class="cs_search_btn">
+                <button type="button" aria-label="Search" class="cs_search_btn cs_center cs_accent_bg cs_white_color">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <path d="M17.5007 17.5007L13.1698 13.1698M13.1698 13.1698C14.342 11.9977 15.0005 10.4079 15.0005 8.75023C15.0005 7.09257 14.342 5.5028 13.1698 4.33065C11.9977 3.1585 10.4079 2.5 8.75023 2.5C7.09257 2.5 5.5028 3.1585 4.33065 4.33065C3.15851 5.5028 2.5 7.09257 2.5 8.75023C2.5 10.4079 3.1585 11.9977 4.33065 13.1698C5.5028 14.342 7.09257 15.0005 8.75023 15.0005C10.4079 15.0005 11.9977 14.342 13.1698 13.1698Z" stroke="#D01818" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M17.5007 17.5007L13.1698 13.1698M13.1698 13.1698C14.342 11.9977 15.0005 10.4079 15.0005 8.75023C15.0005 7.09257 14.342 5.5028 13.1698 4.33065C11.9977 3.1585 10.4079 2.5 8.75023 2.5C7.09257 2.5 5.5028 3.1585 4.33065 4.33065C3.15851 5.5028 2.5 7.09257 2.5 8.75023C2.5 10.4079 3.1585 11.9977 4.33065 13.1698C5.5028 14.342 7.09257 15.0005 8.75023 15.0005C10.4079 15.0005 11.9977 14.342 13.1698 13.1698Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
                 </button>
                 <a href="login.html" class="cs_btn_style_1 cs_accent_color cs_white_bg">

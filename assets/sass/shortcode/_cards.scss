@@ -495,6 +495,28 @@
   }
 }
 
+.cs_card_style_12 {
+  padding: 20px 20px 30px 20px;
+
+  .cs_btn_style_1 {
+    border-color: var(--accent-color);
+
+    &:hover {
+      background-color: var(--accent-color);
+      color: var(--white-color);
+    }
+  }
+  .cs_card_title {
+    a {
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: var(--accent-color);
+      }
+    }
+  }
+}
+
 .cs_card_wrapper_style_1 {
   position: relative;
   left: 0;
