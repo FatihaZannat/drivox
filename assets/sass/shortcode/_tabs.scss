@@ -44,6 +44,35 @@
   // }
 }
 
+.cs_tab_links.cs_style_2 {
+  gap: 20px 40px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--gray-color3);
+  flex-wrap: wrap;
+
+  li.active,
+  li:hover {
+    a {
+      border-bottom: 2px solid var(--accent-color);
+      padding-bottom: 22px;
+    }
+  }
+}
+.cs_tab_links.cs_style_3 {
+  li {
+    display: block;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  li.active,
+  li:hover {
+    a {
+      color: var(--accent-color);
+    }
+  }
+}
 /*===================================================
  Tab Content
 =====================================================*/

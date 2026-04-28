@@ -360,33 +360,45 @@
 
     // Product Single Slider
     if ($(".cs_single_product_slider").length > 0) {
+      const gallery = document.querySelector(".cs_single_product_gallery");
+      const navType = gallery ? gallery.getAttribute("data-nav") : "horizontal";
+      const isVertical = navType === "vertical";
       // Initialize Thumbnail slider first
       const propertyNav = new Swiper(".cs_single_product_nav", {
+        direction: isVertical ? "vertical" : "horizontal",
         spaceBetween: 20,
-        slidesPerView: 5,
+        slidesPerView: 3,
         freeMode: true,
         navigation: false,
         watchSlidesProgress: true,
-        breakpoints: {
-          320: {
-            slidesPerView: 3,
-            spaceBetween: 10,
-          },
+        mousewheel: isVertical ? true : false, // 👈 only for vertical
+    breakpoints: isVertical ? {} : { // 👈 breakpoints only for horizontal
+      320: { slidesPerView: 3, spaceBetween: 10 },
+      450: { slidesPerView: 4, spaceBetween: 30 },
+      768: { slidesPerView: 4, spaceBetween: 20 },
+      1024: { slidesPerView: 4, spaceBetween: 20 },
+    }
+    
+        // breakpoints: {
+        //   320: {
+        //     slidesPerView: 3,
+        //     spaceBetween: 10,
+        //   },
 
-          450: {
-            slidesPerView: 4,
-            spaceBetween: 30,
-          },
-          768: {
-            slidesPerView: 5,
-            spaceBetween: 20,
-          },
+        //   450: {
+        //     slidesPerView: 4,
+        //     spaceBetween: 30,
+        //   },
+        //   768: {
+        //     slidesPerView: 4,
+        //     spaceBetween: 20,
+        //   },
 
-          1024: {
-            slidesPerView: 5,
-            spaceBetween: 20,
-          },
-        },
+        //   1024: {
+        //     slidesPerView: 4,
+        //     spaceBetween: 20,
+        //   },
+        // },
       });
 
       // Initialize Main slider with connection to thumbnails

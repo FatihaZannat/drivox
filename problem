@@ -1,2 +1,30 @@
 Home 2 
   * .cs_card_style_5 = hover transition problem
+
+
+
+  project: drivox
+  1. home1 = done
+  2. home2 = done
+  3. home3= 90%
+  4. car listing = 100%
+  5. car details = 100%
+  6. about =100%
+  7. service =100%
+  8. service details = 100%
+  9. pricing Plans = 100%
+  10. team = 100% 
+  11. team details = 100%
+  12. blog = 100% 
+  13. blog details = 80%
+  14. Contact = 50%
+  15. shop list = 100
+  16. shop single = 0 
+  17. shop cart = 0
+  18. shop checkout = 0
+  19. faq = 100%
+  20. terms & condition = 0
+  21. sing in = 0
+  22. sing up = 0 
+
+It isn’t responsive yet

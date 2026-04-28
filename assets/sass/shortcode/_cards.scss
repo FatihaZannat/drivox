@@ -522,3 +522,34 @@
   left: 0;
   top: -100px;
 }
+
+/*===============================================================
+ Product 
+=================================================================*/
+
+.cs_product_style_1 {
+  border: 1px solid var(--gray-color);
+  padding: 30px;
+
+  .cs_rating {
+    width: 126px;
+    letter-spacing: 3px;
+  }
+
+  .cs_product_title {
+    &:hover {
+      color: var(--accent-color);
+    }
+  }
+
+  .cs_btn_style_1 {
+    padding: 20px 30px;
+    border-color: var(--accent-color);
+    color: var(--primary-color);
+
+    &:hover {
+      background-color: var(--accent-color);
+      color: var(--white-color);
+    }
+  }
+}

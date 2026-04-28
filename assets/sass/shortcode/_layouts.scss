@@ -208,6 +208,109 @@
     padding: 0 10px;
   }
 }
+
+.cs_auth_tabs,
+.cs_auth_tab_links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  li.active,
+  li:hover {
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+  }
+}
+
+.cs_sing_in_form {
+  width: min(100%, 875px);
+  margin: 0 auto;
+  .cs_form_group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    label {
+      font-size: 18px;
+      font-weight: 500;
+      font-family: var(--primary-font);
+      color: var(--primary-color);
+    }
+    input {
+      padding: 15px;
+      height: 55px;
+      width: 100%;
+      outline: none;
+      border: 1px solid var(--gray-color2);
+    }
+  }
+
+  .cs_password_group {
+    .cs_input_wrapper {
+      button {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+  .cs_login_meta {
+    display: flex;
+    gap: 10px 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .cs_forgot_link {
+      border-bottom: 1px solid currentColor;
+
+      &:hover {
+        color: var(--accent-color);
+      }
+    }
+
+    .form-check-input {
+      border-radius: 0;
+      border-color: var(--accent-color);
+      width: 15px;
+      height: 15px;
+      box-shadow: none;
+
+      &:checked {
+        background-color: var(--accent-color);
+      }
+    }
+  }
+
+  .cs_btn_style_1 {
+    padding: 20px 30px;
+  }
+
+  .cs_social_links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+
+    span {
+      width: 200px;
+      height: 80px;
+      border-radius: 40px;
+      border: 1px solid var(--gray-color2);
+    }
+  }
+
+  .cs_terms_text {
+    a {
+      color: var(--primary-color);
+      font-weight: 600;
+
+      &:hover {
+        color: var(--accent-color);
+      }
+    }
+  }
+}
 /*===========================================================
  why choose
 =============================================================*/
