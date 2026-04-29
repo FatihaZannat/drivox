@@ -67,6 +67,7 @@
     cardHoverActive();
     dateTimePicker()
     imageZoom()
+    shopGeneral()
 
     // gsapAnimation();
     dynamicContactForm();
@@ -1105,6 +1106,28 @@
           });
       });
     }
+  }
+
+  /*----------------------------------------------------------
+    13. Shop General
+   ------------------------------------------------------------*/
+  function shopGeneral() {
+    // Quantity Increment and Decrement
+    $('.cs_increment').click(function () {
+      console.log('object');
+      var countElement = $(this).siblings('.cs_quantity_input');
+      var count = parseInt(countElement.text());
+      count++;
+      countElement.text(count);
+    });
+    $('.cs_decrement').click(function () {
+      var countElement = $(this).siblings('.cs_quantity_input');
+      var count = parseInt(countElement.text());
+      if (count > 0) {
+        count--;
+        countElement.text(count);
+      }
+    });
   }
   
 })(jQuery); // End of use strict

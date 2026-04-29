@@ -2,14 +2,14 @@
  07. Footer Section
 =========================================================================*/
 .cs_footer_style_1 {
-  .cs_newsletter_widget {
-    width: min(395px, 100%);
-  }
+  // .cs_newsletter_widget {
+  //   // width: min(395px, 100%);
+  // }
   .cs_newsletter_style_1 {
     input {
       width: 100%;
       background-color: transparent;
-      border: 1px solid #dedede;
+      border: 1px solid var(--gray-color2);
       padding: 15px 20px;
       outline: none;
     }
@@ -42,9 +42,11 @@
         margin-bottom: 20px;
       }
 
-      &:hover {
-        opacity: 1;
-        letter-spacing: 0.32px;
+      &:not(.cs_address) {
+        &:hover {
+          opacity: 1;
+          letter-spacing: 0.32px;
+        }
       }
     }
   }
@@ -94,29 +96,30 @@
     z-index: 1;
   }
 
+  .cs_social_icons {
+    display: flex;
+    gap: 14px;
+
+    .cs_social_icon {
+      display: inline-flex;
+      width: 50px;
+      height: 50px;
+      border: 1px solid currentColor;
+      transition: all 0.3s ease;
+      flex: none;
+
+      &:hover {
+        color: var(--accent-color);
+      }
+    }
+  }
+
   @media (max-width: 1199px) {
     .cs_contact_widget {
       padding-left: 0;
     }
     .cs_service_widget {
       align-items: start;
-    }
-  }
-}
-
-.cs_social_icons {
-  display: flex;
-  gap: 14px;
-
-  .cs_social_icon {
-    display: inline-flex;
-    width: 50px;
-    height: 50px;
-    border: 1px solid currentColor;
-    transition: all 0.3s ease;
-
-    &:hover {
-      color: var(--accent-color);
     }
   }
 }

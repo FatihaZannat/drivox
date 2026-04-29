@@ -213,6 +213,7 @@
 .cs_auth_tab_links {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 16px;
 
   li.active,
@@ -292,11 +293,15 @@
     justify-content: center;
     gap: 24px;
 
-    span {
+    a {
       width: 200px;
       height: 80px;
       border-radius: 40px;
       border: 1px solid var(--gray-color2);
+
+      &:hover {
+        border-color: var(--accent-color);
+      }
     }
   }
 

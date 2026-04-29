@@ -229,18 +229,18 @@
   }
 }
 
-.cs_social_icons {
-  gap: 10px;
+// .cs_social_icons {
+//   gap: 10px;
 
-  .cs_social_icon {
-    color: var(--accent-color);
-    border-color: var(--accent-color);
-    &:hover {
-      color: var(--white-color);
-      background-color: var(--accent-color);
-    }
-  }
-}
+//   .cs_social_icon {
+//     color: var(--accent-color);
+//     border-color: var(--accent-color);
+//     &:hover {
+//       color: var(--white-color);
+//       background-color: var(--accent-color);
+//     }
+//   }
+// }
 
 .cs_post_tags {
   gap: 5px !important;

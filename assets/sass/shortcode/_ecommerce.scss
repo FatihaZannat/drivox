@@ -46,7 +46,31 @@ Shoping Cart
 
   tbody {
     background-color: var(--gray-color);
-    padding: 50px;
+  }
+
+  @media (max-width: 991px) {
+    .cs_cart_table_media {
+      gap: 10px;
+
+      img {
+        width: 50px;
+      }
+    }
+    th,
+    td {
+      padding: 10px;
+    }
+
+    .cs_quantity {
+      padding: 10px;
+      width: fit-content;
+      .cs_quantity_input {
+        padding: 0 10px;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
   }
 }
 
@@ -57,16 +81,17 @@ Shoping Cart
   align-items: center;
 
   .cs_quantity_input {
-    padding-left: 38px;
-    padding-right: 22px;
+    padding: 0 18px;
   }
 
   .cs_decrement {
+    width: 20px;
+    height: 20px;
     position: relative;
     &::after {
       content: "";
       position: absolute;
-      width: 20px;
+      width: 100%;
       height: 1px;
       background-color: var(--primary-color);
       left: 0;
@@ -75,12 +100,14 @@ Shoping Cart
     }
   }
   .cs_increment {
+    width: 16px;
+    height: 16px;
     position: relative;
     &::after,
     &::before {
       content: "";
       position: absolute;
-      width: 16px;
+      width: 100%;
       height: 1px;
       background-color: var(--primary-color);
       left: 0;
@@ -98,6 +125,7 @@ Shoping Cart
   display: flex;
   align-items: center;
   gap: 20px;
+  flex-wrap: wrap;
   justify-content: space-between;
   input {
     background-color: var(--gray-color);
@@ -153,7 +181,6 @@ Check Out
     padding: 15px 20px 16px 15px;
     outline: none;
     transition: all 0.4s ease;
-    margin-bottom: 20px;
   }
 
   input {
@@ -227,39 +254,46 @@ Check Out
   display: flex;
   flex-direction: row-reverse;
   gap: 24px;
-  align-items: flex-start;
-}
-/* Main Slider - RIGHT */
-.cs_single_product_gallery[data-nav="vertical"] .cs_single_product_slider {
-  flex: 2.5;
-  overflow: hidden;
-}
+  align-items: center;
 
-.cs_single_product_thumbnail img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  padding: 20px;
-}
-.cs_single_product_gallery[data-nav="vertical"] .cs_single_product_nav {
-  width: 100%;
-  height: 600px;
-  flex: 1;
-}
-.cs_nav_thumbnail {
-  border: 1px solid var(--gray-color2);
-  border-radius: 10px;
-  overflow: hidden;
-}
+  .cs_single_product_slider {
+    flex: 2.5;
+    overflow: hidden;
+  }
 
-.cs_nav_thumbnail img {
-  width: 100%;
-  object-fit: contain;
-}
+  .cs_single_product_nav {
+    width: 100%;
+    max-height: 500px;
+    flex: 1;
+  }
 
-/* Active thumb - blue border like screenshot */
-.cs_single_product_nav .swiper-slide-thumb-active .cs_nav_thumbnail {
-  border-color: #4a90e2; /* blue border */
+  .cs_nav_thumbnail {
+    border: 1px solid var(--gray-color2);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    max-width: 200px;
+    height: 200px;
+
+    img {
+      width: 100%;
+      object-fit: contain;
+      padding: 20px;
+    }
+  }
+
+  .cs_single_product_thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  @media (max-width: 991px) {
+    .cs_single_product_nav {
+      max-height: 400px;
+    }
+  }
 }
 
 // Product Details
@@ -277,6 +311,6 @@ Check Out
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    width: 60%;
+    width: 70%;
   }
 }
