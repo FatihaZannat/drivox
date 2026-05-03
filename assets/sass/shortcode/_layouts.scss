@@ -88,6 +88,18 @@
 
   .cs_experience_card {
     padding: 41px 34px;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 1199px) {
+    .cs_img_side {
+      padding-right: 0;
+    }
+  }
+  @media (max-width: 991px) {
+    .cs_right {
+      height: fit-content;
+    }
   }
 }
 
@@ -203,9 +215,13 @@
     height: 60px;
     border-radius: 50%;
     border: 1px solid var(--accent-color);
+    flex: none;
   }
   .cs_btns {
     padding: 0 10px;
+  }
+  .cs_dealer_title {
+    white-space: nowrap;
   }
 }
 
@@ -316,6 +332,39 @@
     }
   }
 }
+
+.cs_contact_form_wrapper {
+  padding: 120px 0;
+
+  .cs_form_field {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--white-color);
+    border: 1px solid var(--gray-color2);
+    outline: 0;
+  }
+}
+
+.cs_contact_map {
+  width: 60vw;
+  height: 100%;
+  min-height: 500px;
+  padding-left: 60px;
+  margin-left: -12px;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    filter: brightness(120%) grayscale(0.75);
+  }
+
+  @media (max-width: 991px) {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
 /*===========================================================
  why choose
 =============================================================*/
@@ -392,9 +441,10 @@
 .cs_spec_cell_style_1 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 
   &:not(:last-child) {
-    border-bottom: 1px solid var(--gray-color);
+    border-bottom: 1px solid var(--gray-color3);
     margin-bottom: 20px;
     padding-bottom: 20px;
   }
@@ -406,6 +456,15 @@
 
     &:last-child {
       margin-left: auto;
+    }
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(2, 1fr);
+    .cs_spec_item {
+      &:nth-child(even) {
+        margin-left: auto;
+      }
     }
   }
 }
@@ -454,35 +513,22 @@
 /*===========================================================
   Service Details
 =============================================================*/
-.cs_service_list_style_1 {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px 50px;
 
-  li {
-    position: relative;
-    padding-left: 34px;
-
-    img {
-      position: absolute;
-      left: 0;
-      top: 0;
-    }
-  }
-}
 .cs_service_thumbnails {
   display: flex;
   gap: 24px;
   align-items: center;
 }
 
-.cs_service_banner,
-.cs_service_thumbnails {
+.cs_service_banner {
   img {
     width: 100%;
+  }
+}
+.cs_service_thumbnails {
+  width: 100%;
+  img {
+    width: 48%;
     object-fit: cover;
   }
 }

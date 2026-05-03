@@ -61,10 +61,12 @@
 
 .cs_testimonial_style_3 {
   padding: 40px;
+  height: 100%;
 
   .cs_rating {
     width: 128px;
     letter-spacing: 3px;
+    height: 22px;
   }
   blockquote {
     font-size: 20px;
@@ -72,13 +74,22 @@
     font-weight: 600;
     font-style: normal;
   }
-
+  .cs_testimonial_content {
+    padding-bottom: 110px;
+  }
   .cs_avatar {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 16px;
     padding-top: 30px;
+  }
+
+  @media (max-width: 1199px) {
+    padding: 20px;
+    .cs_testimonial_content {
+      padding-bottom: 60px;
+    }
   }
 }
 

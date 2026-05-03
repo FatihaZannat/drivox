@@ -68,7 +68,11 @@
       opacity: 0.75;
     }
   }
-
+  .cs_team_title {
+    &:hover {
+      color: var(--accent-color);
+    }
+  }
   &:hover {
     .cs_team_thumbnail {
       &::after {
@@ -79,9 +83,6 @@
       opacity: 1;
     }
     .cs_team_info {
-      .cs_team_title {
-        color: var(--accent-color);
-      }
       &::after {
         transform: translate(0);
         opacity: 1;
@@ -91,7 +92,7 @@
 }
 
 .cs_team_style_2 {
-  .cs_social_icons {
+  .cs_social_icons_style_2 {
     bottom: -60px;
     left: 50%;
     transform: translateX(-50%);
@@ -100,8 +101,9 @@
     transition: all 0.3s ease;
 
     .cs_social_icon {
+      color: var(--white-color);
+      border-color: var(--white-color);
       &:hover {
-        color: var(--white-color);
         background-color: var(--accent-color);
       }
     }
@@ -109,6 +111,10 @@
 
   .cs_team_thumbnail {
     overflow: hidden;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
     &::after {
       content: "";
       position: absolute;
@@ -123,13 +129,19 @@
   }
 
   &:hover {
-    .cs_social_icons {
+    .cs_social_icons_style_2 {
       bottom: 30px;
     }
     .cs_team_thumbnail {
       &::after {
         opacity: 1;
       }
+    }
+  }
+
+  @media (max-width: 1199px) {
+    .cs_team_info {
+      padding: 20px 12px 0px 12px;
     }
   }
 }

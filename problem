@@ -4,26 +4,26 @@ Home 2
 
 project: drivox
 
-1. home1 = done
-2. home2 = done
-3. home3= 90%
-4. car listing = 100%
-5. car details = 100%
-6. about =100%
-7. service =100%
-8. service details = 100%
-9. pricing Plans = 100%
-10. team = 100%
-11. team details = 100%
-12. blog = 100%
-13. blog details = 80%
-14. Contact = 50%
-15. shop list = 100
-16. shop single = 0
-17. shop cart = 100%
-18. shop checkout = 0
+1. home1 = 
+2. home2 = 
+3. home3= 
+4. car listing = 
+5. car details = 
+6. about =
+7. service =
+8. service details = 
+9. pricing Plans = 
+10. team = 
+11. team details = 1
+12. blog = 
+13. blog details = 
+14. Contact = 
+15. shop list = continue
+16. shop single = 100%
+17. shop cart = 90% responsive problem > 500
+18. shop checkout = 80%
 19. faq = 100%
-20. terms & condition = 90%
+20. terms & condition = 100%
 21. sing in = 100%
 22. sing up = 100%
 

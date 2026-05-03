@@ -19,6 +19,8 @@
 
   .cs_card_info {
     padding: 20px;
+    overflow: hidden;
+
     .cs_card_title {
       letter-spacing: 0.36px;
     }
@@ -27,7 +29,7 @@
       letter-spacing: 0.36px;
     }
 
-    .cs_compare_price {
+    .cs_discount_price {
       letter-spacing: 0.28px;
     }
 
@@ -43,9 +45,27 @@
     }
   }
 
-  &:hover {
-    .cs_card_title {
+  .cs_card_title {
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: var(--accent-color);
+      bottom: 0;
+      left: -120%;
+      width: 100%;
+      transition: all 0.3s ease;
+      height: 1px;
+    }
+
+    &:hover {
       color: var(--accent-color);
+      &::after {
+        left: 0;
+      }
     }
   }
 }
@@ -225,17 +245,6 @@
         font-size: 14px;
       }
     }
-
-    .cs_compare_price {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-
-      .cs_discount_price {
-        color: var(--secondary-color);
-        font-size: 14px;
-      }
-    }
   }
 
   .cs_cart_price_wrapper {
@@ -295,6 +304,29 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+
+      h3 {
+        position: relative;
+        &::after {
+          content: "";
+          width: 100%;
+          height: 2px;
+          background-color: var(--white-color);
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          transform: translateX(-100%);
+          opacity: 0;
+          transition: all 0.3s ease;
+        }
+
+        &:hover {
+          &::after {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+      }
     }
     .cs_car_details {
       li {
@@ -328,7 +360,6 @@
       .cs_car_model {
         h3 {
           color: var(--white-color);
-          border-bottom: 1px solid currentColor;
         }
       }
     }
@@ -497,6 +528,7 @@
 
 .cs_card_style_12 {
   padding: 20px 20px 30px 20px;
+  height: 100%;
 
   .cs_btn_style_1 {
     border-color: var(--accent-color);
@@ -515,6 +547,12 @@
       }
     }
   }
+  .cs_card_thumbnail {
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
 }
 
 .cs_card_wrapper_style_1 {
@@ -523,13 +561,25 @@
   top: -100px;
 }
 
+.cs_compare_price {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--primary-font);
+
+  .cs_discount_price {
+    color: var(--secondary-color);
+    font-size: 14px;
+  }
+}
 /*===============================================================
  Product 
 =================================================================*/
 
 .cs_product_style_1 {
-  border: 1px solid var(--gray-color);
+  border: 1px solid var(--gray-color2);
   padding: 30px;
+  height: 100%;
 
   .cs_rating {
     width: 126px;
@@ -537,11 +587,18 @@
   }
 
   .cs_product_title {
+    white-space: nowrap;
     &:hover {
       color: var(--accent-color);
     }
   }
 
+  .cs_product_thumbnail {
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
   .cs_btn_style_1 {
     padding: 20px 30px;
     border-color: var(--accent-color);

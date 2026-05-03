@@ -47,14 +47,24 @@
 .cs_tab_links.cs_style_2 {
   gap: 20px 40px;
   padding-bottom: 20px;
-  border-bottom: 2px solid var(--gray-color3);
-  flex-wrap: wrap;
+  border-bottom: 2px solid var(--gray-color2);
 
   li.active,
   li:hover {
     a {
       border-bottom: 2px solid var(--accent-color);
       padding-bottom: 22px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    flex-wrap: wrap;
+
+    li.active,
+    li:hover {
+      a {
+        padding-bottom: 10px;
+      }
     }
   }
 }
