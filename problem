@@ -7,18 +7,18 @@ project: drivox
 1. home1 = 
 2. home2 = 
 3. home3= 
-4. car listing = 
-5. car details = 
-6. about =
+4. car listing = 100%
+5. car details = 90% check icon
+6. about = 100% play button
 7. service =
-8. service details = 
-9. pricing Plans = 
-10. team = 
-11. team details = 1
-12. blog = 
-13. blog details = 
-14. Contact = 
-15. shop list = continue
+8. service details = 100%
+9. pricing Plans = 100%
+10. team = 100%
+11. team details = 
+12. blog = 100%
+13. blog details = 100%
+14. Contact = 100%
+15. shop list = 100%
 16. shop single = 100%
 17. shop cart = 90% responsive problem > 500
 18. shop checkout = 80%
@@ -29,19 +29,14 @@ project: drivox
 
 It isn’t responsive yet
 
-Date: 28/04/2026
+Starting Date: 10/04/2026
+Delivery Date : 6/05/2024
 
 Project: Motors - Car Dealer, Rental & Listing Figma Template
 
-Tasks Accomplished:
+Tasks Accomplished:Car Listing, Car Details, About, Service, Service Details, Blog, Shop List, Shop Cart, FAQ, Sign In, Sign Up, Blog Details, Contact, Terms & Condition
 
-Hospil HTML  project setup and necessary page and functionality update
-Paynext client file ready to upload
 
 In Progress:
-
-shop checkout page, shop single
-
-Next Day Plan:
-
-Hospil HTML
+home1, home2, home3, Pricing Plans, Team, Team Details,
+Next Day Plan: home1, home2, home3, Pricing Plans, Team, Team Details

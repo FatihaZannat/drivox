@@ -453,41 +453,31 @@
   border-radius: 50%;
   position: relative;
   transition: all 0.3s ease;
-  background-color: rgba(0, 0, 0, 0.6);
+  animation: an 0.3s;
+  z-index: 2;
 
-  > * {
+  span {
+    color: var(--white-color);
     position: relative;
-    z-index: 1;
+    z-index: 5;
   }
 
-  &::before,
   &::after {
     content: "";
-    width: 100%;
-    height: 100%;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    z-index: 0;
-    transform: translate(-50%, -50%) scale(1);
+    background-color: rgba(0, 0, 0, 0.6);
     border-radius: inherit;
-    border: 1px solid currentColor;
-    animation: pulseBorder 3s linear infinite;
-  }
-
-  &::after {
-    animation-delay: 1.5s;
+    border: 1px solid var(--white-color);
+    inset: 0;
+    z-index: 1;
+    animation: scale infinite 03s;
   }
 
   &:hover {
     transform: scale(0.75);
-
-    &::before,
-    &::after {
-      animation-play-state: paused;
-    }
   }
 }
+
 .cs_player_btn_style_1 {
   display: inline-flex;
   align-items: center;
@@ -634,14 +624,15 @@
 /*=============================================  
   Property Searchbox Component
 ===============================================*/
-.cs_car_search {
+.cs_car_search_style_1 {
   input[type="date"]::-webkit-calendar-picker-indicator,
   input[type="text"]::-webkit-calendar-picker-indicator {
     display: none !important;
     -webkit-appearance: none;
   }
 }
-.cs_car_search {
+.cs_car_search_style_1,
+.cs_car_search_style_3 {
   width: fit-content;
   padding: 43px 40px;
 
@@ -652,8 +643,33 @@
     white-space: nowrap;
   }
 
+  @media (max-width: 1199px) {
+    .cs_search_form {
+      gap: 20px 40px;
+    }
+    .cs_input_wrapper {
+      &::after {
+        display: none;
+      }
+    }
+  }
+  @media (max-width: 991px) {
+    padding: 20px 30px;
+
+    .cs_search_form {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.cs_car_search_style_1,
+.cs_car_search_style_2,
+.cs_car_search_style_3 {
   .cs_input_wrapper {
     flex-shrink: 0;
+    width: 102px;
+    position: relative;
+
     label {
       display: block;
       margin-bottom: 5px;
@@ -663,20 +679,20 @@
       color: var(--primary-color);
     }
 
-    &:nth-child(1) {
-      width: 136px;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      background-color: var(--gray-color3);
+      right: -50%;
+      top: 0;
     }
 
-    &:nth-child(2) {
-      width: 136px;
-    }
-
-    &:nth-child(3) {
-      width: 146px;
-    }
-
-    &:nth-child(4) {
-      width: 110px;
+    &:last-of-type {
+      &::after {
+        display: none;
+      }
     }
   }
 
@@ -718,197 +734,73 @@
     line-height: 1.5625em;
     color: var(--secondary-color);
   }
-
-  .cs_advanced_search_btn {
-    width: 100%;
-    height: 45px;
-    padding: 8px 15px;
-    gap: 8px;
-    border-radius: 10px;
-    border: 1px solid var(--border-color);
-  }
-
-  .cs_btn.cs_style_1 {
-    border-color: var(--border-color);
-  }
-
-  @media (max-width: 1199px) {
-    &.cs_type_1 {
-      max-width: 100%;
-
-      br {
-        display: none;
-      }
-
-      .cs_search_form {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .cs_btns_wrapper {
-        min-width: 100%;
-        grid-column: auto / span 2;
-        justify-content: space-between;
-      }
-
-      .cs_btn.cs_style_1,
-      .cs_advanced_search_btn {
-        max-width: calc(50% - 8px);
-      }
-    }
-  }
-
-  @media (max-width: 991px) {
-    .cs_search_form {
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-
-    .cs_input_wrapper {
-      &:nth-child(1) {
-        width: calc(25% - 10px);
-      }
-
-      &:nth-child(2) {
-        width: calc(35% - 0px);
-      }
-
-      &:nth-child(3) {
-        width: calc(40% - 10px);
-      }
-
-      &:nth-child(4),
-      &:nth-child(5) {
-        width: initial;
-      }
-    }
-
-    &.cs_type_2 {
-      .cs_input_wrapper {
-        &:nth-child(1),
-        &:nth-child(2) {
-          width: calc(50% - 5px);
-        }
-
-        &:nth-child(3),
-        &:nth-child(4) {
-          width: auto;
-        }
-      }
-    }
-  }
-
-  @media (max-width: 767px) {
-    .cs_input_wrapper {
-      &:nth-child(1) {
-        width: calc(40% - 5px);
-      }
-
-      &:nth-child(2) {
-        width: calc(60% - 5px);
-      }
-
-      &:nth-child(3) {
-        width: 100%;
-      }
-    }
-
-    &.cs_type_1 {
-      padding: 30px 20px 40px;
-
-      .cs_search_form {
-        grid-template-columns: repeat(1, 1fr);
-      }
-
-      .cs_btns_wrapper {
-        grid-column: auto / span 1;
-      }
-    }
-  }
-
-  @media (max-width: 450px) {
-    .cs_input_wrapper {
-      width: 100% !important;
-
-      .cs_btn.cs_style_1 {
-        width: 100%;
-      }
-    }
-
-    &.cs_type_1 {
-      .cs_btn.cs_style_1,
-      .cs_advanced_search_btn {
-        max-width: 100%;
-      }
-    }
-  }
-}
-
-.ts-dropdown {
-  border: 0;
-  opacity: 0;
-  transform: translateY(20px);
-  transition:
-    opacity 0.2s ease,
-    transform 0.3s ease;
-  display: block !important;
-  pointer-events: none;
-
-  &.active {
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
-  }
-
-  .option {
-    padding: 10px 15px;
-    font-size: 16px;
-    line-height: 1.5em;
-    color: var(--secondary-color);
-    transition: all 0.4s ease;
+  .ts-dropdown {
+    border: 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition:
+      opacity 0.2s ease,
+      transform 0.3s ease;
+    display: block !important;
+    pointer-events: none;
 
     &.active {
-      background-color: var(--gray2-color);
-    }
-  }
-}
-
-.cs_property_sort_wrapper {
-  width: 253px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-
-  span {
-    text-wrap: nowrap;
-  }
-
-  .ts-control {
-    padding: 8px 15px;
-    border-radius: 20px;
-    font-size: 16px;
-    line-height: 1.7em;
-
-    &::after {
-      content: "\f078";
-      font-size: 10px;
-      font-weight: 900;
-      font-family: "Font Awesome 6 Free";
-      position: absolute;
-      right: 15px;
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+      border: 1px solid var(--accent-color);
     }
 
-    input {
-      min-width: auto !important;
-    }
-  }
-}
+    .option {
+      padding: 10px 15px;
+      font-size: 16px;
+      line-height: 1.5em;
+      color: var(--secondary-color);
+      transition: all 0.4s ease;
 
-.cs_property_list_wrapper {
-  @media (max-width: 1199px) {
-    .cs_card.cs_style_1 {
-      .cs_property_info {
-        flex-wrap: wrap;
+      &.active {
+        background-color: var(--gray-color);
       }
+    }
+  }
+}
+
+.cs_car_search_style_2 {
+  .cs_input_wrapper {
+    width: 280px;
+    &::after {
+      display: none;
+    }
+
+    label {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--primary-color);
+      letter-spacing: 0.28px;
+      font-family: var(--primary-font);
+    }
+  }
+
+  .ts-wrapper {
+    border: 1px solid var(--gray-color3);
+    padding: 17px 20px;
+  }
+}
+.cs_car_search_style_3 {
+  padding: 20px;
+
+  .cs_search_form {
+    align-items: center;
+    gap: 20px 160px;
+  }
+
+  .cs_input_wrapper {
+    width: 140px;
+  }
+
+  @media (max-width: 1199px) {
+    .cs_search_form {
+      gap: 20px 80px;
     }
   }
 }
@@ -935,7 +827,29 @@
   cursor: pointer;
   padding: 0;
 }
+.flatpickr-day {
+  &:hover {
+    background-color: var(--accent-color);
+  }
 
+  &.selected {
+    background: var(--accent-color);
+    border-color: transparent;
+    &:hover {
+      border-color: var(--primary-color);
+      background: var(--accent-color);
+    }
+  }
+  &.today {
+    background-color: var(--accent-color);
+    border-color: transparent;
+    &:hover {
+      border-color: var(--primary-color);
+      background: var(--accent-color);
+      color: var(--white-color);
+    }
+  }
+}
 /*=============================================
  Progressbar Component
 ===============================================*/
@@ -1093,6 +1007,12 @@
     opacity: 0;
     border-width: 30px;
     transform: translate(-50%, -50%) scale(1.4);
+  }
+}
+
+@keyframes scale {
+  50% {
+    transform: scale(0.85);
   }
 }
 

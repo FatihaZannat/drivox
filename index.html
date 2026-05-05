@@ -63,9 +63,8 @@
     </div> -->
     <!-- End Preloader -->
     <!-- Start Header Section -->
-    <header
-      class="cs_site_header cs_style_1 cs_sticky_header" aria-label="Main header">
-      <div class="cs_main_header cs_white_bg">
+    <header class="cs_site_header cs_style_1 cs_sticky_header" aria-label="Main header">
+      <div class="cs_main_header">
         <div class="container-fluid">
           <div class="cs_main_header_in">
             <div class="cs_main_header_left">
@@ -97,7 +96,7 @@
                         <li><a href="pricing.html" aria-label="our price">Our Price</a></li>
                         <li><a href="blog.html" aria-label="our blog">Our Blog</a></li>
                         <li><a href="blog-details.html" aria-label="blog details">Blog Details</a></li>
-                        <li><a href="cart.html" aria-label="cart">Our Cart</a></li>
+                        <li><a href="shop-cart.html" aria-label="cart">Our Cart</a></li>
                         <li><a href="checkout.html" aria-label="Checkout">Checkout</a></li>
                         <li><a href="faq.html" aria-label="FAQ & Answer">FAQ & Answer</a></li>
                         <li><a href="shop-list.html" aria-label="Shop List">Shop List</a></li>
@@ -124,13 +123,13 @@
                     <path d="M17.5007 17.5007L13.1698 13.1698M13.1698 13.1698C14.342 11.9977 15.0005 10.4079 15.0005 8.75023C15.0005 7.09257 14.342 5.5028 13.1698 4.33065C11.9977 3.1585 10.4079 2.5 8.75023 2.5C7.09257 2.5 5.5028 3.1585 4.33065 4.33065C3.15851 5.5028 2.5 7.09257 2.5 8.75023C2.5 10.4079 3.1585 11.9977 4.33065 13.1698C5.5028 14.342 7.09257 15.0005 8.75023 15.0005C10.4079 15.0005 11.9977 14.342 13.1698 13.1698Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
                 </button>
-                <a href="login.html" class="cs_btn_style_1 cs_accent_color cs_white_bg">
+                <a href="sing-in.html" class="cs_btn_style_1 cs_accent_color cs_white_bg">
                   Log In
                   <svg xmlns="http://www.w3.org/2000/svg" width="21" height="15" viewBox="0 0 21 15" fill="none">
                     <path d="M20.7071 8.07039C21.0976 7.67986 21.0976 7.0467 20.7071 6.65617L14.3431 0.292213C13.9526 -0.0983109 13.3195 -0.0983109 12.9289 0.292213C12.5384 0.682738 12.5384 1.3159 12.9289 1.70643L18.5858 7.36328L12.9289 13.0201C12.5384 13.4107 12.5384 14.0438 12.9289 14.4343C13.3195 14.8249 13.9526 14.8249 14.3431 14.4343L20.7071 8.07039ZM0 7.36328V8.36328H20V7.36328V6.36328H0V7.36328Z" fill="currentColor"/>
                   </svg>
                 </a>
-                <a href="register.html" class="cs_btn_style_1 cs_white_color cs_accent_bg">
+                <a href="sing-up.html" class="cs_btn_style_1 cs_white_color cs_accent_bg">
                   Registration
                   <svg xmlns="http://www.w3.org/2000/svg" width="21" height="15" viewBox="0 0 21 15" fill="none">
                     <path d="M20.7071 8.07039C21.0976 7.67986 21.0976 7.0467 20.7071 6.65617L14.3431 0.292213C13.9526 -0.0983109 13.3195 -0.0983109 12.9289 0.292213C12.5384 0.682738 12.5384 1.3159 12.9289 1.70643L18.5858 7.36328L12.9289 13.0201C12.5384 13.4107 12.5384 14.0438 12.9289 14.4343C13.3195 14.8249 13.9526 14.8249 14.3431 14.4343L20.7071 8.07039ZM0 7.36328V8.36328H20V7.36328V6.36328H0V7.36328Z" fill="currentColor"/>
@@ -174,8 +173,7 @@
             <div class="cs_hero_content position-relative z-1">
               <h3 class="cs_subtitle_style_1 cs_fs_14 cs_mb_16">
                 RIDE TO CUSTOMER
-                 <span class="cs_lines">
-                  </span>
+                <span class="cs_lines_right"></span>
               </h3>
               <h1 class="cs_hero_title cs_fs_80 cs_bold cs_mb_16">
                 Unlock Your <span class="cs_accent_color">Adventure</span> Drive
@@ -198,12 +196,12 @@
             </div>
           </div>
           <!-- Search Box HTML -->
-          <div class="cs_car_search cs_gray_bg">
+          <div class="cs_car_search_style_1 cs_gray_bg position-relative z-2">
           <form action="#" class="cs_search_form">
             <div class="cs_input_wrapper">
               <label>Location</label>
                 <select id="ts-location" class="cs_select tom_select">
-                  <option value="">Select Your City</option>
+                  <option value="">Select City</option>
                   <option value="dhaka">Dhaka</option>
                   <option value="chittagong">Chittagong</option>
                 </select>
@@ -211,7 +209,7 @@
             <div class="cs_input_wrapper">
               <label>Pick Up</label>
                 <select id="ts-pickup" class="cs_select tom_select">
-                  <option value="">Select Your City</option>
+                  <option value="">Select City</option>
                   <option value="airport">Airport</option>
                   <option value="station">Station</option>
                 </select>
@@ -219,7 +217,7 @@
             <div class="cs_input_wrapper">
               <label>Car Type</label>
                 <select id="ts-cartype" class="cs_select tom_select">
-                  <option value="">Choose Car Type</option>
+                  <option value="">Car Type</option>
                   <option value="sedan">Sedan</option>
                   <option value="suv">SUV</option>
                   <option value="van">Van</option>
@@ -238,7 +236,7 @@
                     </clipPath>
                   </defs>
                 </svg>
-                <input type="text" class="cs_date flatpickr-input" id="datePicker" name="date" placeholder="2026-02-01" readonly>
+                <input type="text" name="date" class="cs_date flatpickr-input" id="datePicker" name="date" placeholder="2026-02-01" readonly>
               </div>
               </label>
             </div>
@@ -252,75 +250,6 @@
           <img src="assets/img/icon/hero-icon-1.svg" alt="icon" />
         </div>
       </section>
-      <!-- <section class="cs_hero_style_1 overflow-hidden">
-        <div class="container-fluid">
-          <div class="cs_hero_top cs_mb_45">
-            <div class="cs_hero_content">
-              <h3 class="cs_subtitle_style_1 cs_fs_14 cs_mb_16">
-                RIDE TO CUSTOMER
-                 <span class="cs_lines">
-                    <span></span>
-                    <span></span>
-                  </span>
-              </h3>
-              <h1 class="cs_hero_title cs_fs_80 cs_bold cs_mb_16">
-                Unlock Your <span class="cs_accent_color">Adventure</span> Drive
-                Your Dreams.
-              </h1>
-              <p class="cs_mb_40">
-                A Motors – Car Dealer, Rental & Listing business provides a
-                complete <br />
-                automotive solution by combining vehicle sales.
-              </p>
-              <a href="register.html"class="cs_btn_style_1 cs_white_color cs_accent_bg">
-                DISCOVER MORE
-                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="15" viewBox="0 0 21 15" fill="none">
-                  <path d="M20.7071 8.07039C21.0976 7.67986 21.0976 7.0467 20.7071 6.65617L14.3431 0.292213C13.9526 -0.0983109 13.3195 -0.0983109 12.9289 0.292213C12.5384 0.682738 12.5384 1.3159 12.9289 1.70643L18.5858 7.36328L12.9289 13.0201C12.5384 13.4107 12.5384 14.0438 12.9289 14.4343C13.3195 14.8249 13.9526 14.8249 14.3431 14.4343L20.7071 8.07039ZM0 7.36328V8.36328H20V7.36328V6.36328H0V7.36328Z" fill="white"/>
-                </svg>
-              </a>
-            </div>
-            <div class="cs_hero_img_wrapper">
-              <div class="cs_hero_bg_shape">
-                <img src="assets/img/icon/hero-icon-1.svg" alt="icon" />
-              </div>
-              <img src="assets/img/hero-img-1.png" alt="hero img" />
-            </div>
-          </div>
-          <div class="cs_hero_search cs_gray_bg">
-            <div class="cs_input_wrapper">
-              <label>Location</label>
-              <select>
-                <option>Select Your City</option>
-              </select>
-            </div>
-            <div class="cs_input_wrapper">
-              <label>Pick Up</label>
-              <select>
-                <option>Select Your City</option>
-              </select>
-            </div>
-            <div class="cs_input_wrapper">
-              <label>Car Type</label>
-              <select>
-                <option>Choose Car Type</option>
-              </select>
-            </div>
-            <div class="cs_input_wrapper">
-              <label>Date</label>
-              <select>
-                <input type="date" value="2026-09-01" />
-              </select>
-            </div>
-            <a href="#" aria-label="search now btn" class="cs_btn_style_1 cs_white_color cs_accent_bg">
-              Search now
-              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="15" viewBox="0 0 21 15" fill="none">
-                <path d="M20.7071 8.07039C21.0976 7.67986 21.0976 7.0467 20.7071 6.65617L14.3431 0.292213C13.9526 -0.0983109 13.3195 -0.0983109 12.9289 0.292213C12.5384 0.682738 12.5384 1.3159 12.9289 1.70643L18.5858 7.36328L12.9289 13.0201C12.5384 13.4107 12.5384 14.0438 12.9289 14.4343C13.3195 14.8249 13.9526 14.8249 14.3431 14.4343L20.7071 8.07039ZM0 7.36328V8.36328H20V7.36328V6.36328H0V7.36328Z" fill="currentColor"/>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </section> -->
-      <!-- End Hero Section -->
       <!-- Start About Section -->
       <section class="cs_about_style_1">
         <div class="cs_height_120 cs_height_lg_70"></div>
@@ -422,15 +351,15 @@
             <div class="col-xxl-3 col-xl-4 col-md-6">
               <div class="cs_card_style_1 cs_gray_bg">
                 <div class="cs_card_img">
-                  <a href="car_details.html"><img src="assets/img/card-img-1.jpg" alt="Car image"/></a>
+                  <a href="car-details.html"><img src="assets/img/card-img-1.jpg" alt="Car image"/></a>
                 </div>
                 <div class="cs_card_info">
                   <h3 class="cs_card_title cs_fs_18 cs_mb_10">
-                    <a href="car_details.html">Mercedes-Benz Class 2015</a>
+                    <a href="car-details.html">Mercedes-Benz Class 2015</a>
                   </h3>
-                  <div class="cs_price_wrapper cs_mb_10">
+                  <div class="cs_compare_price cs_mb_10">
                     <span class="cs_price cs_fs_18 cs_accent_color cs_semibold">$35.000</span>
-                    <s class="cs_compare_price cs_fs_14">$39000</s>
+                    <s class="cs_discount_price cs_fs_14">$39000</s>
                   </div>
                   <hr class="cs_mb_10"/>
                   <div class="cs_spec_row">
@@ -444,15 +373,15 @@
             <div class="col-xxl-3 col-xl-4 col-md-6">
               <div class="cs_card_style_1 cs_gray_bg">
                 <div class="cs_card_img">
-                  <a href="car_details.html"><img src="assets/img/card-img-2.jpg" alt="Car image"/></a>
+                  <a href="car-details.html"><img src="assets/img/card-img-2.jpg" alt="Car image"/></a>
                 </div>
                 <div class="cs_card_info">
                   <h3 class="cs_card_title cs_fs_18 cs_mb_10">
-                    <a href="car_details.html">Nissan Altima 2019</a>
+                    <a href="car-details.html">Nissan Altima 2019</a>
                   </h3>
-                  <div class="cs_price_wrapper cs_mb_10">
+                  <div class="cs_compare_price cs_mb_10">
                     <span class="cs_price cs_fs_18 cs_accent_color cs_semibold">$35.000</span>
-                    <s class="cs_compare_price cs_fs_14">$39000</s>
+                    <s class="cs_discount_price cs_fs_14">$39000</s>
                   </div>
                   <hr class="cs_mb_10"/>
                   <div class="cs_spec_row">
@@ -466,15 +395,15 @@
             <div class="col-xxl-3 col-xl-4 col-md-6">
               <div class="cs_card_style_1 cs_gray_bg">
                 <div class="cs_card_img">
-                  <a href="car_details.html"><img src="assets/img/card-img-3.jpg" alt="Car image"/></a>
+                  <a href="car-details.html"><img src="assets/img/card-img-3.jpg" alt="Car image"/></a>
                 </div>
                 <div class="cs_card_info">
                   <h3 class="cs_card_title cs_fs_18 cs_mb_10">
-                    <a href="car_details.html">Tesla Roadster 2021</a>
+                    <a href="car-details.html">Tesla Roadster 2021</a>
                   </h3>
-                  <div class="cs_price_wrapper cs_mb_10">
+                  <div class="cs_compare_price cs_mb_10">
                     <span class="cs_price cs_fs_18 cs_accent_color cs_semibold">$35.000</span>
-                    <s class="cs_compare_price cs_fs_14">$39000</s>
+                    <s class="cs_discount_price cs_fs_14">$39000</s>
                   </div>
                   <hr class="cs_mb_10"/>
                   <div class="cs_spec_row">
@@ -488,15 +417,15 @@
             <div class="col-xxl-3 col-xl-4 col-md-6">
               <div class="cs_card_style_1 cs_gray_bg">
                 <div class="cs_card_img">
-                  <a href="car_details.html"><img src="assets/img/card-img-4.jpg" alt="Car image"/></a>
+                  <a href="car-details.html"><img src="assets/img/card-img-4.jpg" alt="Car image"/></a>
                 </div>
                 <div class="cs_card_info">
                   <h3 class="cs_card_title cs_fs_18 cs_mb_10">
-                    <a href="car_details.html">Lexus 2026</a>
+                    <a href="car-details.html">Lexus 2026</a>
                   </h3>
-                  <div class="cs_price_wrapper cs_mb_10">
+                  <div class="cs_compare_price cs_mb_10">
                     <span class="cs_price cs_fs_18 cs_accent_color cs_semibold">$35.000</span>
-                    <s class="cs_compare_price cs_fs_14">$39000</s>
+                    <s class="cs_discount_price cs_fs_14">$39000</s>
                   </div>
                   <hr class="cs_mb_10"/>
                   <div class="cs_spec_row">
@@ -510,15 +439,15 @@
             <div class="col-xxl-3 col-xl-4 col-md-6">
               <div class="cs_card_style_1 cs_gray_bg">
                 <div class="cs_card_img">
-                  <a href="car_details.html"><img src="assets/img/card-img-5.jpg" alt="Car image"/></a>
+                  <a href="car-details.html"><img src="assets/img/card-img-5.jpg" alt="Car image"/></a>
                 </div>
                 <div class="cs_card_info">
                   <h3 class="cs_card_title cs_fs_18 cs_mb_10">
-                    <a href="car_details.html">Honda Accord 2021</a>
+                    <a href="car-details.html">Honda Accord 2021</a>
                   </h3>
-                  <div class="cs_price_wrapper cs_mb_10">
+                  <div class="cs_compare_price cs_mb_10">
                     <span class="cs_price cs_fs_18 cs_accent_color cs_semibold">$35.000</span>
-                    <s class="cs_compare_price cs_fs_14">$39000</s>
+                    <s class="cs_discount_price cs_fs_14">$39000</s>
                   </div>
                   <hr class="cs_mb_10"/>
                   <div class="cs_spec_row">
@@ -532,15 +461,15 @@
             <div class="col-xxl-3 col-xl-4 col-md-6">
               <div class="cs_card_style_1 cs_gray_bg">
                 <div class="cs_card_img">
-                  <a href="car_details.html"><img src="assets/img/card-img-6.jpg" alt="Car image"/></a>
+                  <a href="car-details.html"><img src="assets/img/card-img-6.jpg" alt="Car image"/></a>
                 </div>
                 <div class="cs_card_info">
                   <h3 class="cs_card_title cs_fs_18 cs_mb_10">
-                    <a href="car_details.html">Chevrolet 2021</a>
+                    <a href="car-details.html">Chevrolet 2021</a>
                   </h3>
-                  <div class="cs_price_wrapper cs_mb_10">
+                  <div class="cs_compare_price cs_mb_10">
                     <span class="cs_price cs_fs_18 cs_accent_color cs_semibold">$35.000</span>
-                    <s class="cs_compare_price cs_fs_14">$39000</s>
+                    <s class="cs_discount_price cs_fs_14">$39000</s>
                   </div>
                   <hr class="cs_mb_10"/>
                   <div class="cs_spec_row">
@@ -554,15 +483,15 @@
             <div class="col-xxl-3 col-xl-4 col-md-6">
               <div class="cs_card_style_1 cs_gray_bg">
                 <div class="cs_card_img">
-                  <a href="car_details.html"><img src="assets/img/card-img-7.jpg" alt="Car image"/></a>
+                  <a href="car-details.html"><img src="assets/img/card-img-7.jpg" alt="Car image"/></a>
                 </div>
                 <div class="cs_card_info">
                   <h3 class="cs_card_title cs_fs_18 cs_mb_10">
-                    <a href="car_details.html">BMW 2024</a>
+                    <a href="car-details.html">BMW 2024</a>
                   </h3>
-                  <div class="cs_price_wrapper cs_mb_10">
+                  <div class="cs_compare_price cs_mb_10">
                     <span class="cs_price cs_fs_18 cs_accent_color cs_semibold">$35.000</span>
-                    <s class="cs_compare_price cs_fs_14">$39000</s>
+                    <s class="cs_discount_price cs_fs_14">$39000</s>
                   </div>
                   <hr class="cs_mb_10"/>
                   <div class="cs_spec_row">
@@ -576,15 +505,15 @@
             <div class="col-xxl-3 col-xl-4 col-md-6">
               <div class="cs_card_style_1 cs_gray_bg">
                 <div class="cs_card_img">
-                  <a href="car_details.html"><img src="assets/img/card-img-8.jpg" alt="Car image"/></a>
+                  <a href="car-details.html"><img src="assets/img/card-img-8.jpg" alt="Car image"/></a>
                 </div>
                 <div class="cs_card_info">
                   <h3 class="cs_card_title cs_fs_18 cs_mb_10">
-                    <a href="car_details.html">Acura ILX 2021</a>
+                    <a href="car-details.html">Acura ILX 2021</a>
                   </h3>
-                  <div class="cs_price_wrapper cs_mb_10">
+                  <div class="cs_compare_price cs_mb_10">
                     <span class="cs_price cs_fs_18 cs_accent_color cs_semibold">$35.000</span>
-                    <s class="cs_compare_price cs_fs_14">$39000</s>
+                    <s class="cs_discount_price cs_fs_14">$39000</s>
                   </div>
                   <hr class="cs_mb_10"/>
                   <div class="cs_spec_row">
@@ -613,8 +542,8 @@
           <div class="cs_height_120 cs_height_lg_70"></div>
           <div class="cs_video_block_1 cs_primary_bg cs_bg_fixed" data-src="assets/img/video_bg_1.jpg">
             <div class="cs_center position-relative z-1">
-              <a href="https://youtu.be/ekgUjyWe1Yc?si=HCJRj0hEsdEn9wzT" aria-label="Play Video" class="cs_player_btn_style_2 cs_video_open cs_fs_14 cs_white_color cs_center text-uppercase ">
-                Play now
+              <a href="https://youtu.be/ekgUjyWe1Yc?si=HCJRj0hEsdEn9wzT" aria-label="Play Video" class="cs_player_btn_style_2 cs_video_open cs_fs_14 cs_center text-uppercase ">
+               <span>Play now</span>
               </a>
             </div>
           </div>
@@ -673,10 +602,7 @@
             <div class="cs_section_heading_style_1 cs_mb_50">
               <h3 class="cs_subtitle_style_1 cs_fs_14 cs_mb_16">
                 TOP CAR INVENTCRY
-                  <span class="cs_lines">
-                  <span></span>
-                  <span></span>
-                </span>
+                  <span class="cs_lines_right"></span>
               </h3>
               <h2 class="cs_section_title cs_fs_53">
                 Why Electric Vehicles?  
@@ -696,12 +622,15 @@
                       <div class="cs_right position-relative">
                         <div class="cs_contact cs_mb_38">
                           <div class="cs_phone cs_fs_18 cs_medium cs_mb_16">
-                            <i class="fa-solid fa-phone-volume"></i>
-                            + 1-800 100 975 2034
+                            <a href="tel:+18001009752034">
+                              <i class="fa-solid fa-phone-volume"></i>
+                              + 1-800 100 975 2034</a>
                           </div>
                           <div class="cs_email cs_fs_18 cs_medium">
-                            <i class="fa-regular fa-envelope"></i>
-                            example@drivox.com
+                            <a href="mailto:example@drivox.com">
+                              <i class="fa-regular fa-envelope"></i>
+                              example@drivox.com
+                            </a>
                           </div>
                         </div>
                         <div class="cs_img">
@@ -722,12 +651,7 @@
                 <div class="cs_icon_wrapper_style_1">
                   <div class="cs_iconbox_style_1">
                     <div class="cs_icon">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-                        <path d="M25 50C24.9382 50 24.8764 49.9943 24.8154 49.9825C18.8908 48.843 13.5117 45.6539 9.66911 41.0023C5.82695 36.3506 3.71094 30.4661 3.71094 24.4328V7.341C3.71094 6.91414 3.98827 6.53648 4.39568 6.40907L24.6773 0.0549316C24.7799 0.0190734 24.8924 0.00228882 25 0H25.0011C25.1118 0 25.2205 0.0190734 25.3231 0.0549316L45.6043 6.40907C46.0117 6.53687 46.2891 6.91414 46.2891 7.341V24.4328C46.2891 30.4661 44.1731 36.3506 40.3305 41.0023C36.4883 45.6539 31.1092 48.843 25.1846 49.9825C25.1236 49.9943 25.0618 50 25 50ZM5.66406 8.05817V24.4328C5.66406 35.8883 13.7844 45.7813 25 48.0282C36.2156 45.7813 44.3356 35.8883 44.3356 24.4328V8.05817L25 2.00043L5.66406 8.05817Z" fill="#111111"/>
-                        <path d="M25 44.4008C24.9207 44.4008 24.8413 44.3913 24.7643 44.3722C20.3552 43.2751 16.3769 40.6933 13.5612 37.1025C10.7357 33.4984 9.17969 28.9986 9.17969 24.4316V11.3571C9.17969 10.9303 9.45702 10.553 9.86404 10.4256L24.7078 5.7751C24.8978 5.71559 25.1019 5.71559 25.2918 5.7751L40.1356 10.4256C40.5426 10.553 40.8199 10.9303 40.8199 11.3571V24.4316C40.8199 27.7699 39.9929 31.0929 38.4285 34.0412C38.1756 34.5177 37.5847 34.6985 37.1082 34.446C36.6318 34.1931 36.4506 33.6022 36.7031 33.1257C38.1187 30.4585 38.8668 27.4521 38.8668 24.4316V12.0747L24.9996 7.73013L11.1328 12.0747V24.4316C11.1328 32.909 16.8228 40.2699 24.9996 42.4164C27.2713 41.8202 29.3819 40.8112 31.2771 39.4154C31.7112 39.0957 32.3227 39.1884 32.6424 39.6225C32.9624 40.0566 32.8697 40.6681 32.4352 40.9878C30.2681 42.5843 27.8458 43.7226 25.2354 44.3722C25.1583 44.3913 25.079 44.4008 25 44.4008Z" fill="#111111"/>
-                        <path d="M23.227 32.3489C22.9768 32.3489 22.7273 32.2535 22.5366 32.0628L15.997 25.5233C15.6156 25.1422 15.6156 24.5238 15.997 24.1424L19.3116 20.8278C19.4947 20.6447 19.7431 20.5417 20.0021 20.5417C20.2611 20.5417 20.5094 20.6447 20.6926 20.8278L23.227 23.3623L29.3088 17.2801C29.6903 16.899 30.3086 16.8986 30.6901 17.2801L34.0047 20.5947C34.1878 20.7778 34.2908 21.0261 34.2908 21.2852C34.2908 21.5442 34.1878 21.7925 34.0047 21.9756L23.9175 32.0628C23.7268 32.2535 23.4769 32.3489 23.227 32.3489ZM18.0684 24.8328L23.227 29.9911L31.9329 21.2852L29.9993 19.3519L23.9175 25.434C23.7344 25.6171 23.4861 25.7197 23.227 25.7197C22.968 25.7197 22.7197 25.6171 22.5366 25.434L20.0021 22.8995L18.0684 24.8328Z" fill="#111111"/>
-                        <path d="M35.0801 38.1934C34.8233 38.1934 34.5712 38.0896 34.3896 37.9073C34.208 37.7257 34.1035 37.4735 34.1035 37.2168C34.1035 36.9601 34.208 36.7079 34.3896 36.5263C34.5712 36.3448 34.8233 36.2402 35.0801 36.2402C35.3368 36.2402 35.589 36.3448 35.7705 36.5263C35.9521 36.7079 36.0566 36.9601 36.0566 37.2168C36.0566 37.4735 35.9521 37.7257 35.7705 37.9073C35.589 38.0896 35.3368 38.1934 35.0801 38.1934Z" fill="#111111"/>
-                      </svg>
+                      <img src="assets/img/icon/safety.svg" alt="icon">
                     </div>
                     <div class="cs_icon_details">
                       <h3 class="cs_icon_title cs_fs_30 cs_medium cs_mb_16">Safety</h3>
@@ -736,13 +660,7 @@
                   </div>
                   <div class="cs_iconbox_style_1">
                     <div class="cs_icon">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-                        <path d="M35.8307 16.6654V4.9987C35.8307 4.55667 35.6551 4.13275 35.3426 3.82019C35.03 3.50763 34.6061 3.33203 34.1641 3.33203H15.8307C15.3887 3.33203 14.9648 3.50763 14.6522 3.82019C14.3397 4.13275 14.1641 4.55667 14.1641 4.9987V16.6654C14.1641 17.1074 14.3397 17.5313 14.6522 17.8439C14.9648 18.1564 15.3887 18.332 15.8307 18.332H34.1641C34.6061 18.332 35.03 18.1564 35.3426 17.8439C35.6551 17.5313 35.8307 17.1074 35.8307 16.6654ZM15.8307 4.9987H34.1641V16.6654H15.8307V4.9987Z" fill="#111111"/>
-                        <path d="M46.5238 35.8333H44.9988V22.5C44.9988 21.837 44.7354 21.2011 44.2666 20.7322C43.7977 20.2634 43.1618 20 42.4988 20H39.1655V4.16667C39.1641 3.062 38.7247 2.00296 37.9436 1.22185C37.1625 0.440735 36.1034 0.00132321 34.9988 0L14.9988 0C13.8941 0.00132321 12.8351 0.440735 12.054 1.22185C11.2728 2.00296 10.8334 3.062 10.8321 4.16667V5.48833L8.23128 8.08917C7.9983 8.32065 7.81359 8.59608 7.68785 8.89949C7.56211 9.20289 7.49785 9.52824 7.49878 9.85667V12.6533C7.01302 12.8251 6.59219 13.1427 6.29385 13.5628C5.99552 13.9828 5.83425 14.4848 5.83211 15V20C5.83358 20.5051 5.98804 20.998 6.27514 21.4136C6.56224 21.8293 6.96852 22.1482 7.44045 22.3283C7.09242 24.6 6.30314 26.7815 5.11711 28.75C2.08211 33.9725 -2.69205 41.86 1.97378 45.6467C3.0418 46.5385 4.39072 47.0241 5.78211 47.0175C7.60155 46.9405 9.35799 46.3292 10.8321 45.26V47.5C10.8321 48.163 11.0955 48.7989 11.5643 49.2678C12.0332 49.7366 12.6691 50 13.3321 50H36.6655C37.1307 50.0001 37.5866 49.8696 37.9814 49.6234C38.3762 49.3773 38.6941 49.0253 38.8988 48.6075C39.168 48.5115 39.4085 48.3489 39.598 48.135L47.7938 38.5833C48.0011 38.341 48.1345 38.0443 48.1782 37.7284C48.2219 37.4125 48.174 37.0907 48.0403 36.8012C47.9066 36.5117 47.6927 36.2666 47.4239 36.0951C47.1551 35.9235 46.8427 35.8327 46.5238 35.8333ZM9.40961 9.2675L10.8321 7.845V12.5H9.16545V9.85667C9.16549 9.63567 9.25332 9.42374 9.40961 9.2675ZM7.49878 15C7.49878 14.779 7.58658 14.567 7.74286 14.4107C7.89914 14.2545 8.1111 14.1667 8.33211 14.1667H10.8321V20.8333H8.33211C8.1111 20.8333 7.89914 20.7455 7.74286 20.5893C7.58658 20.433 7.49878 20.221 7.49878 20V15ZM3.02378 44.3533C-0.62122 41.3942 4.14628 33.7433 6.56045 29.5833C7.86942 27.4145 8.73291 25.0064 9.10045 22.5H10.8321V43.1592C9.83211 44.0258 6.11545 46.8633 3.02378 44.3533ZM13.3321 48.3333C13.1111 48.3333 12.8991 48.2455 12.7429 48.0893C12.5866 47.933 12.4988 47.721 12.4988 47.5V4.16667C12.4988 3.50363 12.7622 2.86774 13.231 2.3989C13.6999 1.93006 14.3357 1.66667 14.9988 1.66667H34.9988C35.6618 1.66667 36.2977 1.93006 36.7666 2.3989C37.2354 2.86774 37.4988 3.50363 37.4988 4.16667V20H34.1655C33.5024 20 32.8665 20.2634 32.3977 20.7322C31.9288 21.2011 31.6655 21.837 31.6655 22.5V35.8333H30.1404C29.8219 35.8335 29.5101 35.9249 29.2419 36.0968C28.9737 36.2686 28.7604 36.5138 28.6272 36.8031C28.494 37.0925 28.4465 37.4139 28.4904 37.7294C28.5342 38.0449 28.6676 38.3413 28.8746 38.5833L37.0704 48.1383C37.0855 48.155 37.1046 48.1667 37.1196 48.1833C36.9866 48.2775 36.8284 48.3297 36.6655 48.3333H13.3321ZM38.3321 47.0492L30.1404 37.5H31.6655C32.1075 37.5 32.5314 37.3244 32.844 37.0118C33.1565 36.6993 33.3321 36.2754 33.3321 35.8333V22.5C33.3321 22.279 33.4199 22.067 33.5762 21.9107C33.7325 21.7545 33.9444 21.6667 34.1655 21.6667H42.4988C42.7198 21.6667 42.9318 21.7545 43.088 21.9107C43.2443 22.067 43.3321 22.279 43.3321 22.5V35.8333C43.3321 36.2754 43.5077 36.6993 43.8203 37.0118C44.1328 37.3244 44.5568 37.5 44.9988 37.5H46.5246L38.3321 47.0492Z" fill="#111111"/>
-                        <path d="M38.3333 27.4987C38.5543 27.4987 38.7663 27.4109 38.9226 27.2546C39.0789 27.0983 39.1667 26.8864 39.1667 26.6654V26.0637C39.4192 26.2088 39.6291 26.4178 39.7754 26.6697C39.9217 26.9215 39.9991 27.2074 40 27.4987C40 27.7197 40.0878 27.9317 40.2441 28.088C40.4004 28.2442 40.6123 28.332 40.8333 28.332C41.0543 28.332 41.2663 28.2442 41.4226 28.088C41.5789 27.9317 41.6667 27.7197 41.6667 27.4987C41.6639 26.7619 41.4171 26.0467 40.9647 25.465C40.5124 24.8833 39.8801 24.4679 39.1667 24.2837V24.1654C39.1667 23.9444 39.0789 23.7324 38.9226 23.5761C38.7663 23.4198 38.5543 23.332 38.3333 23.332C38.1123 23.332 37.9004 23.4198 37.7441 23.5761C37.5878 23.7324 37.5 23.9444 37.5 24.1654V24.2837C36.7153 24.4857 36.0313 24.9671 35.5764 25.6376C35.1214 26.3081 34.9268 27.1215 35.0291 27.9253C35.1314 28.7291 35.5236 29.4679 36.1319 30.0031C36.7403 30.5383 37.5231 30.833 38.3333 30.832C38.6996 30.8311 39.056 30.9513 39.347 31.1738C39.6379 31.3963 39.8472 31.7088 39.9423 32.0625C40.0373 32.4163 40.0128 32.7916 39.8725 33.13C39.7323 33.4683 39.4841 33.7509 39.1667 33.9337V33.332C39.1667 33.111 39.0789 32.8991 38.9226 32.7428C38.7663 32.5865 38.5543 32.4987 38.3333 32.4987C38.1123 32.4987 37.9004 32.5865 37.7441 32.7428C37.5878 32.8991 37.5 33.111 37.5 33.332V33.9337C37.2475 33.7886 37.0375 33.5796 36.8913 33.3277C36.745 33.0759 36.6675 32.79 36.6667 32.4987C36.6667 32.2777 36.5789 32.0657 36.4226 31.9094C36.2663 31.7532 36.0543 31.6654 35.8333 31.6654C35.6123 31.6654 35.4004 31.7532 35.2441 31.9094C35.0878 32.0657 35 32.2777 35 32.4987C35.0028 33.2355 35.2496 33.9507 35.7019 34.5324C36.1542 35.1141 36.7865 35.5295 37.5 35.7137V35.832C37.5 36.053 37.5878 36.265 37.7441 36.4213C37.9004 36.5776 38.1123 36.6654 38.3333 36.6654C38.5543 36.6654 38.7663 36.5776 38.9226 36.4213C39.0789 36.265 39.1667 36.053 39.1667 35.832V35.7137C39.9514 35.5117 40.6354 35.0303 41.0903 34.3598C41.5452 33.6893 41.7398 32.8759 41.6375 32.0721C41.5352 31.2683 41.1431 30.5295 40.5347 29.9943C39.9264 29.4591 39.1436 29.1644 38.3333 29.1654C37.967 29.1663 37.6107 29.0461 37.3197 28.8236C37.0287 28.6011 36.8195 28.2886 36.7244 27.9349C36.6294 27.5811 36.6539 27.2058 36.7941 26.8674C36.9344 26.529 37.1826 26.2465 37.5 26.0637V26.6654C37.5 26.8864 37.5878 27.0983 37.7441 27.2546C37.9004 27.4109 38.1123 27.4987 38.3333 27.4987Z" fill="#111111"/>
-                        <path d="M18.3332 9.16749C18.5542 9.16745 18.7661 9.07962 18.9223 8.92333L19.7557 8.08999C19.9075 7.93283 19.9914 7.72232 19.9896 7.50383C19.9877 7.28533 19.9 7.07632 19.7455 6.92181C19.591 6.76731 19.382 6.67966 19.1635 6.67777C18.945 6.67587 18.7345 6.75986 18.5773 6.91166L17.744 7.74499C17.6275 7.86154 17.5481 8.01001 17.516 8.17163C17.4839 8.33326 17.5004 8.50079 17.5634 8.65304C17.6265 8.80529 17.7333 8.93543 17.8703 9.027C18.0073 9.11857 18.1684 9.16746 18.3332 9.16749Z" fill="#111111"/>
-                        <path d="M23.577 6.91166L17.7437 12.745C17.5919 12.9022 17.5079 13.1127 17.5098 13.3312C17.5117 13.5497 17.5993 13.7587 17.7538 13.9132C17.9084 14.0677 18.1174 14.1553 18.3359 14.1572C18.5544 14.1591 18.7649 14.0751 18.922 13.9233L24.7554 8.08999C24.9072 7.93283 24.9912 7.72232 24.9893 7.50383C24.9874 7.28533 24.8997 7.07632 24.7452 6.92181C24.5907 6.76731 24.3817 6.67966 24.1632 6.67777C23.9447 6.67587 23.7342 6.75986 23.577 6.91166Z" fill="#111111"/>
-                      </svg>                  
+                      <img src="assets/img/icon/fuel.svg" alt="icon">                
                     </div>
                     <div class="cs_icon_details">
                       <h3 class="cs_icon_title cs_fs_30 cs_medium cs_mb_16">Fuel Cost</h3>
@@ -751,13 +669,7 @@
                   </div>
                   <div class="cs_iconbox_style_1">
                     <div class="cs_icon">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-                        <path d="M47.2851 37.6811C47.2041 36.7892 43.0351 33.6879 36.177 33.5122C33.3392 33.4514 29.6297 28.6946 22.5689 28.1473C15.9473 27.6338 7.53513 29.5325 3.57567 34.7487C3.33918 35.0595 3.48108 35.2014 3.44054 37.5933H3.38648C2.32567 37.5933 2.83243 39.1608 2.71081 40.2352C2.71081 42.8163 5.5554 44.0392 6.42027 43.4514C6.69729 45.6811 8.59594 47.4176 10.9068 47.4176C13.1703 47.4176 15.0419 45.7419 15.373 43.573H34.0554C34.8324 48.7014 42.2649 48.6676 42.9946 43.5325C44.1162 43.9176 47.6162 41.4514 47.2851 37.6811ZM33.2378 33.9311C29.2851 34.4514 25.2716 34.7284 21.2243 34.7487V29.4311C27.0892 29.6203 29.3054 31.823 33.2378 33.9311ZM19.873 29.4176V34.7419C15.4338 34.7014 10.9473 34.3636 6.44054 33.7217C9.59594 31.0865 14.5419 29.4919 19.873 29.4176ZM10.9068 46.073C9.15675 46.073 7.73783 44.6473 7.73783 42.9041C7.73783 41.1608 9.15675 39.7352 10.9068 39.7352C12.6568 39.7352 14.0757 41.1541 14.0757 42.9041C14.0757 44.6541 12.6568 46.073 10.9068 46.073ZM38.5216 46.073C36.7716 46.073 35.3527 44.6473 35.3527 42.9041C35.3527 41.1608 36.7716 39.7352 38.5216 39.7352C40.2716 39.7352 41.6905 41.1541 41.6905 42.9041C41.6905 44.6541 40.2716 46.073 38.5216 46.073ZM43.0892 42.2352C43.0554 42.2419 43.0284 42.2554 42.9946 42.269C42.2649 37.1338 34.8324 37.1068 34.0554 42.2284H15.373C14.5892 37.0527 7.04864 37.1608 6.42027 42.3568C6.12972 42.1608 4.06216 42.2622 4.06216 40.2419V38.9514H4.1027C5.23108 38.9514 4.62297 37.2487 4.77837 35.3906C4.90675 35.2284 5.0554 35.0663 5.19729 34.9108C15.5959 36.4919 26.0149 36.519 36.1905 34.8636C40.2716 34.9784 43.7243 36.1068 45.9473 38.0527C46.0014 39.9379 44.7311 41.8163 43.0892 42.2352Z" fill="#111111"/>
-                        <path d="M14.684 16.053C17.5692 16.3165 19.13 18.1611 19.13 19.7624C19.13 21.7287 17.353 21.9922 18.0354 22.8773C18.8732 23.9584 19.7449 21.5057 23.2313 21.5057C25.8192 21.5057 27.9881 22.9246 28.2786 24.8097C28.407 25.6273 29.6232 25.5395 29.6232 24.7084V24.6273C29.6705 22.58 32.2786 21.58 33.6503 23.4314C38.157 29.3503 37.9881 29.7962 38.7584 29.5057C39.0421 29.3976 39.2178 29.1138 39.1908 28.8097C37.8327 16.6408 37.2043 16.7692 38.5421 14.9449C40.0759 12.857 41.907 13.8165 41.9611 12.7354C42.0084 11.7557 40.6097 12.0665 39.9003 11.9043C36.2449 11.5665 34.0354 8.34353 36.4813 5.97866C37.0557 5.41785 36.3394 4.49893 35.6638 4.91785L34.5286 5.60704C31.3867 7.51244 26.7516 6.03947 26.3057 3.14758C26.2178 2.57326 25.5692 2.54623 25.6367 2.57326C24.7719 2.57326 24.9611 3.70839 24.7989 4.25569C24.353 7.12731 19.7313 8.62731 16.5827 6.71515C15.9003 6.30299 15.184 7.2219 15.7651 7.77596C16.2381 8.33677 17.6976 9.20163 17.6976 10.8638C17.6976 12.4651 16.1367 14.3097 13.2516 14.5733C12.9003 14.607 12.6367 14.8976 12.6367 15.2489C12.63 16.2016 13.9476 15.8976 14.684 16.053ZM18.4881 8.82326C21.5624 9.3165 24.8394 7.93812 25.8665 5.40434C27.6165 7.64758 31.2516 8.45839 34.1976 7.27596C33.5692 9.95163 35.6705 12.3165 38.5354 13.0462C38.1232 13.3503 37.7584 13.7219 37.4408 14.1543C35.7111 16.5124 36.4813 17.0192 37.6097 26.5327C35.3665 23.9651 34.6232 21.1206 31.7516 21.1206C30.5421 21.1206 29.4543 21.7827 28.8394 22.7287C27.1232 20.2962 23.2921 19.526 20.3665 20.6949C20.9678 18.1273 19.0489 15.8233 16.3462 15.0057C18.9543 13.5327 19.6638 10.8908 18.4881 8.82326Z" fill="#111111"/>
-                        <path d="M22.8659 11.0527C21.3862 13.3973 20.7105 13.7283 21.0348 14.35C21.3591 14.9648 22.001 14.6135 24.1429 14.7081C25.0348 14.7081 25.0348 13.3567 24.1429 13.3567H22.9132C24.3929 11.0121 25.0686 10.681 24.7443 10.0594C24.6294 9.83645 24.3997 9.70132 24.1497 9.70132C22.6497 9.84321 20.9605 9.26889 20.9605 10.377C20.9605 11.377 22.3389 10.9648 22.8659 11.0527Z" fill="#111111"/>
-                        <path d="M27.7033 12.9648C26.2303 15.2959 25.5479 15.6405 25.879 16.2621C25.9939 16.4851 26.2236 16.6202 26.4736 16.6202C27.9736 16.4783 29.6628 17.0526 29.6628 15.9445C29.6628 14.9445 28.2844 15.3499 27.7574 15.2688C29.2303 12.9378 29.9128 12.5932 29.5817 11.9715C29.4668 11.7486 29.2371 11.6134 28.9871 11.6134C27.4871 11.7553 25.7979 11.181 25.7979 12.2891C25.7979 13.2891 27.1763 12.8837 27.7033 12.9648Z" fill="#111111"/>
-                        <path d="M32.5412 14.8772C31.0683 17.2083 30.3858 17.5528 30.7101 18.1745C31.0345 18.7893 31.6764 18.438 33.8183 18.5326C34.7101 18.5326 34.7101 17.1812 33.8183 17.1812H32.5885C34.0615 14.8501 34.7439 14.5056 34.4196 13.8839C34.0953 13.2691 33.4534 13.6204 31.3115 13.5258C30.9399 13.5258 30.6358 13.8299 30.6358 14.2015C30.6358 15.2015 32.0142 14.7961 32.5412 14.8772Z" fill="#111111"/>
-                      </svg>
+                      <img src="assets/img/icon/fatigue.svg" alt="icon">
                     </div>
                     <div class="cs_icon_details">
                       <h3 class="cs_icon_title cs_fs_30 cs_medium cs_mb_16">Driver Fatigue & Silence</h3>
@@ -766,20 +678,7 @@
                   </div>
                   <div class="cs_iconbox_style_1">
                     <div class="cs_icon">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-                        <g clip-path="url(#clip0_20627_241)">
-                          <path d="M33.9863 15.1504C33.4462 15.1504 33.0078 15.5868 33.0078 16.1266C33.0078 16.666 33.4462 17.1031 33.9863 17.1031C34.5275 17.1031 34.9648 16.666 34.9648 16.1266C34.9648 15.5868 34.5275 15.1504 33.9863 15.1504Z" fill="#111111"/>
-                          <path d="M16.207 32.8945C15.6658 32.8945 15.2285 33.3321 15.2285 33.8711C15.2285 34.4113 15.6658 34.8477 16.207 34.8477C16.7471 34.8477 17.1855 34.4113 17.1855 33.8711C17.1855 33.3321 16.7471 32.8945 16.207 32.8945Z" fill="#111111"/>
-                          <path d="M48.9293 6.00786C48.5991 5.93119 48.252 6.03075 48.0135 6.27108L43.9571 10.3517H42.0123L39.8716 8.13799V6.16999L43.8699 2.11992C44.1065 1.88036 44.2028 1.53589 44.1245 1.20821C44.0465 0.880907 43.8049 0.61693 43.4854 0.509355C42.4809 0.171373 41.4299 9.26482e-05 40.3608 9.26482e-05C37.1739 9.26482e-05 34.2786 1.48325 32.4172 4.06923C30.6751 6.49004 30.138 9.45673 30.9074 12.296L23.7 19.4894L11.6923 7.47767V5.12018C11.6923 4.77724 11.5119 4.45909 11.2172 4.28286L4.29869 0.139329C3.91342 -0.0914601 3.42074 -0.0308064 3.1035 0.286195L0.336255 3.04766C0.0190152 3.36466 -0.0417571 3.85637 0.189102 4.24089L4.33997 11.1459C4.51655 11.44 4.83494 11.6197 5.17855 11.62L7.53988 11.6208L19.5487 23.6325L12.3688 30.7984C9.52397 30.0309 6.54994 30.5677 4.12325 32.3075C1.53374 34.1642 0.0488281 37.053 0.0488281 40.2337C0.0488281 41.3003 0.220443 42.3497 0.559087 43.3519C0.667254 43.6727 0.934423 43.9149 1.26466 43.9912C1.59528 44.0679 1.94195 43.9683 2.18083 43.728L6.23691 39.6478H8.19233L10.4203 41.8714V43.823L6.33208 47.8711C6.09128 48.1096 5.99153 48.4555 6.06835 48.7855C6.14479 49.1151 6.3875 49.3818 6.70895 49.4897C7.71303 49.8277 8.76451 49.999 9.83318 49.999C13.0201 49.999 15.9142 48.5166 17.7749 45.9321C19.5182 43.5102 20.0559 40.5423 19.2869 37.7031L25.0534 31.9478L26.3744 33.3799L25.7682 33.9845C25.3859 34.366 25.3859 34.9843 25.7682 35.3658C26.1504 35.7469 26.7696 35.7469 27.1522 35.3658L27.701 34.818L40.0948 48.2541C40.1039 48.264 40.1135 48.2736 40.1231 48.2831C42.4164 50.5719 46.1319 50.5727 48.4263 48.2827C50.7143 45.9981 50.7143 42.2807 48.4263 39.9961C48.4164 39.9862 48.4061 39.9766 48.3957 39.9671L34.9123 27.6212L35.455 27.0795C35.8373 26.6984 35.8373 26.08 35.455 25.6986C35.0728 25.3171 34.4536 25.3171 34.071 25.6986L33.4691 26.2998L32.0315 24.9829L37.8259 19.1999C38.6496 19.4196 39.4997 19.531 40.3608 19.531C45.7562 19.531 50.1451 15.1502 50.1451 9.76572C50.1451 8.69875 49.9735 7.64971 49.6349 6.64721C49.5267 6.32639 49.2596 6.08416 48.9293 6.00786ZM8.63837 9.95455C8.45491 9.77106 8.20609 9.6776 7.94618 9.6776L5.73315 9.67684L2.26033 3.88994L3.94705 2.20651L9.73533 5.67331V7.88202C9.73533 8.14066 9.83815 8.38862 10.0212 8.57172L22.3164 20.8707L20.9324 22.2516L8.63837 9.95455ZM33.5271 29.0036L47.0565 41.3911C48.5677 42.9155 48.5632 45.3836 47.0423 46.9022C45.518 48.4235 43.0504 48.4281 41.5201 46.9156L29.0858 33.4356L33.5271 29.0036ZM32.0839 27.6818L27.7591 31.9974L26.4382 30.5654L30.6464 26.365L32.0839 27.6818ZM40.3608 17.5778C39.505 17.5778 38.6634 17.4409 37.86 17.1708C37.5079 17.0529 37.1188 17.1437 36.8559 17.4058C31.9505 22.3016 21.3807 32.8504 17.4886 36.7353C17.2256 36.9977 17.1343 37.3861 17.2531 37.7378C18.0665 40.1483 17.6774 42.7194 16.1852 44.7927C14.6973 46.8599 12.3818 48.0458 9.83318 48.0458C9.5469 48.0458 9.26215 48.0302 8.98007 48.0001L12.0879 44.9224C12.2729 44.7393 12.3772 44.4898 12.3772 44.2292V41.4666C12.3772 41.2076 12.274 40.9593 12.0906 40.7762L9.28929 37.9804C9.10582 37.7973 8.857 37.6943 8.59748 37.6943H5.82947C5.56841 37.6943 5.31844 37.7984 5.1346 37.9831L2.05126 41.0848C2.02068 40.8033 2.00539 40.5191 2.00539 40.2333C2.00539 37.6893 3.19332 35.3788 5.26493 33.8937C7.3419 32.4044 9.91842 32.0157 12.334 32.8279C12.686 32.9465 13.0751 32.8553 13.3381 32.5929C13.392 32.5395 32.6916 13.2772 32.7054 13.2634C32.9683 13.001 33.0593 12.613 32.9408 12.2613C32.1271 9.85079 32.5154 7.28045 34.0064 5.20868C35.4956 3.13959 37.8114 1.95322 40.3604 1.95322C40.6555 1.95322 40.9486 1.96962 41.2391 2.00167L38.1959 5.08432C38.0155 5.26705 37.9146 5.5131 37.9146 5.76944V8.53205C37.9146 8.78535 38.0128 9.02834 38.189 9.2103L40.8925 12.0061C41.0767 12.1968 41.3309 12.3044 41.5965 12.3044H44.3645C44.6252 12.3044 44.8751 12.2006 45.059 12.0156L48.1423 8.91428C48.1729 9.19581 48.1882 9.48 48.1882 9.76572C48.1882 14.0733 44.6768 17.5778 40.3608 17.5778Z" fill="#111111"/>
-                          <path d="M30.5268 18.1982L18.2825 30.4186C17.9006 30.7997 17.9006 31.4181 18.2825 31.7995C18.6647 32.181 19.2843 32.181 19.6665 31.7995L31.9108 19.5791C32.293 19.198 32.293 18.5797 31.9108 18.1982C31.5286 17.8167 30.909 17.8167 30.5268 18.1982Z" fill="#111111"/>
-                          <path d="M42.8924 44.1414C43.2746 44.5218 43.8942 44.5218 44.2764 44.1391C44.6579 43.7573 44.6567 43.1389 44.2741 42.7582L35.4545 33.984C35.0719 33.6033 34.4519 33.6045 34.0709 33.9863C33.689 34.3686 33.6902 34.9865 34.0728 35.3672L42.8924 44.1414Z" fill="#111111"/>
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_20627_241">
-                            <rect width="50" height="50" fill="white"/>
-                          </clipPath>
-                        </defs>
-                      </svg>
+                      <img src="assets/img/icon/maintaienance.svg" alt="icon">
                     </div>
                     <div class="cs_icon_details">
                       <h3 class="cs_icon_title cs_fs_30 cs_medium cs_mb_16">Maintenance</h3>
@@ -788,9 +687,7 @@
                   </div>
                   <div class="cs_iconbox_style_1">
                     <div class="cs_icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47" fill="none">
-                      <path d="M46.133 5.46311C45.4558 3.33337 44.538 1.80844 44.4991 1.74435C44.3486 1.4963 44.0387 1.36727 43.7581 1.43164C43.6854 1.44824 41.9522 1.85279 39.9529 2.85128C37.2538 4.19883 35.3684 5.99784 34.4998 8.05291C33.7768 9.76438 33.6729 11.8566 34.1859 14.1681C33.0933 12.9478 31.8642 11.8804 30.5244 10.9817C30.1153 10.1735 29.0335 8.18366 27.3424 6.10398C26.7853 5.41934 25.7139 6.27851 26.2766 6.97001C27.4162 8.37163 28.2739 9.75007 28.8103 10.6971L22.5553 9.4777L16.6124 1.37156C17.1894 1.37957 17.7685 1.43536 18.3447 1.54837C20.1715 1.906 21.9759 2.83641 23.7089 4.31327C24.3878 4.89205 25.2695 3.83862 24.5995 3.26785C22.6852 1.63649 20.6696 0.604236 18.6085 0.200546C15.4622 -0.415147 11.7927 0.393093 7.99554 2.53886C5.16541 4.13817 3.27284 5.89484 3.19388 5.96866C2.94068 6.20526 2.90034 6.63499 3.11234 6.91136C3.38986 7.48071 4.44157 9.53464 6.19223 11.7459C7.22421 13.0497 8.31254 14.1655 9.43835 15.0824C9.11849 15.3505 8.80721 15.6309 8.50594 15.9259C6.8969 17.4997 5.66495 19.3562 4.85614 21.3859C4.14117 23.1791 3.75664 25.1083 3.73519 27.0967C3.69971 30.3483 4.64185 33.4843 6.46031 36.1662C8.23672 38.7857 10.7201 40.797 13.6418 41.9824C14.4594 42.3134 14.9764 41.0417 14.1582 40.7098C13.0996 40.2803 12.1051 39.7302 11.1879 39.0759C11.3052 38.4253 11.5773 36.0838 10.022 33.6599C9.80428 33.3209 10.4552 31.9894 10.8437 31.194C11.2448 30.3743 11.6588 29.5269 11.8522 28.729C12.0576 27.8812 11.8264 27.1697 11.1841 26.6705C10.7127 26.304 10.0955 26.1143 9.55165 25.9469C9.19831 25.8382 8.79777 25.7152 8.65472 25.5959C8.36003 25.3489 7.87881 24.4366 7.492 23.7039C7.06284 22.891 6.65429 22.1174 6.23715 21.6411C7.17585 19.4118 8.68361 17.4391 10.5719 15.9299C12.2968 17.1049 14.2655 17.9157 16.358 18.0799C13.9313 19.9602 13.1462 22.3615 14.2683 24.668C15.5787 27.3614 18.2758 26.9311 20.6553 26.552C21.067 26.4862 21.493 26.4184 21.901 26.3675C22.054 26.3483 22.1001 26.3901 22.131 26.4173C22.652 26.8807 22.6365 29.0943 22.6254 30.7108C22.6102 32.9467 22.5959 35.0587 23.4288 36.143C23.8536 36.6958 24.4519 36.9784 25.1531 36.9784C25.5734 36.9784 26.03 36.8772 26.5089 36.6717C28.58 35.7848 30.733 33.1155 30.4045 31.0035C30.1175 29.157 29.9276 27.937 30.3753 26.9537C30.7893 26.0436 31.7901 25.201 33.7611 24.1259C33.9971 25.1887 34.1161 26.2945 34.1038 27.4289C34.0618 31.301 32.5139 34.9251 29.7459 37.633C26.6523 40.6594 22.3044 42.154 18.0034 41.68C17.1271 41.585 16.9757 42.9485 17.8532 43.0452C22.561 43.5637 27.3209 41.9272 30.7061 38.6149C33.7367 35.6501 35.431 31.683 35.4771 27.4435C35.5383 21.8225 32.6541 16.8426 28.2636 13.9738C29.1708 13.3269 29.8466 12.7676 30.2214 12.4429C31.8221 13.5913 33.2421 15.0061 34.4234 16.6543C37.2592 20.6119 38.3839 25.4365 37.5908 30.2402C35.9529 40.1562 26.5536 46.8919 16.6358 45.2534C11.8319 44.46 7.62475 41.8439 4.7889 37.8862C1.95277 33.9289 0.8281 29.1038 1.62146 24.3004C1.76394 23.4361 0.409818 23.2092 0.266767 24.0767C-0.586677 29.2422 0.62325 34.4307 3.67224 38.6865C6.72181 42.9417 11.2465 45.7552 16.4121 46.6086C17.4924 46.7869 18.5739 46.875 19.6479 46.875C23.7077 46.875 27.6571 45.6144 31.0225 43.2029C35.2788 40.1533 38.0927 35.6295 38.9455 30.4639C39.5707 26.6788 39.0869 22.8813 37.5843 19.4475C38.2778 19.243 39.4579 18.8458 40.7505 18.2004C43.4491 16.8528 45.3348 15.0538 46.2031 12.9988C47.0723 10.9431 47.0479 8.3373 46.133 5.46311ZM6.27721 24.3447C6.78819 25.3135 7.27141 26.229 7.77352 26.649C8.12915 26.9463 8.6241 27.0985 9.14796 27.2595C10.4901 27.6721 10.646 27.8747 10.5172 28.4054C10.3593 29.058 9.97823 29.8373 9.61001 30.5906C8.90077 32.0417 8.231 33.4116 8.86586 34.4015C9.76623 35.8046 9.92043 37.1859 9.90499 38.045C5.81487 34.3569 4.14946 28.5316 5.67296 23.2369C5.87495 23.5831 6.08723 23.9854 6.27721 24.3447ZM39.5009 10.8501L37.5493 6.12086C38.4989 5.2328 39.6007 4.56447 40.5391 4.09383C41.3385 3.69271 42.0989 3.39288 42.7089 3.1803L39.5009 10.8501ZM43.9749 3.71274C44.2476 4.29868 44.5637 5.05427 44.8338 5.90829C45.1299 6.84556 45.4017 8.00714 45.4558 9.21878L40.8824 11.1056L43.9749 3.71274ZM35.7646 8.58764C35.9672 8.1087 36.229 7.66467 36.5314 7.25469L38.753 12.6377L36.7594 17.4047C36.4793 16.8105 36.1494 16.03 35.8696 15.1434C35.308 13.3681 34.8342 10.7892 35.7646 8.58764ZM40.164 16.9578C39.3947 17.3441 38.6606 17.6365 38.0626 17.8473L40.1314 12.9015L45.3974 10.7285C45.321 11.3185 45.1754 11.9033 44.9382 12.464C44.0081 14.6656 41.8286 16.1233 40.164 16.9578ZM15.4027 16.567C15.1601 16.5195 14.9206 16.4615 14.6846 16.3954L22.2846 10.8244L28.5426 12.044C26.2629 13.8402 20.7151 17.6079 15.4027 16.567ZM8.45702 12.2706C6.83167 10.5188 5.64034 8.64572 4.95627 7.44638L12.9199 8.99905L8.45702 12.2706ZM9.8635 3.10878L13.1954 7.65351L5.18029 6.09111C6.18937 5.29431 7.85506 4.09812 9.8635 3.10878ZM15.1821 8.0409L11.1427 2.53085C12.352 2.03389 13.6501 1.64279 14.9807 1.46884L20.5689 9.09061L15.1821 8.0409ZM14.7547 9.35668L20.4501 10.4668L13.1405 15.8246C11.7621 15.188 10.5215 14.2728 9.43606 13.2554L14.7547 9.35668ZM33.388 22.7663C30.9123 24.0852 29.7001 25.1212 29.1251 26.3849C28.5074 27.7419 28.7337 29.1985 29.047 31.2143C29.2321 32.4031 27.8193 34.6167 25.9682 35.4095C25.2833 35.7027 24.7955 35.6681 24.5177 35.3062C23.9721 34.5961 23.9869 32.4469 23.9987 30.7202C24.015 28.3313 24.0293 26.2682 23.0437 25.3913C22.6892 25.076 22.2357 24.9427 21.7319 25.0045C21.3002 25.0583 20.8621 25.1281 20.439 25.1956C17.9147 25.5979 16.3263 25.7589 15.5034 24.0672C14.1702 21.3272 16.869 19.2976 18.0912 18.5523C18.3401 18.4007 18.571 18.2218 18.7856 18.0227C21.7396 17.6697 24.5308 16.4022 27.0182 14.8147C30.0005 16.5965 32.2899 19.4163 33.388 22.7663Z" fill="#111111"/>
-                    </svg>
+                    <img src="assets/img/icon/environment.svg" alt="icon">
                     </div>
                     <div class="cs_icon_details">
                       <h3 class="cs_icon_title cs_fs_30 cs_medium cs_mb_16">Environment</h3>
@@ -809,15 +706,9 @@
         <div class="container">
           <div class="cs_section_heading_style_1 cs_center_column cs_mb_50">
             <h3 class="cs_subtitle_style_1 cs_fs_14 cs_mb_16">
-              <span class="cs_lines align-items-end">
-                <span></span>
-                <span></span>
-              </span>
+              <span class="cs_lines_left"></span>
               TRENDING viceless
-              <span class="cs_lines">
-                <span></span>
-                <span></span>
-              </span>
+              <span class="cs_lines_right"></span>
             </h3>
             <h2 class="cs_section_title cs_fs_53">
               Our Popular Listings Makes 
@@ -827,14 +718,14 @@
             <div class="col-xl-4 col-md-6">
               <div class="cs_card_style_3">
                 <div class="cs_card_img position-relative">
-                  <a href="car_details"><img src="assets/img/trending-car-img-1.jpg" alt="Car image"></a>
+                  <a href="car-details.html"><img src="assets/img/trending-car-img-1.jpg" alt="Car image"></a>
                   <div class="cs_discount_badge cs_accent_bg cs_fs_13 cs_white_color position-absolute">
                     <span class="cs_price">$35 000</span>
                     <s class="cs_discount_price cs_fs_10">$49 000</s>
                   </div>
                 </div>
                 <div class="cs_card_info">
-                  <h3 class="cs_card_title cs_fs_24 cs_medium cs_mb_13"><a href="car_details">Acura RSX</a></h3>
+                  <h3 class="cs_card_title cs_fs_24 cs_medium cs_mb_13"><a href="car-details.html">Acura RSX</a></h3>
                   <div class="cs_review_wrapper cs_mb_20">
                     <div class="cs_rating" data-rating="5">
                       <div class="cs_rating_percentage"></div>
@@ -861,14 +752,14 @@
             <div class="col-xl-4 col-md-6">
               <div class="cs_card_style_3">
                 <div class="cs_card_img position-relative">
-                  <a href="car_details"><img src="assets/img/trending-car-img-2.jpg" alt="Car image"></a>
+                  <a href="car-details.html"><img src="assets/img/trending-car-img-2.jpg" alt="Car image"></a>
                   <div class="cs_discount_badge cs_accent_bg cs_fs_13 cs_white_color position-absolute">
                     <span class="cs_price">$35 000</span>
                     <s class="cs_discount_price cs_fs_10">$49 000</s>
                   </div>
                 </div>
                 <div class="cs_card_info">
-                  <h3 class="cs_card_title cs_fs_24 cs_medium cs_mb_13"><a href="car_details">2017 AUDI R8</a></h3>
+                  <h3 class="cs_card_title cs_fs_24 cs_medium cs_mb_13"><a href="car-details.html">2017 AUDI R8</a></h3>
                   <div class="cs_review_wrapper cs_mb_20">
                     <div class="cs_rating" data-rating="5">
                       <div class="cs_rating_percentage"></div>
@@ -895,14 +786,14 @@
             <div class="col-xl-4 col-md-6">
               <div class="cs_card_style_3">
                 <div class="cs_card_img position-relative">
-                  <a href="car_details"><img src="assets/img/trending-car-img-3.jpg" alt="Car image"></a>
+                  <a href="car-details.html"><img src="assets/img/trending-car-img-3.jpg" alt="Car image"></a>
                   <div class="cs_discount_badge cs_accent_bg cs_fs_13 cs_white_color position-absolute">
                     <span class="cs_price">$55 000</span>
                     <s class="cs_discount_price cs_fs_10">$55 000</s>
                   </div>
                 </div>
                 <div class="cs_card_info">
-                  <h3 class="cs_card_title cs_fs_24 cs_medium cs_mb_13"><a href="car_details">2017 Bentley</a></h3>
+                  <h3 class="cs_card_title cs_fs_24 cs_medium cs_mb_13"><a href="car-details.html">2017 Bentley</a></h3>
                   <div class="cs_review_wrapper cs_mb_20">
                     <div class="cs_rating" data-rating="5">
                       <div class="cs_rating_percentage"></div>
@@ -929,14 +820,14 @@
             <div class="col-xl-4 col-md-6">
               <div class="cs_card_style_3">
                 <div class="cs_card_img position-relative">
-                  <a href="car_details"><img src="assets/img/trending-car-img-4.jpg" alt="Car image"></a>
+                  <a href="car-details.html"><img src="assets/img/trending-car-img-4.jpg" alt="Car image"></a>
                   <div class="cs_discount_badge cs_accent_bg cs_fs_13 cs_white_color position-absolute">
                     <span class="cs_price">$65 000</span>
                     <s class="cs_discount_price cs_fs_10">$75 000</s>
                   </div>
                 </div>
                 <div class="cs_card_info">
-                  <h3 class="cs_card_title cs_fs_24 cs_medium cs_mb_13"><a href="car_details">2018 Audi 0.2</a></h3>
+                  <h3 class="cs_card_title cs_fs_24 cs_medium cs_mb_13"><a href="car-details.html">2018 Audi 0.2</a></h3>
                   <div class="cs_review_wrapper cs_mb_20">
                     <div class="cs_rating" data-rating="5">
                       <div class="cs_rating_percentage"></div>
@@ -963,14 +854,14 @@
             <div class="col-xl-4 col-md-6">
               <div class="cs_card_style_3">
                 <div class="cs_card_img position-relative">
-                  <a href="car_details"><img src="assets/img/trending-car-img-5.jpg" alt="Car image"></a>
+                  <a href="car-details.html"><img src="assets/img/trending-car-img-5.jpg" alt="Car image"></a>
                   <div class="cs_discount_badge cs_accent_bg cs_fs_13 cs_white_color position-absolute">
                     <span class="cs_price">$75 000</span>
                     <s class="cs_discount_price cs_fs_10">$89 000</s>
                   </div>
                 </div>
                 <div class="cs_card_info">
-                  <h3 class="cs_card_title cs_fs_24 cs_medium cs_mb_13"><a href="car_details">2014 Ford F-150</a></h3>
+                  <h3 class="cs_card_title cs_fs_24 cs_medium cs_mb_13"><a href="car-details.html">2014 Ford F-150</a></h3>
                   <div class="cs_review_wrapper cs_mb_20">
                     <div class="cs_rating" data-rating="5">
                       <div class="cs_rating_percentage"></div>
@@ -997,14 +888,14 @@
             <div class="col-xl-4 col-md-6">
               <div class="cs_card_style_3">
                 <div class="cs_card_img position-relative">
-                  <a href="car_details"><img src="assets/img/trending-car-img-6.jpg" alt="Car image"></a>
+                  <a href="car-details.html"><img src="assets/img/trending-car-img-6.jpg" alt="Car image"></a>
                   <div class="cs_discount_badge cs_accent_bg cs_fs_13 cs_white_color position-absolute">
                     <span class="cs_price">$85 000</span>
                     <s class="cs_discount_price cs_fs_10">$99 000</s>
                   </div>
                 </div>
                 <div class="cs_card_info">
-                  <h3 class="cs_card_title cs_fs_24 cs_medium cs_mb_13"><a href="car_details">2010 BMW M6</a></h3>
+                  <h3 class="cs_card_title cs_fs_24 cs_medium cs_mb_13"><a href="car-details.html">2010 BMW M6</a></h3>
                   <div class="cs_review_wrapper cs_mb_20">
                     <div class="cs_rating" data-rating="5">
                       <div class="cs_rating_percentage"></div>
@@ -1066,15 +957,9 @@
             <div class="cs_slider cs_style_1 swiper">
                 <div class="cs_section_heading_style_1 cs_center_column cs_mb_50">
                   <h3 class="cs_subtitle_style_1 cs_fs_14 cs_mb_16">
-                    <span class="cs_lines align-items-end">
-                      <span></span>
-                      <span></span>
-                    </span>
+                    <span class="cs_lines_left"></span>
                     TOUR TESTIMONIALS
-                    <span class="cs_lines">
-                      <span></span>
-                      <span></span>
-                    </span>
+                    <span class="cs_lines_right"></span>
                   </h3>
                   <h2 class="cs_section_title cs_fs_53 mb-0">What Our Client’s Say</h2>
               </div>
@@ -1082,7 +967,7 @@
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div class="cs_testimonial_style_1 text-center">
-                      <span class="cs_avatar_icon cs_center cs_radius_100 cs_mb_20">
+                      <span class="cs_avatar cs_center cs_radius_100 cs_mb_20">
                         <img src="../assets/img/avatar-1.jpg" alt="Avatar">
                       </span>
                       <div class="cs_testimonial_content cs_center_column cs_radius_5 text-center"> 
@@ -1096,7 +981,7 @@
                   </div>
                   <div class="swiper-slide">
                     <div class="cs_testimonial_style_1 text-center">
-                      <span class="cs_avatar_icon cs_center cs_radius_100 cs_mb_20">
+                      <span class="cs_avatar cs_center cs_radius_100 cs_mb_20">
                         <img src="../assets/img/avatar-2.jpg" alt="Avatar">
                       </span>
                       <div class="cs_testimonial_content cs_center_column cs_radius_5 text-center"> 
@@ -1110,7 +995,7 @@
                   </div>
                   <div class="swiper-slide">
                     <div class="cs_testimonial_style_1 text-center">
-                      <span class="cs_avatar_icon cs_center cs_radius_100 cs_mb_20">
+                      <span class="cs_avatar cs_center cs_radius_100 cs_mb_20">
                         <img src="../assets/img/avatar-3.jpg" alt="Avatar">
                       </span>
                       <div class="cs_testimonial_content cs_center_column cs_radius_5 text-center"> 
@@ -1124,7 +1009,7 @@
                   </div>
                   <div class="swiper-slide">
                     <div class="cs_testimonial_style_1 text-center">
-                      <span class="cs_avatar_icon cs_center cs_radius_100 cs_mb_20">
+                      <span class="cs_avatar cs_center cs_radius_100 cs_mb_20">
                         <img src="../assets/img/avatar-1.jpg" alt="Avatar">
                       </span>
                       <div class="cs_testimonial_content cs_center_column cs_radius_5 text-center"> 
@@ -1138,7 +1023,7 @@
                   </div>
                   <div class="swiper-slide">
                     <div class="cs_testimonial_style_1 text-center">
-                      <span class="cs_avatar_icon cs_center cs_radius_100 cs_mb_20">
+                      <span class="cs_avatar cs_center cs_radius_100 cs_mb_20">
                         <img src="../assets/img/avatar-1.jpg" alt="Avatar">
                       </span>
                       <div class="cs_testimonial_content cs_center_column cs_radius_5 text-center"> 
@@ -1159,27 +1044,21 @@
         </section>
       <!-- End Testimonial Section -->
        <!-- Start Blog Section -->
-       <section>
+       <section class="cs_post_wrapper_style_1">
         <div class="cs_height_120 cs_height_lg_70"></div>
         <div class="container">
-            <div class="cs_section_heading_style_1 cs_center_column cs_mb_50">
+            <div class="cs_section_heading_style_1">
               <h3 class="cs_subtitle_style_1 cs_fs_14 cs_mb_16">
-                <span class="cs_lines align-items-end">
-                  <span></span>
-                  <span></span>
-                </span>
                 NEWS & blog's
-                 <span class="cs_lines">
-                    <span></span>
-                    <span></span>
-                  </span>
+                <span class="cs_lines_right"></span>
               </h3>
-              <h2 class="cs_section_title cs_fs_53">Our Recent News & Articles</h2>
+              <h2 class="cs_section_title cs_fs_53 mb-0">Our Recent News & Articles</h2>
             </div>
+            <div class="cs_height_50 cs_height_lg_50"></div>
           <div class="row cs_gap_y_24">
             <div class="col-lg-4 col-md-6">
               <article class="cs_post_style_1">
-                <a href="#" aria-label="Post Details Pages link" class="cs_post_thumbnail cs_mb_30 position-relative">
+                <a href="blog-details.html" aria-label="Post Details Pages link" class="cs_post_thumbnail cs_mb_30 position-relative">
                   <img src="assets/img/post-img-1.jpg" alt="Post Image">
                   <h3 class="cs_posting_date cs_fs_24 cs_white_color cs_medium position-absolute">30 <br> Jan</h3>
                 </a>
@@ -1197,7 +1076,7 @@
             </div>
             <div class="col-lg-4 col-md-6">
               <article class="cs_post_style_1">
-                <a href="#" aria-label="Post Details Pages link" class="cs_post_thumbnail cs_mb_30 position-relative">
+                <a href="blog-details.html" aria-label="Post Details Pages link" class="cs_post_thumbnail cs_mb_30 position-relative">
                   <img src="assets/img/post-img-2.jpg" alt="Post Image">
                   <h3 class="cs_posting_date cs_fs_24 cs_white_color cs_medium position-absolute">30 <br> Jan</h3>
                 </a>
@@ -1215,7 +1094,7 @@
             </div>
             <div class="col-lg-4 col-md-6">
               <article class="cs_post_style_1">
-                <a href="#" aria-label="Post Details Pages link" class="cs_post_thumbnail cs_mb_30 position-relative">
+                <a href="blog-details.html" aria-label="Post Details Pages link" class="cs_post_thumbnail cs_mb_30 position-relative">
                   <img src="assets/img/post-img-3.jpg" alt="Post Image">
                   <h3 class="cs_posting_date cs_fs_24 cs_white_color cs_medium position-absolute">30 <br> Jan</h3>
                 </a>
@@ -1242,17 +1121,26 @@
      <footer class="cs_footer_style_1 cs_primary_bg position-relative">
       <div class="cs_height_120 cs_height_lg_70"></div>
       <div class="container">
-        <h3 class="cs_footer_text cs_fs_200 cs_white_color text-center">DRI<span class="cs_accent_color">VOX</span></h3>
-        <div class="cs_height_60 cs_height_lg_60"></div>
+        <h3 class="cs_footer_text cs_fs_200 cs_white_color text-center mb-0">DRI<span class="cs_accent_color">VOX</span></h3>
+        <div class="cs_height_80 cs_height_lg_60"></div>
         <div class="cs_footer_main">
-          <div class="row cs_gap_y_24">
+          <div class="row cs_gap_y_40 position-relative z-2">
             <div class="col-xl-4 col-12">
               <div class="cs_footer_widget cs_newsletter_widget cs_white_color">
                 <h3 class="cs_footer_widget_title cs_fs_24 cs_white_color cs_medium cs_mb_20">News Letters</h3>
                 <p class="cs_mb_32">A newsletter is a regularly distributed publication that shares updates, news, and valuable information with a specific audience.</p>
                 <form action="#" class="cs_newsletter_style_1">
                   <label for="email" class="cs_fs_18 cs_medium cs_white_color cs_mb_20">Subscribe For Our Newsletters</label>
-                  <input type="email" id="email" autocomplete="email" placeholder="Enter Your Email">
+                  <div class="cs_input_wrapper position-relative">
+                    <input type="email" id="email" autocomplete="email" placeholder="Enter Your Email">
+                    <button type="submit" class="cs_sent_icon position-absolute">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                        <g clip-path="url(#clip0_21289_2118)">
+                          <path d="M10.7347 6.88174L2.27856 11.7204C1.45839 12.189 0.495434 11.3799 0.817652 10.492L2.4415 5.99937L0.817652 1.50673C0.495434 0.616947 1.45839 -0.190381 2.27856 0.278275L10.7347 5.1169C11.4194 5.50685 11.4176 6.49179 10.7347 6.88174Z" fill="white"/>
+                        </g>
+                      </svg>
+                    </button>
+                  </div>
                 </form>
               </div>
             </div>
@@ -1261,7 +1149,7 @@
                 <h3 class="cs_footer_widget_title cs_fs_24 cs_white_color cs_medium cs_mb_20">Our Services</h3>
                 <ul class="cs_footer_menu cs_mp_0">
                   <li><a href="#" aria-label="service link">Comming Soon</a></li>
-                  <li><a href="#" aria-label="service link">Services</a></li>
+                  <li><a href="service.html" aria-label="service link">Services</a></li>
                   <li><a href="#" aria-label="service link">Sell Services</a></li>
                   <li><a href="#" aria-label="service link">Loan Calculator</a></li>
                   <li><a href="#" aria-label="service link">Trauma Counseling</a></li>
@@ -1272,11 +1160,11 @@
               <div class="cs_footer_widget">
                 <h3 class="cs_footer_widget_title cs_fs_24 cs_white_color cs_medium cs_mb_20">Useful Links</h3>
                 <ul class="cs_footer_menu cs_mp_0">
-                  <li><a href="#" aria-label="Useful link">About us</a></li>
+                  <li><a href="about.html" aria-label="Useful link">About us</a></li>
                   <li><a href="#" aria-label="Useful link">Our Mission</a></li>
-                  <li><a href="#" aria-label="Useful link">Our Process</a></li>
+                  <li><a href="service-details.html" aria-label="Useful link">Our Process</a></li>
                   <li><a href="#" aria-label="Useful link">Testimonials</a></li>
-                  <li><a href="#" aria-label="Useful link">Contact Us</a></li>
+                  <li><a href="contact.html" aria-label="Useful link">Contact Us</a></li>
                 </ul>
               </div>
             </div>
@@ -1284,23 +1172,23 @@
               <div class="cs_footer_widget cs_contact_widget">
                 <h3 class="cs_footer_widget_title cs_fs_24 cs_white_color cs_medium cs_mb_20">Contact Us</h3>
                 <ul class="cs_footer_menu cs_mb_20">
-                  <li>A. 7198 0,Connell Rue Alden Washington</li>
+                  <li class="cs_address">A. 7198 0,Connell Rue Alden Washington</li>
                   <li><a href="tel:123456789000" aria-label="Useful link">P ; +1 (234) 567 890 00</a></li>
                   <li><a href="mailto:example@drivox.com" aria-label="Useful link">Email: example@drivox.com</a></li>
                 </ul>
                 <div class="cs_social_icons cs_white_color">
-                  <span class="cs_social_icon cs_center cs_radius_100">
+                  <a href="#" aria-label="sicial media icon link" class="cs_social_icon cs_center cs_radius_100">
                     <i class="fa-brands fa-slack"></i>
-                  </span>
-                  <span class="cs_social_icon cs_center cs_radius_100">
+                  </a>
+                  <a href="#" aria-label="sicial media icon link"  class="cs_social_icon cs_center cs_radius_100">
                     <i class="fa-brands fa-youtube"></i>
-                  </span>
-                  <span class="cs_social_icon cs_center cs_radius_100">
+                  </a>
+                  <a href="#" aria-label="sicial media icon link" class="cs_social_icon cs_center cs_radius_100">
                     <i class="fa-brands fa-x-twitter"></i>
-                  </span>
-                  <span class="cs_social_icon cs_center cs_radius_100">
+                  </a>
+                  <a href="#" aria-label="sicial media icon link" class="cs_social_icon cs_center cs_radius_100">
                     <i class="fa-brands fa-linkedin-in"></i>
-                  </span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -1311,11 +1199,11 @@
       <div class="cs_footer_bottom">
         <div class="container">
           <div class="cs_bottom_content">
-            <div class="cs_copyright_text cs_fs_16 cs_white_color">Copyright & Design By @Autoluxis - <span class="cs_getting_year"></span></div>
+            <div class="cs_copyright_text cs_fs_16 cs_white_color">Copyright & Design By @Autoluxis - <span class="cs_getting_year">2026</span></div>
             <ul class="cs_bottom_menu cs_mp_0 cs_white_color">
-              <li><a href="#">Faq</a></li>
+              <li><a href="faq.html">Faq</a></li>
               <li><a href="#">Careers</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -1333,9 +1221,9 @@
     <!-- JavaScript with defer for performance -->
     <script defer src="assets/js/jquery.min.js"></script>
     <script defer src="assets/js/swiper.min.js"></script>
-    <script defer src="assets/js/odometer.min.js"></script>
     <script defer src="assets/js/tom_select_complete.min.js"></script>
     <script defer src="assets/js/flatpickr.min.js"></script>
+    <script defer src="assets/js/zoomPlus.min.js"></script>
     <script defer src="assets/js/main.js"></script>
   </body>
 </html>

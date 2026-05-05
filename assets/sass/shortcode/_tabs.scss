@@ -83,6 +83,19 @@
     }
   }
 }
+.cs_tab_links.cs_style_4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px 50px;
+
+  li.active,
+  li:hover {
+    a {
+      border-bottom: 1px solid var(--white-color);
+    }
+  }
+}
 /*===================================================
  Tab Content
 =====================================================*/

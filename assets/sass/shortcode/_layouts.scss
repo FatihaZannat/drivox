@@ -10,7 +10,7 @@
     }
   }
   .cs_right {
-    padding-bottom: 30%;
+    padding-bottom: 52%;
     .cs_contact {
       .cs_phone,
       .cs_email {
@@ -35,8 +35,11 @@
 
     .cs_shape_1 {
       position: absolute;
-      bottom: 10%;
-      right: 50px;
+      bottom: 9%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 200px;
+      height: 200px;
 
       > img {
         animation: rotation 9s linear infinite;
@@ -47,11 +50,21 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        // animation: counter-rotation 9s linear infinite;
       }
-
       &:hover {
-        animation-play-state: paused;
+        img {
+          animation-play-state: paused;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .cs_right {
+      padding-bottom: 20%;
+
+      .cs_shape_1 {
+        bottom: 0;
       }
     }
   }

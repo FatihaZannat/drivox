@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="print" onload="this.media = 'all'"/>
     <link rel="stylesheet" href="assets/css/fontawesome.min.css" media="print" onload="this.media = 'all'"/>
     <link rel="stylesheet" href="assets/css/odometer.min.css" media="print" onload="this.media = 'all'"/>
+    <link rel="stylesheet" href="assets/css/tom-select.min.css" media="print" onload="this.media = 'all'"/>
     <link rel="stylesheet" href="assets/css/swiper.min.css" media="print" onload="this.media = 'all'"/>
     <link rel="stylesheet" href="assets/css/style.css" media="print" onload="this.media = 'all'"/>
     <!-- Noscript Fallback -->
@@ -61,35 +62,54 @@
     </div> -->
     <!-- End Preloader -->
     <!-- Start Header Section -->
-    <header
-      class="cs_site_header cs_style_2 cs_sticky_header" aria-label="Main header">
+    <header class="cs_site_header cs_style_2 cs_sticky_header" aria-label="Main header">
       <div class="cs_main_header">
         <div class="container-fluid">
           <div class="cs_main_header_in">
             <div class="cs_main_header_left">
               <a href="index.html" aria-label="Home page" class="cs_site_brand">
-                <img src="assets/img/logo.svg" alt="Brand logo" />
+                <img src="assets/img/Logo-2.svg" alt="Brand logo"/>
               </a>
             </div>
             <div class="cs_main_header_center">
               <nav class="cs_nav" aria-label="Main navigation">
                 <div class="cs_nav_list_wrapper">
-                  <ul class="cs_nav_list cs_white_color cs_medium cs_mp_0">
-                    <li><a href="index.html" aria-label="Home">Home</a></li>
-                    <li>
-                      <a href="about-us.html" aria-label="About">About</a>
+                  <ul class="cs_nav_list cs_primary_color cs_medium cs_mp_0">
+                    <li class="menu-item-has-children">
+                      <a href="index.html" aria-label="Home">Home</a>
+                      <ul class="cs_dropdown_list cs_mp_0">
+                        <li><a href="index.html" aria-label="Home v1">Home V1</a></li>
+                        <li><a href="home2.html" aria-label="Home v2">Home V2</a></li>
+                        <li><a href="home3.html" aria-label="Home v3">Home V3</a></li>
+                      </ul>
                     </li>
                     <li>
-                      <a href="about-us.html" aria-label="Services">Services</a>
+                      <a href="about.html" aria-label="About">About</a>
                     </li>
                     <li>
-                      <a href="about-us.html" aria-label="Pages">Pages</a>
+                      <a href="service.html" aria-label="Services">Services</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                      <a href="#" aria-label="Pages">Pages</a>
+                      <ul class="cs_dropdown_list cs_mp_0">
+                        <li><a href="pricing.html" aria-label="our price">Our Price</a></li>
+                        <li><a href="blog.html" aria-label="our blog">Our Blog</a></li>
+                        <li><a href="blog-details.html" aria-label="blog details">Blog Details</a></li>
+                        <li><a href="shop-cart.html" aria-label="cart">Our Cart</a></li>
+                        <li><a href="checkout.html" aria-label="Checkout">Checkout</a></li>
+                        <li><a href="faq.html" aria-label="FAQ & Answer">FAQ & Answer</a></li>
+                        <li><a href="shop-list.html" aria-label="Shop List">Shop List</a></li>
+                        <li><a href="shop-details.html" aria-label="Shop Details">Shop Details</a></li>
+                        <li><a href="team.html" aria-label="Our Team">Our Team</a></li>
+                        <li><a href="team-details.html" aria-label="Team Details">Team Details</a></li>
+                        <li><a href="terms-condition.html" aria-label="Terms & Condition">Terms & Condition</a></li>
+                      </ul>
                     </li>
                     <li>
-                      <a href="about-us.html" aria-label="Car listing">Car listing</a>
+                      <a href="car-listing.html" aria-label="Car listing">Car listing</a>
                     </li>
                     <li>
-                      <a href="contact-us.html" aria-label="Car Details">Car Details</a>
+                      <a href="car-details.html" aria-label="Car Details">Car Details</a>
                     </li>
                   </ul>
                 </div>
@@ -97,18 +117,18 @@
             </div>
             <div class="cs_main_header_right">
               <div class="cs_header_btns_wrapper">
-                <button type="button" aria-label="Search" class="cs_search_btn">
+                <button type="button" aria-label="Search" class="cs_search_btn cs_center cs_accent_bg cs_white_color">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <path d="M17.5007 17.5007L13.1698 13.1698M13.1698 13.1698C14.342 11.9977 15.0005 10.4079 15.0005 8.75023C15.0005 7.09257 14.342 5.5028 13.1698 4.33065C11.9977 3.1585 10.4079 2.5 8.75023 2.5C7.09257 2.5 5.5028 3.1585 4.33065 4.33065C3.15851 5.5028 2.5 7.09257 2.5 8.75023C2.5 10.4079 3.1585 11.9977 4.33065 13.1698C5.5028 14.342 7.09257 15.0005 8.75023 15.0005C10.4079 15.0005 11.9977 14.342 13.1698 13.1698Z" stroke="#D01818" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M17.5007 17.5007L13.1698 13.1698M13.1698 13.1698C14.342 11.9977 15.0005 10.4079 15.0005 8.75023C15.0005 7.09257 14.342 5.5028 13.1698 4.33065C11.9977 3.1585 10.4079 2.5 8.75023 2.5C7.09257 2.5 5.5028 3.1585 4.33065 4.33065C3.15851 5.5028 2.5 7.09257 2.5 8.75023C2.5 10.4079 3.1585 11.9977 4.33065 13.1698C5.5028 14.342 7.09257 15.0005 8.75023 15.0005C10.4079 15.0005 11.9977 14.342 13.1698 13.1698Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
                 </button>
-                <a href="login.html" class="cs_btn_style_1 cs_white_color cs_accent_bg">
+                <a href="sing-in.html" class="cs_btn_style_1 cs_accent_color cs_white_bg">
                   Log In
                   <svg xmlns="http://www.w3.org/2000/svg" width="21" height="15" viewBox="0 0 21 15" fill="none">
                     <path d="M20.7071 8.07039C21.0976 7.67986 21.0976 7.0467 20.7071 6.65617L14.3431 0.292213C13.9526 -0.0983109 13.3195 -0.0983109 12.9289 0.292213C12.5384 0.682738 12.5384 1.3159 12.9289 1.70643L18.5858 7.36328L12.9289 13.0201C12.5384 13.4107 12.5384 14.0438 12.9289 14.4343C13.3195 14.8249 13.9526 14.8249 14.3431 14.4343L20.7071 8.07039ZM0 7.36328V8.36328H20V7.36328V6.36328H0V7.36328Z" fill="currentColor"/>
                   </svg>
                 </a>
-                <a href="register.html" class="cs_btn_style_1 cs_accent_color cs_white_bg">
+                <a href="sing-up.html" class="cs_btn_style_1 cs_white_color cs_accent_bg">
                   Registration
                   <svg xmlns="http://www.w3.org/2000/svg" width="21" height="15" viewBox="0 0 21 15" fill="none">
                     <path d="M20.7071 8.07039C21.0976 7.67986 21.0976 7.0467 20.7071 6.65617L14.3431 0.292213C13.9526 -0.0983109 13.3195 -0.0983109 12.9289 0.292213C12.5384 0.682738 12.5384 1.3159 12.9289 1.70643L18.5858 7.36328L12.9289 13.0201C12.5384 13.4107 12.5384 14.0438 12.9289 14.4343C13.3195 14.8249 13.9526 14.8249 14.3431 14.4343L20.7071 8.07039ZM0 7.36328V8.36328H20V7.36328V6.36328H0V7.36328Z" fill="currentColor"/>
@@ -173,31 +193,31 @@
           </div>
         </div>
       </section>
-      <div class="cs_search_form_outer">
+      <div class="cs_car_search_style_2">
         <div class="container">
-          <div class="cs_search_form_wrap">
+          <form action="#" class="cs_search_form">
             <div class="cs_search_form_row cs_mb_35">
-              <div class="cs_field_group">
+              <div class="cs_input_wrapper">
                 <label for="cs_year">Select Year</label>
-                <select id="cs_year" class="cs_form_select">
+                <select id="cs_year" class="cs_select tom_select">
                   <option value="">Select</option>
                   <option>2024</option>
                   <option>2023</option>
                   <option>2022</option>
                 </select>
               </div>
-              <div class="cs_field_group">
+              <div class="cs_input_wrapper">
                 <label for="cs_more">Select More</label>
-                <select id="cs_more" class="cs_form_select">
+                <select id="cs_more" class="cs_select tom_select">
                   <option value="">Select</option>
                   <option>Sedan</option>
                   <option>SUV</option>
                   <option>Truck</option>
                 </select>
               </div>
-              <div class="cs_field_group">
+              <div class="cs_input_wrapper">
                 <label for="cs_model">Select Model</label>
-                <select id="cs_model" class="cs_form_select">
+                <select id="cs_model" class="cs_select tom_select">
                   <option value="">Select</option>
                   <option>Camry</option>
                   <option>Civic</option>
@@ -214,41 +234,40 @@
                 </div>
               </div>
             </div>
-          <div class="cs_search_form_row_2">
-            <div class="cs_field_group">
-              <label for="cs_manage">Select Manage</label>
-              <select id="cs_manage" class="cs_form_select">
-                <option value="">Select</option>
-                <option>Automatic</option>
-                <option>Manual</option>
-              </select>
+            <div class="cs_search_form_row_2">
+              <div class="cs_input_wrapper">
+                <label for="cs_manage">Select Manage</label>
+                <select id="cs_manage" class="cs_select tom_select">
+                  <option value="">Select</option>
+                  <option>Automatic</option>
+                  <option>Manual</option>
+                </select>
+              </div>
+              <div class="cs_input_wrapper">
+                <label for="cs_transmission">Select Transformation</label>
+                <select id="cs_transmission" class="cs_select tom_select">
+                  <option value="">Select</option>
+                  <option>FWD</option>
+                  <option>RWD</option>
+                  <option>AWD</option>
+                </select>
+              </div>
+              <div class="cs_input_wrapper">
+                <label for="cs_condition">Select Condition</label>
+                <select id="cs_condition" class="cs_select tom_select">
+                  <option value="">Select</option>
+                  <option>New</option>
+                  <option>Used</option>
+                </select>
+              </div>
+              <button type="submit" class="cs_btn_style_1 cs_white_color cs_accent_bg">
+                SEARCH CAR
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="15" viewBox="0 0 21 15" fill="none">
+                  <path d="M20.7071 8.07039C21.0976 7.67986 21.0976 7.0467 20.7071 6.65617L14.3431 0.292213C13.9526 -0.0983109 13.3195 -0.0983109 12.9289 0.292213C12.5384 0.682738 12.5384 1.3159 12.9289 1.70643L18.5858 7.36328L12.9289 13.0201C12.5384 13.4107 12.5384 14.0438 12.9289 14.4343C13.3195 14.8249 13.9526 14.8249 14.3431 14.4343L20.7071 8.07039ZM0 7.36328V8.36328H20V7.36328V6.36328H0V7.36328Z" fill="currentColor"/>
+                </svg>
+              </button>
             </div>
-
-            <div class="cs_field_group">
-              <label for="cs_transmission">Select Transformation</label>
-              <select id="cs_transmission" class="cs_form_select">
-                <option value="">Select</option>
-                <option>FWD</option>
-                <option>RWD</option>
-                <option>AWD</option>
-              </select>
-            </div>
-            <div class="cs_field_group">
-              <label for="cs_condition">Select Condition</label>
-              <select id="cs_condition" class="cs_form_select">
-                <option value="">Select</option>
-                <option>New</option>
-                <option>Used</option>
-              </select>
-            </div>
-            <button type="submit" class="cs_btn_style_1 cs_white_color cs_accent_bg">
-              SEARCH CAR
-              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="15" viewBox="0 0 21 15" fill="none">
-                <path d="M20.7071 8.07039C21.0976 7.67986 21.0976 7.0467 20.7071 6.65617L14.3431 0.292213C13.9526 -0.0983109 13.3195 -0.0983109 12.9289 0.292213C12.5384 0.682738 12.5384 1.3159 12.9289 1.70643L18.5858 7.36328L12.9289 13.0201C12.5384 13.4107 12.5384 14.0438 12.9289 14.4343C13.3195 14.8249 13.9526 14.8249 14.3431 14.4343L20.7071 8.07039ZM0 7.36328V8.36328H20V7.36328V6.36328H0V7.36328Z" fill="currentColor"/>
-              </svg>
-            </button>
-          </div>
-          </div>
+          </form>
         </div>
       </div>
       <!-- End Hero Section -->
@@ -273,10 +292,7 @@
                <div class="cs_section_heading_style_1 cs_mb_40">
                 <h3 class="cs_subtitle_style_1 cs_fs_14 cs_mb_16">
                   About Our Company
-                  <span class="cs_lines">
-                    <span></span>
-                    <span></span>
-                  </span>
+                  <span class="cs_lines_right"></span>
                 </h3>
                 <h2 class="cs_section_title cs_fs_53 cs_mb_16">
                   Experience Freedom On Four Wheels.
@@ -284,18 +300,13 @@
                 <p class="mb-0">Looking to sell your car quickly and at the best possible price?  Whether you’re upgrading to a new vehicle or just need.</p>
               </div>
               <div class="cs_phone_number cs_mb_40">
-                <a href="tel:95002120988" class="cs_phone_icon cs_center">
+                <a href="tel:95002120988" class="cs_phone_icon cs_center cs_radius_100 cs_accent_color">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <g clip-path="url(#clip0_20729_107)">
                       <path d="M18.9635 14.8646C18.4722 14.3531 17.8797 14.0796 17.2518 14.0796C16.6289 14.0796 16.0313 14.348 15.5198 14.8595L13.9195 16.4548C13.7878 16.3839 13.6561 16.318 13.5295 16.2522C13.3472 16.161 13.175 16.0749 13.0282 15.9838C11.5292 15.0317 10.1669 13.791 8.86031 12.1856C8.22728 11.3855 7.80189 10.7119 7.49297 10.0283C7.90824 9.64844 8.29312 9.25343 8.66787 8.87361C8.80967 8.73181 8.95147 8.58495 9.09327 8.44315C10.1568 7.37966 10.1568 6.00219 9.09327 4.9387L7.71073 3.55616C7.55374 3.39917 7.39169 3.23712 7.23976 3.07506C6.9359 2.76108 6.61686 2.43697 6.28768 2.13311C5.79645 1.64695 5.209 1.38867 4.59116 1.38867C3.97333 1.38867 3.37575 1.64695 2.86932 2.13311C2.86426 2.13818 2.86426 2.13818 2.8592 2.14324L1.13736 3.88028C0.489134 4.5285 0.119444 5.31852 0.0384167 6.23514C-0.0831249 7.7139 0.352399 9.09137 0.686639 9.9928C1.50704 12.2059 2.73259 14.2569 4.56078 16.4548C6.77891 19.1034 9.44777 21.1949 12.4964 22.6686C13.6612 23.2206 15.2159 23.8739 16.953 23.9853C17.0593 23.9903 17.1707 23.9954 17.272 23.9954C18.4418 23.9954 19.4243 23.5751 20.1941 22.7395C20.1991 22.7294 20.2093 22.7243 20.2143 22.7142C20.4777 22.3951 20.7815 22.1065 21.1006 21.7975C21.3183 21.5899 21.5412 21.3721 21.7589 21.1442C22.2603 20.6226 22.5236 20.0149 22.5236 19.392C22.5236 18.7641 22.2552 18.1614 21.7437 17.655L18.9635 14.8646ZM20.7765 20.1972C20.7714 20.1972 20.7714 20.2023 20.7765 20.1972C20.579 20.4099 20.3764 20.6024 20.1586 20.8151C19.8294 21.1291 19.4952 21.4582 19.1812 21.8279C18.6697 22.3749 18.0671 22.6331 17.2771 22.6331C17.2011 22.6331 17.1201 22.6331 17.0441 22.6281C15.54 22.5318 14.1423 21.9444 13.094 21.443C10.2277 20.0554 7.71073 18.0855 5.6192 15.5888C3.8923 13.5074 2.73765 11.583 1.97295 9.51677C1.50198 8.25577 1.3298 7.27331 1.40576 6.34656C1.4564 5.75404 1.68429 5.26281 2.10462 4.84248L3.83153 3.11558C4.07968 2.88262 4.34302 2.75601 4.60129 2.75601C4.92034 2.75601 5.17862 2.94846 5.34067 3.11051C5.34574 3.11558 5.3508 3.12064 5.35586 3.1257C5.66478 3.41437 5.95851 3.71316 6.26743 4.0322C6.42442 4.19426 6.58647 4.35631 6.74853 4.52343L8.13106 5.90597C8.66787 6.44278 8.66787 6.93907 8.13106 7.47588C7.9842 7.62274 7.8424 7.76961 7.69554 7.9114C7.27014 8.34693 6.86501 8.75207 6.42442 9.14708C6.41429 9.15721 6.40416 9.16227 6.3991 9.1724C5.96357 9.60792 6.0446 10.0333 6.13576 10.322C6.14082 10.3372 6.14588 10.3524 6.15095 10.3676C6.51051 11.2386 7.01693 12.059 7.7867 13.0364L7.79176 13.0415C9.18949 14.7633 10.6632 16.1053 12.2888 17.1334C12.4964 17.265 12.7091 17.3714 12.9117 17.4727C13.094 17.5638 13.2662 17.6499 13.4131 17.7411C13.4333 17.7512 13.4536 17.7664 13.4738 17.7765C13.646 17.8626 13.8081 17.9031 13.9752 17.9031C14.3955 17.9031 14.6589 17.6398 14.745 17.5537L16.4769 15.8217C16.6491 15.6496 16.9226 15.4419 17.2416 15.4419C17.5556 15.4419 17.8139 15.6394 17.9709 15.8116C17.9759 15.8167 17.9759 15.8167 17.981 15.8217L20.7714 18.6121C21.293 19.1287 21.293 19.6604 20.7765 20.1972Z" fill="currentColor"/>
                       <path d="M12.969 5.7078C14.2958 5.93063 15.5011 6.55859 16.4633 7.5208C17.4255 8.483 18.0484 9.68829 18.2763 11.0151C18.332 11.3494 18.6207 11.5823 18.9499 11.5823C18.9904 11.5823 19.0258 11.5773 19.0663 11.5722C19.4411 11.5114 19.6892 11.1569 19.6285 10.7822C19.355 9.1768 18.5954 7.71324 17.4357 6.55353C16.2759 5.39382 14.8124 4.63418 13.207 4.36072C12.8323 4.29994 12.4828 4.54809 12.417 4.91778C12.3512 5.28747 12.5942 5.64703 12.969 5.7078Z" fill="currentColor"/>
                       <path d="M23.9678 10.5845C23.5171 7.94101 22.2713 5.5355 20.357 3.62122C18.4428 1.70694 16.0372 0.46114 13.3937 0.0104229C13.024 -0.0554121 12.6746 0.1978 12.6088 0.567489C12.548 0.942242 12.7961 1.29167 13.1709 1.35751C15.5308 1.75758 17.6831 2.87678 19.3948 4.58343C21.1065 6.29514 22.2207 8.44744 22.6207 10.8074C22.6765 11.1416 22.9651 11.3746 23.2943 11.3746C23.3348 11.3746 23.3703 11.3695 23.4108 11.3644C23.7805 11.3087 24.0337 10.9542 23.9678 10.5845Z" fill="currentColor"/>
                     </g>
-                    <defs>
-                      <clipPath id="clip0_20729_107">
-                        <rect width="23.9946" height="23.9946" fill="white"/>
-                      </clipPath>
-                    </defs>
                   </svg>
                 </a>
                 <div class="cs_phone_details">
@@ -303,9 +314,9 @@
                   <h3 class="cs_fs_20 cs_medium mb-0"><a href="tel:95002120988">9 500 212 09 88</a></h3>
                 </div>
               </div>
-              <div class="cs_about_img">
-                <img src="assets/img/about-img-5.jpg" alt="Car image">
-                <img src="assets/img/about-img-6.jpg" alt="Car image">
+              <div class="row cs_about_img cs_gap_y_24">
+                <div class="col-lg-6"><img src="assets/img/about-img-5.jpg" alt="Car image"></div>
+                <div class="col-lg-6"><img src="assets/img/about-img-6.jpg" alt="Car image"></div>
               </div>
             </div>
           </div>
@@ -317,22 +328,17 @@
       <section>
         <div class="cs_height_120 cs_height_lg_80"></div>
         <div class="container">
-          <div class="cs_section_heading_style_1 cs_mb_50 cs_center_column">
+          <div class="cs_section_heading_style_1 cs_center_column">
             <h3 class="cs_subtitle_style_1 cs_fs_14 cs_mb_16">
-               <span class="cs_lines align-items-end">
-                  <span></span>
-                  <span></span>
-                </span>
+               <span class="cs_lines_left"></span>
                 PREMIUM CAR’S
-               <span class="cs_lines">
-                <span></span>
-                <span></span>
-              </span>
+               <span class="cs_lines_right"></span>
             </h3>
             <h2 class="cs_section_title cs_fs_53 mb-0">
               Latest Premium Vehicles
             </h2>
           </div>
+          <div class="cs_height_50 cs_height_lg_50"></div>
           <div class="row cs_gap_y_24">
             <div class="col-xl-3 col-lg-4 col-md-6">
               <div class="cs_card_style_8 cs_gray_bg">
@@ -522,10 +528,7 @@
               <div class="cs_section_heading_style_1 cs_white_color cs_mb_30">
                 <h3 class="cs_subtitle_style_1 cs_fs_14 cs_white_color cs_mb_16">
                   WHY CHOOSE US
-                  <span class="cs_lines">
-                    <span></span>
-                    <span></span>
-                  </span>
+                  <span class="cs_lines_right"></span>
                 </h3>
                 <h2 class="cs_section_title cs_fs_53 cs_white_color cs_mb_16">Sign Up And Never Miss A Deal Again.</h2>
                 <p class="mb-0">Rental & Listing business provides a complete automotive solution by combining vehicle sales, rentals, and an online marketplace.</p>
@@ -589,12 +592,9 @@
               <div>
                 <h3 class="cs_subtitle_style_1 cs_fs_14 cs_mb_16">
                   TOP CAR INVENTCRY
-                  <span class="cs_lines_right">
-                  </span>
+                  <span class="cs_lines_right"></span>
                 </h3>
-                <h2 class="cs_section_title cs_fs_53 mb-0">
-                  Why Electric Vehicles?  
-                </h2>
+                <h2 class="cs_section_title cs_fs_53 mb-0">Why Electric Vehicles?</h2>
               </div>
               <a href="#" aria-label="Show all button" class="cs_btn_style_1 cs_white_bg cs_accent_color">
                 View All Inventory
@@ -611,7 +611,7 @@
                   </div>
                   <div class="cs_card_info">
                     <div class="cs_car_model cs_mb_8">
-                      <h3 class="cs_fs_16 mb-0">2017 AUDI R8</h3>
+                      <h3 class="cs_fs_16 mb-0"><a href="car-details.html">2017 AUDI R8</a></h3>
                       <p class="cs_fs_12 cs_medium mb-0">Vslemasem 2021</p>
                     </div>
                     <ul class="cs_car_details cs_mp_0">
@@ -669,7 +669,7 @@
                   </div>
                   <div class="cs_card_info">
                     <div class="cs_car_model cs_mb_8">
-                      <h3 class="cs_fs_16 mb-0">E-Golf 330</h3>
+                      <h3 class="cs_fs_16 mb-0"><a href="car-listing.html">E-Golf 330</a></h3>
                       <p class="cs_fs_12 cs_medium mb-0">Tesla 2024</p>
                     </div>
                     <ul class="cs_car_details cs_mp_0">
@@ -727,7 +727,7 @@
                   </div>
                   <div class="cs_card_info">
                     <div class="cs_car_model cs_mb_8">
-                      <h3 class="cs_fs_16 mb-0">E-Golf 330</h3>
+                      <h3 class="cs_fs_16 mb-0"><a href="car-listing.html">E-Golf 330</a></h3>
                       <p class="cs_fs_12 cs_medium mb-0">Tesla 2024</p>
                     </div>
                     <ul class="cs_car_details cs_mp_0">
@@ -785,7 +785,7 @@
                 </div>
                 <div class="cs_card_info">
                   <div class="cs_car_model cs_mb_8">
-                    <h3 class="cs_fs_16 mb-0">Acura RSX</h3>
+                    <h3 class="cs_fs_16 mb-0"><a href="car-listing.html">Acura RSX</a></h3>
                     <p class="cs_fs_12 cs_medium mb-0">Peugeot 20</p>
                   </div>
                   <ul class="cs_car_details cs_mp_0">
@@ -843,7 +843,7 @@
                   </div>
                   <div class="cs_card_info">
                     <div class="cs_car_model cs_mb_8">
-                      <h3 class="cs_fs_16 mb-0">2018 Audi 0.2</h3>
+                      <h3 class="cs_fs_16 mb-0"><a href="car-listing.html">2018 Audi 0.2</a></h3>
                       <p class="cs_fs_12 cs_medium mb-0">Mercedes - Benz 2022</p>
                     </div>
                     <ul class="cs_car_details cs_mp_0">
@@ -901,7 +901,7 @@
                   </div>
                   <div class="cs_card_info">
                     <div class="cs_car_model cs_mb_8">
-                      <h3 class="cs_fs_16 mb-0">2014 Ford F-150</h3>
+                      <h3 class="cs_fs_16 mb-0"><a href="car-listing.html">2014 Ford F-150</a></h3>
                       <p class="cs_fs_12 cs_medium mb-0">Hyundai 2023</p>
                     </div>
                     <ul class="cs_car_details cs_mp_0">
@@ -959,7 +959,7 @@
                   </div>
                   <div class="cs_card_info">
                     <div class="cs_car_model cs_mb_8">
-                      <h3 class="cs_fs_16 mb-0">Volkswagen BMW</h3>
+                      <h3 class="cs_fs_16 mb-0"><a href="car-listing.html">Volkswagen BMW</a></h3>
                       <p class="cs_fs_12 cs_medium mb-0">Honda 2021</p>
                     </div>
                     <ul class="cs_car_details cs_mp_0">
@@ -1017,7 +1017,7 @@
                   </div>
                   <div class="cs_card_info">
                     <div class="cs_car_model cs_mb_8">
-                      <h3 class="cs_fs_16 mb-0">2010 BMW M6</h3>
+                      <h3 class="cs_fs_16 mb-0"><a href="car-listing.html">2010 BMW M6</a></h3>
                       <p class="cs_fs_12 cs_medium mb-0">BMW 2021</p>
                     </div>
                     <ul class="cs_car_details cs_mp_0">
@@ -1076,22 +1076,15 @@
        <section>
         <div class="cs_height_120 cs_height_lg_70"></div>
         <div class="container">
-          <div class="cs_section_heading_style_1 cs_center_column cs_mb_50">
+          <div class="cs_section_heading_style_1 cs_center_column">
             <h3 class="cs_subtitle_style_1 cs_fs_14 cs_mb_16">
-              <span class="cs_lines align-items-end">
-                <span></span>
-                <span></span>
-              </span>
+              <span class="cs_lines_left"></span>
               Office SHOP
-              <span class="cs_lines">
-                <span></span>
-                <span></span>
-              </span>
+              <span class="cs_lines_right"></span>
             </h3>
-            <h2 class="cs_section_title cs_fs_53">
-              Featured Products 
-            </h2>
+            <h2 class="cs_section_title cs_fs_53 mb-0">Featured Products</h2>
           </div>
+          <div class="cs_height_50 cs_height_lg_50"></div>
           <div class="row cs_gap_y_24">
             <div class="col-xl-3 col-lg-4 col-md-6">
               <div class="cs_card_style_5">
@@ -1115,7 +1108,7 @@
                   </div>
                   <h3 class="cs_card_title cs_fs_20 cs_medium cs_mb_8">Motor Oil Bottles</h3>
                   <div class="cs_cart_price_wrapper">
-                    <a href="#" aria-label="Add to cart button" class="cs_text_btn_style_1 cs_cart_btn cs_fs_14 cs_accent_color cs_semibold">
+                    <a href="shop-details.html" aria-label="Add to cart button" class="cs_text_btn_style_1 cs_cart_btn cs_fs_14 cs_accent_color cs_semibold">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                       <path d="M5.15503 10.3439H5.15576C5.15637 10.3439 5.15698 10.3437 5.15759 10.3437H13.6562C13.8655 10.3437 14.0494 10.205 14.1069 10.0038L15.9819 3.44128C16.0223 3.2998 15.994 3.1477 15.9055 3.03027C15.8169 2.91284 15.6783 2.84375 15.5312 2.84375H4.07397L3.73889 1.33582C3.69116 1.12134 3.50097 0.96875 3.28125 0.96875H0.46875C0.209839 0.96875 0 1.17859 0 1.4375C0 1.69641 0.209839 1.90625 0.46875 1.90625H2.90527C2.9646 2.17346 4.50879 9.12243 4.59765 9.52221C4.09948 9.73876 3.75 10.2355 3.75 10.8125C3.75 11.5879 4.38086 12.2187 5.15625 12.2187H13.6562C13.9152 12.2187 14.125 12.0089 14.125 11.75C14.125 11.4911 13.9152 11.2812 13.6562 11.2812H5.15625C4.89782 11.2812 4.6875 11.0709 4.6875 10.8125C4.6875 10.5544 4.89709 10.3445 5.15503 10.3439ZM14.9098 3.78125L13.3026 9.40625H5.53222L4.28222 3.78125H14.9098Z" fill="#D01818"/>
                       <path d="M4.6875 13.625C4.6875 14.4004 5.31836 15.0312 6.09375 15.0312C6.86914 15.0312 7.5 14.4004 7.5 13.625C7.5 12.8496 6.86914 12.2188 6.09375 12.2188C5.31836 12.2188 4.6875 12.8496 4.6875 13.625ZM6.09375 13.1562C6.35217 13.1562 6.5625 13.3666 6.5625 13.625C6.5625 13.8834 6.35217 14.0937 6.09375 14.0937C5.83533 14.0937 5.625 13.8834 5.625 13.625C5.625 13.3666 5.83533 13.1562 6.09375 13.1562Z" fill="#D01818"/>
@@ -1153,7 +1146,7 @@
                   </div>
                   <h3 class="cs_card_title cs_fs_20 cs_medium cs_mb_8">Distributor cap</h3>
                   <div class="cs_cart_price_wrapper">
-                    <a href="#" aria-label="Add to cart button" class="cs_text_btn_style_1 cs_cart_btn cs_fs_14 cs_accent_color cs_semibold">
+                    <a href="shop-details.html" aria-label="Add to cart button" class="cs_text_btn_style_1 cs_cart_btn cs_fs_14 cs_accent_color cs_semibold">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                         <path d="M5.15503 10.3439H5.15576C5.15637 10.3439 5.15698 10.3437 5.15759 10.3437H13.6562C13.8655 10.3437 14.0494 10.205 14.1069 10.0038L15.9819 3.44128C16.0223 3.2998 15.994 3.1477 15.9055 3.03027C15.8169 2.91284 15.6783 2.84375 15.5312 2.84375H4.07397L3.73889 1.33582C3.69116 1.12134 3.50097 0.96875 3.28125 0.96875H0.46875C0.209839 0.96875 0 1.17859 0 1.4375C0 1.69641 0.209839 1.90625 0.46875 1.90625H2.90527C2.9646 2.17346 4.50879 9.12243 4.59765 9.52221C4.09948 9.73876 3.75 10.2355 3.75 10.8125C3.75 11.5879 4.38086 12.2187 5.15625 12.2187H13.6562C13.9152 12.2187 14.125 12.0089 14.125 11.75C14.125 11.4911 13.9152 11.2812 13.6562 11.2812H5.15625C4.89782 11.2812 4.6875 11.0709 4.6875 10.8125C4.6875 10.5544 4.89709 10.3445 5.15503 10.3439ZM14.9098 3.78125L13.3026 9.40625H5.53222L4.28222 3.78125H14.9098Z" fill="#D01818"/>
                         <path d="M4.6875 13.625C4.6875 14.4004 5.31836 15.0312 6.09375 15.0312C6.86914 15.0312 7.5 14.4004 7.5 13.625C7.5 12.8496 6.86914 12.2188 6.09375 12.2188C5.31836 12.2188 4.6875 12.8496 4.6875 13.625ZM6.09375 13.1562C6.35217 13.1562 6.5625 13.3666 6.5625 13.625C6.5625 13.8834 6.35217 14.0937 6.09375 14.0937C5.83533 14.0937 5.625 13.8834 5.625 13.625C5.625 13.3666 5.83533 13.1562 6.09375 13.1562Z" fill="#D01818"/>
@@ -1191,7 +1184,7 @@
                   </div>
                   <h3 class="cs_card_title cs_fs_20 cs_medium cs_mb_8">Realistic car key</h3>
                   <div class="cs_cart_price_wrapper">
-                    <a href="#" aria-label="Add to cart button" class="cs_text_btn_style_1 cs_cart_btn cs_fs_14 cs_accent_color cs_semibold">
+                    <a href="shop-details.html" aria-label="Add to cart button" class="cs_text_btn_style_1 cs_cart_btn cs_fs_14 cs_accent_color cs_semibold">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                         <path d="M5.15503 10.3439H5.15576C5.15637 10.3439 5.15698 10.3437 5.15759 10.3437H13.6562C13.8655 10.3437 14.0494 10.205 14.1069 10.0038L15.9819 3.44128C16.0223 3.2998 15.994 3.1477 15.9055 3.03027C15.8169 2.91284 15.6783 2.84375 15.5312 2.84375H4.07397L3.73889 1.33582C3.69116 1.12134 3.50097 0.96875 3.28125 0.96875H0.46875C0.209839 0.96875 0 1.17859 0 1.4375C0 1.69641 0.209839 1.90625 0.46875 1.90625H2.90527C2.9646 2.17346 4.50879 9.12243 4.59765 9.52221C4.09948 9.73876 3.75 10.2355 3.75 10.8125C3.75 11.5879 4.38086 12.2187 5.15625 12.2187H13.6562C13.9152 12.2187 14.125 12.0089 14.125 11.75C14.125 11.4911 13.9152 11.2812 13.6562 11.2812H5.15625C4.89782 11.2812 4.6875 11.0709 4.6875 10.8125C4.6875 10.5544 4.89709 10.3445 5.15503 10.3439ZM14.9098 3.78125L13.3026 9.40625H5.53222L4.28222 3.78125H14.9098Z" fill="#D01818"/>
                         <path d="M4.6875 13.625C4.6875 14.4004 5.31836 15.0312 6.09375 15.0312C6.86914 15.0312 7.5 14.4004 7.5 13.625C7.5 12.8496 6.86914 12.2188 6.09375 12.2188C5.31836 12.2188 4.6875 12.8496 4.6875 13.625ZM6.09375 13.1562C6.35217 13.1562 6.5625 13.3666 6.5625 13.625C6.5625 13.8834 6.35217 14.0937 6.09375 14.0937C5.83533 14.0937 5.625 13.8834 5.625 13.625C5.625 13.3666 5.83533 13.1562 6.09375 13.1562Z" fill="#D01818"/>
@@ -1229,7 +1222,7 @@
                   </div>
                   <h3 class="cs_card_title cs_fs_20 cs_medium cs_mb_8">Car tires</h3>
                   <div class="cs_cart_price_wrapper">
-                    <a href="#" aria-label="Add to cart button" class="cs_text_btn_style_1 cs_cart_btn cs_fs_14 cs_accent_color cs_semibold">
+                    <a href="shop-details.html" aria-label="Add to cart button" class="cs_text_btn_style_1 cs_cart_btn cs_fs_14 cs_accent_color cs_semibold">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                         <path d="M5.15503 10.3439H5.15576C5.15637 10.3439 5.15698 10.3437 5.15759 10.3437H13.6562C13.8655 10.3437 14.0494 10.205 14.1069 10.0038L15.9819 3.44128C16.0223 3.2998 15.994 3.1477 15.9055 3.03027C15.8169 2.91284 15.6783 2.84375 15.5312 2.84375H4.07397L3.73889 1.33582C3.69116 1.12134 3.50097 0.96875 3.28125 0.96875H0.46875C0.209839 0.96875 0 1.17859 0 1.4375C0 1.69641 0.209839 1.90625 0.46875 1.90625H2.90527C2.9646 2.17346 4.50879 9.12243 4.59765 9.52221C4.09948 9.73876 3.75 10.2355 3.75 10.8125C3.75 11.5879 4.38086 12.2187 5.15625 12.2187H13.6562C13.9152 12.2187 14.125 12.0089 14.125 11.75C14.125 11.4911 13.9152 11.2812 13.6562 11.2812H5.15625C4.89782 11.2812 4.6875 11.0709 4.6875 10.8125C4.6875 10.5544 4.89709 10.3445 5.15503 10.3439ZM14.9098 3.78125L13.3026 9.40625H5.53222L4.28222 3.78125H14.9098Z" fill="#D01818"/>
                         <path d="M4.6875 13.625C4.6875 14.4004 5.31836 15.0312 6.09375 15.0312C6.86914 15.0312 7.5 14.4004 7.5 13.625C7.5 12.8496 6.86914 12.2188 6.09375 12.2188C5.31836 12.2188 4.6875 12.8496 4.6875 13.625ZM6.09375 13.1562C6.35217 13.1562 6.5625 13.3666 6.5625 13.625C6.5625 13.8834 6.35217 14.0937 6.09375 14.0937C5.83533 14.0937 5.625 13.8834 5.625 13.625C5.625 13.3666 5.83533 13.1562 6.09375 13.1562Z" fill="#D01818"/>
@@ -1267,7 +1260,7 @@
                   </div>
                   <h3 class="cs_card_title cs_fs_20 cs_medium cs_mb_8">Precision Screwdriver</h3>
                   <div class="cs_cart_price_wrapper">
-                    <a href="#" aria-label="Add to cart button" class="cs_text_btn_style_1 cs_cart_btn cs_fs_14 cs_accent_color cs_semibold">
+                    <a href="shop-details.html" aria-label="Add to cart button" class="cs_text_btn_style_1 cs_cart_btn cs_fs_14 cs_accent_color cs_semibold">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                       <path d="M5.15503 10.3439H5.15576C5.15637 10.3439 5.15698 10.3437 5.15759 10.3437H13.6562C13.8655 10.3437 14.0494 10.205 14.1069 10.0038L15.9819 3.44128C16.0223 3.2998 15.994 3.1477 15.9055 3.03027C15.8169 2.91284 15.6783 2.84375 15.5312 2.84375H4.07397L3.73889 1.33582C3.69116 1.12134 3.50097 0.96875 3.28125 0.96875H0.46875C0.209839 0.96875 0 1.17859 0 1.4375C0 1.69641 0.209839 1.90625 0.46875 1.90625H2.90527C2.9646 2.17346 4.50879 9.12243 4.59765 9.52221C4.09948 9.73876 3.75 10.2355 3.75 10.8125C3.75 11.5879 4.38086 12.2187 5.15625 12.2187H13.6562C13.9152 12.2187 14.125 12.0089 14.125 11.75C14.125 11.4911 13.9152 11.2812 13.6562 11.2812H5.15625C4.89782 11.2812 4.6875 11.0709 4.6875 10.8125C4.6875 10.5544 4.89709 10.3445 5.15503 10.3439ZM14.9098 3.78125L13.3026 9.40625H5.53222L4.28222 3.78125H14.9098Z" fill="#D01818"/>
                       <path d="M4.6875 13.625C4.6875 14.4004 5.31836 15.0312 6.09375 15.0312C6.86914 15.0312 7.5 14.4004 7.5 13.625C7.5 12.8496 6.86914 12.2188 6.09375 12.2188C5.31836 12.2188 4.6875 12.8496 4.6875 13.625ZM6.09375 13.1562C6.35217 13.1562 6.5625 13.3666 6.5625 13.625C6.5625 13.8834 6.35217 14.0937 6.09375 14.0937C5.83533 14.0937 5.625 13.8834 5.625 13.625C5.625 13.3666 5.83533 13.1562 6.09375 13.1562Z" fill="#D01818"/>
@@ -1305,7 +1298,7 @@
                   </div>
                   <h3 class="cs_card_title cs_fs_20 cs_medium cs_mb_8">Wrench isolated</h3>
                   <div class="cs_cart_price_wrapper">
-                    <a href="#" aria-label="Add to cart button" class="cs_text_btn_style_1 cs_cart_btn cs_fs_14 cs_accent_color cs_semibold">
+                    <a href="shop-details.html" aria-label="Add to cart button" class="cs_text_btn_style_1 cs_cart_btn cs_fs_14 cs_accent_color cs_semibold">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                         <path d="M5.15503 10.3439H5.15576C5.15637 10.3439 5.15698 10.3437 5.15759 10.3437H13.6562C13.8655 10.3437 14.0494 10.205 14.1069 10.0038L15.9819 3.44128C16.0223 3.2998 15.994 3.1477 15.9055 3.03027C15.8169 2.91284 15.6783 2.84375 15.5312 2.84375H4.07397L3.73889 1.33582C3.69116 1.12134 3.50097 0.96875 3.28125 0.96875H0.46875C0.209839 0.96875 0 1.17859 0 1.4375C0 1.69641 0.209839 1.90625 0.46875 1.90625H2.90527C2.9646 2.17346 4.50879 9.12243 4.59765 9.52221C4.09948 9.73876 3.75 10.2355 3.75 10.8125C3.75 11.5879 4.38086 12.2187 5.15625 12.2187H13.6562C13.9152 12.2187 14.125 12.0089 14.125 11.75C14.125 11.4911 13.9152 11.2812 13.6562 11.2812H5.15625C4.89782 11.2812 4.6875 11.0709 4.6875 10.8125C4.6875 10.5544 4.89709 10.3445 5.15503 10.3439ZM14.9098 3.78125L13.3026 9.40625H5.53222L4.28222 3.78125H14.9098Z" fill="#D01818"/>
                         <path d="M4.6875 13.625C4.6875 14.4004 5.31836 15.0312 6.09375 15.0312C6.86914 15.0312 7.5 14.4004 7.5 13.625C7.5 12.8496 6.86914 12.2188 6.09375 12.2188C5.31836 12.2188 4.6875 12.8496 4.6875 13.625ZM6.09375 13.1562C6.35217 13.1562 6.5625 13.3666 6.5625 13.625C6.5625 13.8834 6.35217 14.0937 6.09375 14.0937C5.83533 14.0937 5.625 13.8834 5.625 13.625C5.625 13.3666 5.83533 13.1562 6.09375 13.1562Z" fill="#D01818"/>
@@ -1343,7 +1336,7 @@
                   </div>
                   <h3 class="cs_card_title cs_fs_20 cs_medium cs_mb_8">Leather gloves</h3>
                   <div class="cs_cart_price_wrapper">
-                    <a href="#" aria-label="Add to cart button" class="cs_text_btn_style_1 cs_cart_btn cs_fs_14 cs_accent_color cs_semibold">
+                    <a href="shop-details.html" aria-label="Add to cart button" class="cs_text_btn_style_1 cs_cart_btn cs_fs_14 cs_accent_color cs_semibold">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                         <path d="M5.15503 10.3439H5.15576C5.15637 10.3439 5.15698 10.3437 5.15759 10.3437H13.6562C13.8655 10.3437 14.0494 10.205 14.1069 10.0038L15.9819 3.44128C16.0223 3.2998 15.994 3.1477 15.9055 3.03027C15.8169 2.91284 15.6783 2.84375 15.5312 2.84375H4.07397L3.73889 1.33582C3.69116 1.12134 3.50097 0.96875 3.28125 0.96875H0.46875C0.209839 0.96875 0 1.17859 0 1.4375C0 1.69641 0.209839 1.90625 0.46875 1.90625H2.90527C2.9646 2.17346 4.50879 9.12243 4.59765 9.52221C4.09948 9.73876 3.75 10.2355 3.75 10.8125C3.75 11.5879 4.38086 12.2187 5.15625 12.2187H13.6562C13.9152 12.2187 14.125 12.0089 14.125 11.75C14.125 11.4911 13.9152 11.2812 13.6562 11.2812H5.15625C4.89782 11.2812 4.6875 11.0709 4.6875 10.8125C4.6875 10.5544 4.89709 10.3445 5.15503 10.3439ZM14.9098 3.78125L13.3026 9.40625H5.53222L4.28222 3.78125H14.9098Z" fill="#D01818"/>
                         <path d="M4.6875 13.625C4.6875 14.4004 5.31836 15.0312 6.09375 15.0312C6.86914 15.0312 7.5 14.4004 7.5 13.625C7.5 12.8496 6.86914 12.2188 6.09375 12.2188C5.31836 12.2188 4.6875 12.8496 4.6875 13.625ZM6.09375 13.1562C6.35217 13.1562 6.5625 13.3666 6.5625 13.625C6.5625 13.8834 6.35217 14.0937 6.09375 14.0937C5.83533 14.0937 5.625 13.8834 5.625 13.625C5.625 13.3666 5.83533 13.1562 6.09375 13.1562Z" fill="#D01818"/>
@@ -1381,7 +1374,7 @@
                   </div>
                   <h3 class="cs_card_title cs_fs_20 cs_medium cs_mb_8">Car-Steering</h3>
                   <div class="cs_cart_price_wrapper">
-                    <a href="#" aria-label="Add to cart button" class="cs_text_btn_style_1 cs_cart_btn cs_fs_14 cs_accent_color cs_semibold">
+                    <a href="shop-details.html" aria-label="Add to cart button" class="cs_text_btn_style_1 cs_cart_btn cs_fs_14 cs_accent_color cs_semibold">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                         <path d="M5.15503 10.3439H5.15576C5.15637 10.3439 5.15698 10.3437 5.15759 10.3437H13.6562C13.8655 10.3437 14.0494 10.205 14.1069 10.0038L15.9819 3.44128C16.0223 3.2998 15.994 3.1477 15.9055 3.03027C15.8169 2.91284 15.6783 2.84375 15.5312 2.84375H4.07397L3.73889 1.33582C3.69116 1.12134 3.50097 0.96875 3.28125 0.96875H0.46875C0.209839 0.96875 0 1.17859 0 1.4375C0 1.69641 0.209839 1.90625 0.46875 1.90625H2.90527C2.9646 2.17346 4.50879 9.12243 4.59765 9.52221C4.09948 9.73876 3.75 10.2355 3.75 10.8125C3.75 11.5879 4.38086 12.2187 5.15625 12.2187H13.6562C13.9152 12.2187 14.125 12.0089 14.125 11.75C14.125 11.4911 13.9152 11.2812 13.6562 11.2812H5.15625C4.89782 11.2812 4.6875 11.0709 4.6875 10.8125C4.6875 10.5544 4.89709 10.3445 5.15503 10.3439ZM14.9098 3.78125L13.3026 9.40625H5.53222L4.28222 3.78125H14.9098Z" fill="#D01818"/>
                         <path d="M4.6875 13.625C4.6875 14.4004 5.31836 15.0312 6.09375 15.0312C6.86914 15.0312 7.5 14.4004 7.5 13.625C7.5 12.8496 6.86914 12.2188 6.09375 12.2188C5.31836 12.2188 4.6875 12.8496 4.6875 13.625ZM6.09375 13.1562C6.35217 13.1562 6.5625 13.3666 6.5625 13.625C6.5625 13.8834 6.35217 14.0937 6.09375 14.0937C5.83533 14.0937 5.625 13.8834 5.625 13.625C5.625 13.3666 5.83533 13.1562 6.09375 13.1562Z" fill="#D01818"/>
@@ -1439,15 +1432,9 @@
           <div class="container">
             <div class="cs_section_heading_style_1 cs_center_column cs_mb_50">
               <h3 class="cs_subtitle_style_1 cs_fs_14 cs_mb_16">
-                <span class="cs_lines align-items-end">
-                  <span></span>
-                  <span></span>
-                </span>
+                <span class="cs_lines_left"></span>
                 TOUR TESTIMONIALS
-                <span class="cs_lines">
-                  <span></span>
-                  <span></span>
-                </span>
+                <span class="cs_lines_right"></span>
               </h3>
               <h2 class="cs_section_title cs_fs_53 mb-0">What Our Client’s Say</h2>
             </div>
@@ -1516,20 +1503,18 @@
        <section>
         <div class="cs_height_120"></div>
         <div class="container">
-          <div class="cs_section_heading_style_1 cs_mb_50">
+          <div class="cs_section_heading_style_1">
             <h3 class="cs_subtitle_style_1 cs_fs_14 cs_mb_16">
               NEWS & blog's
-                <span class="cs_lines">
-                  <span></span>
-                  <span></span>
-                </span>
+                <span class="cs_lines_right"></span>
             </h3>
-            <h2 class="cs_section_title cs_fs_53">Our Recent News & Articles</h2>
+            <h2 class="cs_section_title cs_fs_53 mb-0">Our Recent News & Articles</h2>
           </div>
+          <div class="cs_height_50 cs_height_lg_50"></div>
           <div class="row cs_gap_y_24">
             <div class="col-md-6">
               <article class="cs_post_style_2">
-                <a href="#" aria-label="Post Details Pages link" class="cs_post_thumbnail cs_mb_30">
+                <a href="blog-details.html" aria-label="Post Details Pages link" class="cs_post_thumbnail cs_mb_30">
                   <img src="assets/img/post-img-4.jpg" alt="Post Image">
                 </a>
                 <div class="cs_post_content">
@@ -1547,7 +1532,7 @@
                       09/03/2026
                     </li>
                   </ul>
-                  <h3 class="cs_post_title cs_fs_30 cs_medium cs_mb_20"><a href="#">Why Who Driving Will Help You To Pass</a></h3>
+                  <h3 class="cs_post_title cs_fs_30 cs_medium cs_mb_20"><a href="blog-details.html">Why Who Driving Will Help You To Pass</a></h3>
                   <p class="cs_mb_30">It connects buyers, sellers, and renters with a wide range of vehicles—from budget-friendly cars to premium models.</p>
                   <a href="#" aria-label="Post Details Link" class="cs_text_btn_style_1 cs_fs_14 cs_accent_color cs_semibold">READ MORE
                     <svg xmlns="http://www.w3.org/2000/svg" width="21" height="15" viewBox="0 0 21 15" fill="none">
@@ -1559,7 +1544,7 @@
             </div>
             <div class="col-md-6">
               <article class="cs_post_style_2">
-                <a href="#" aria-label="Post Details Pages link" class="cs_post_thumbnail cs_mb_30">
+                <a href="blog-details.html" aria-label="Post Details Pages link" class="cs_post_thumbnail cs_mb_30">
                   <img src="assets/img/post-img-5.jpg" alt="Post Image">
                 </a>
                 <div class="cs_post_content">
@@ -1577,7 +1562,7 @@
                       09/03/2026
                     </li>
                   </ul>
-                  <h3 class="cs_post_title cs_fs_30 cs_medium cs_mb_20"><a href="#">How To Overcome Your Fear Of Driving</a></h3>
+                  <h3 class="cs_post_title cs_fs_30 cs_medium cs_mb_20"><a href="blog-details.html">How To Overcome Your Fear Of Driving</a></h3>
                   <p class="cs_mb_30">Customers can explore detailed listings, compare prices, and choose the best option that fits their needs.</p>
                   <a href="#" aria-label="Post Details Link" class="cs_text_btn_style_1 cs_fs_14 cs_accent_color cs_semibold">READ MORE
                     <svg xmlns="http://www.w3.org/2000/svg" width="21" height="15" viewBox="0 0 21 15" fill="none">
@@ -1598,17 +1583,26 @@
      <footer class="cs_footer_style_1 cs_primary_bg position-relative">
       <div class="cs_height_120 cs_height_lg_70"></div>
       <div class="container">
-        <h3 class="cs_footer_text cs_fs_200 cs_white_color text-center">DRI<span class="cs_accent_color">VOX</span></h3>
-        <div class="cs_height_60 cs_height_lg_60"></div>
+        <h3 class="cs_footer_text cs_fs_200 cs_white_color text-center mb-0">DRI<span class="cs_accent_color">VOX</span></h3>
+        <div class="cs_height_80 cs_height_lg_60"></div>
         <div class="cs_footer_main">
-          <div class="row cs_gap_y_24">
+          <div class="row cs_gap_y_40 position-relative z-2">
             <div class="col-xl-4 col-12">
               <div class="cs_footer_widget cs_newsletter_widget cs_white_color">
                 <h3 class="cs_footer_widget_title cs_fs_24 cs_white_color cs_medium cs_mb_20">News Letters</h3>
                 <p class="cs_mb_32">A newsletter is a regularly distributed publication that shares updates, news, and valuable information with a specific audience.</p>
                 <form action="#" class="cs_newsletter_style_1">
                   <label for="email" class="cs_fs_18 cs_medium cs_white_color cs_mb_20">Subscribe For Our Newsletters</label>
-                  <input type="email" id="email" autocomplete="email" placeholder="Enter Your Email">
+                  <div class="cs_input_wrapper position-relative">
+                    <input type="email" id="email" autocomplete="email" placeholder="Enter Your Email">
+                    <button type="submit" class="cs_sent_icon position-absolute">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                        <g clip-path="url(#clip0_21289_2118)">
+                          <path d="M10.7347 6.88174L2.27856 11.7204C1.45839 12.189 0.495434 11.3799 0.817652 10.492L2.4415 5.99937L0.817652 1.50673C0.495434 0.616947 1.45839 -0.190381 2.27856 0.278275L10.7347 5.1169C11.4194 5.50685 11.4176 6.49179 10.7347 6.88174Z" fill="white"/>
+                        </g>
+                      </svg>
+                    </button>
+                  </div>
                 </form>
               </div>
             </div>
@@ -1617,7 +1611,7 @@
                 <h3 class="cs_footer_widget_title cs_fs_24 cs_white_color cs_medium cs_mb_20">Our Services</h3>
                 <ul class="cs_footer_menu cs_mp_0">
                   <li><a href="#" aria-label="service link">Comming Soon</a></li>
-                  <li><a href="#" aria-label="service link">Services</a></li>
+                  <li><a href="service.html" aria-label="service link">Services</a></li>
                   <li><a href="#" aria-label="service link">Sell Services</a></li>
                   <li><a href="#" aria-label="service link">Loan Calculator</a></li>
                   <li><a href="#" aria-label="service link">Trauma Counseling</a></li>
@@ -1628,11 +1622,11 @@
               <div class="cs_footer_widget">
                 <h3 class="cs_footer_widget_title cs_fs_24 cs_white_color cs_medium cs_mb_20">Useful Links</h3>
                 <ul class="cs_footer_menu cs_mp_0">
-                  <li><a href="#" aria-label="Useful link">About us</a></li>
+                  <li><a href="about.html" aria-label="Useful link">About us</a></li>
                   <li><a href="#" aria-label="Useful link">Our Mission</a></li>
-                  <li><a href="#" aria-label="Useful link">Our Process</a></li>
+                  <li><a href="service-details.html" aria-label="Useful link">Our Process</a></li>
                   <li><a href="#" aria-label="Useful link">Testimonials</a></li>
-                  <li><a href="#" aria-label="Useful link">Contact Us</a></li>
+                  <li><a href="contact.html" aria-label="Useful link">Contact Us</a></li>
                 </ul>
               </div>
             </div>
@@ -1640,23 +1634,23 @@
               <div class="cs_footer_widget cs_contact_widget">
                 <h3 class="cs_footer_widget_title cs_fs_24 cs_white_color cs_medium cs_mb_20">Contact Us</h3>
                 <ul class="cs_footer_menu cs_mb_20">
-                  <li>A. 7198 0,Connell Rue Alden Washington</li>
+                  <li class="cs_address">A. 7198 0,Connell Rue Alden Washington</li>
                   <li><a href="tel:123456789000" aria-label="Useful link">P ; +1 (234) 567 890 00</a></li>
                   <li><a href="mailto:example@drivox.com" aria-label="Useful link">Email: example@drivox.com</a></li>
                 </ul>
                 <div class="cs_social_icons cs_white_color">
-                  <span class="cs_social_icon cs_center cs_radius_100">
+                  <a href="#" aria-label="sicial media icon link" class="cs_social_icon cs_center cs_radius_100">
                     <i class="fa-brands fa-slack"></i>
-                  </span>
-                  <span class="cs_social_icon cs_center cs_radius_100">
+                  </a>
+                  <a href="#" aria-label="sicial media icon link"  class="cs_social_icon cs_center cs_radius_100">
                     <i class="fa-brands fa-youtube"></i>
-                  </span>
-                  <span class="cs_social_icon cs_center cs_radius_100">
+                  </a>
+                  <a href="#" aria-label="sicial media icon link" class="cs_social_icon cs_center cs_radius_100">
                     <i class="fa-brands fa-x-twitter"></i>
-                  </span>
-                  <span class="cs_social_icon cs_center cs_radius_100">
+                  </a>
+                  <a href="#" aria-label="sicial media icon link" class="cs_social_icon cs_center cs_radius_100">
                     <i class="fa-brands fa-linkedin-in"></i>
-                  </span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -1667,11 +1661,11 @@
       <div class="cs_footer_bottom">
         <div class="container">
           <div class="cs_bottom_content">
-            <div class="cs_copyright_text cs_fs_16 cs_white_color">Copyright & Design By @Autoluxis - <span class="cs_getting_year"></span></div>
+            <div class="cs_copyright_text cs_fs_16 cs_white_color">Copyright & Design By @Autoluxis - <span class="cs_getting_year">2026</span></div>
             <ul class="cs_bottom_menu cs_mp_0 cs_white_color">
-              <li><a href="#">Faq</a></li>
+              <li><a href="faq.html">Faq</a></li>
               <li><a href="#">Careers</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -1688,12 +1682,10 @@
     <!-- End Scroll Top Button -->
     <!-- JavaScript with defer for performance -->
     <script defer src="assets/js/jquery.min.js"></script>
-    <!-- <script defer src="assets/js/gsap.min.js"></script> -->
-    <!-- <script defer src="assets/js/lenis.min.js"></script> -->
     <script defer src="assets/js/swiper.min.js"></script>
-    <script defer src="assets/js/odometer.min.js"></script>
-    <!-- <script defer src="assets/js/SplitText.min.js"></script> -->
-    <!-- <script defer src="assets/js/ScrollTrigger.min.js"></script> -->
+    <script defer src="assets/js/tom_select_complete.min.js"></script>
+    <script defer src="assets/js/flatpickr.min.js"></script>
+    <script defer src="assets/js/zoomPlus.min.js"></script>
     <script defer src="assets/js/main.js"></script>
   </body>
 </html>

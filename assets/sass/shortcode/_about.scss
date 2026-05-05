@@ -24,16 +24,19 @@
     grid-template-columns: 42fr 58fr;
     gap: 24px;
     align-items: start;
+    height: 100%;
   }
 
   .cs_about_img_left {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    height: 100%;
 
     img {
       width: 100%;
       object-fit: cover;
+      height: 100%;
     }
     .cs_img_bottom {
       padding-left: 16%;
@@ -43,6 +46,13 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
   .cs_buttons {
@@ -55,6 +65,8 @@
   .cs_about_stat {
     width: min(312px, 100%);
     padding: 22px 40px;
+    right: 0;
+    bottom: 60px;
   }
 
   .cs_about_img_left {
@@ -82,5 +94,45 @@
 .cs_about_style_2 {
   .cs_about_right {
     padding-left: 40px;
+
+    .cs_phone_number {
+      position: relative;
+      padding-left: 60px;
+
+      .cs_phone_icon {
+        width: 50px;
+        height: 50px;
+        background-color: var(--gray-color);
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+      a {
+        &:hover {
+          color: var(--accent-color);
+        }
+      }
+    }
+
+    .cs_about_img {
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .cs_about_left {
+    padding-right: 11%;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    @media (max-width: 991px) {
+      padding-right: 0;
+    }
   }
 }
