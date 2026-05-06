@@ -1,5 +1,5 @@
 /*========================================================
-  19. Team and Team Details
+  22. Team and Team Details
 ==========================================================*/
 .cs_team_style_1 {
   padding-bottom: 65px;
@@ -45,7 +45,7 @@
     }
   }
 
-  .cs_social_icons {
+  .cs_social_icons_style_2 {
     display: flex;
     gap: 10px 20px;
     align-items: center;
@@ -58,14 +58,15 @@
     opacity: 0;
     transition: all 0.3s ease;
 
-    .cs_social_icons {
-      width: 40px;
-      height: 40px;
-      padding: 10px;
+    .cs_social_icon {
+      border-color: var(--white-color);
+      color: var(--white-color);
     }
 
     a:hover {
-      opacity: 0.75;
+      border-color: var(--accent-color);
+      background-color: transparent;
+      color: var(--accent-color);
     }
   }
   .cs_team_title {
@@ -79,7 +80,7 @@
         opacity: 1;
       }
     }
-    .cs_social_icons {
+    .cs_social_icons_style_2 {
       opacity: 1;
     }
     .cs_team_info {
@@ -126,6 +127,12 @@
 
   .cs_team_info {
     padding: 20px 20px 0px 20px;
+  }
+
+  .cs_team_title {
+    &:hover {
+      color: var(--accent-color);
+    }
   }
 
   &:hover {

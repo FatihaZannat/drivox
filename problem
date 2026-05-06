@@ -4,8 +4,8 @@ Home 2
 
 project: drivox
 
-1. home1 = 
-2. home2 = 
+1. home1 = date picker
+2. home2 = header in mobile view
 3. home3= 
 4. car listing = 100%
 5. car details = 90% check icon
@@ -18,7 +18,7 @@ project: drivox
 12. blog = 100%
 13. blog details = 100%
 14. Contact = 100%
-15. shop list = 100%
+15. shop list = 100% error for h3...................
 16. shop single = 100%
 17. shop cart = 90% responsive problem > 500
 18. shop checkout = 80%

@@ -229,6 +229,12 @@
     padding: 40px;
     font-style: normal;
   }
+
+  @media (max-width: 575px) {
+    blockquote {
+      padding: 30px 20px;
+    }
+  }
 }
 
 .cs_post_shares {

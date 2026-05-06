@@ -1,52 +1,26 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <!-- Primary Meta Tags -->
-    <title>Motors - Car Dealer, Rental & Listing Figma Template | Laralink</title>
-    <meta name="description"content="AxisBuilt - Architecture & Interior Design HTML Website Template. Professional and modern design solutions for residential and commercial spaces."/>
-    <meta name="keywords" content="architecture, interior design, architectural template, design studio, modern architecture, interior design template, AxisBuilt"/>
-    <meta name="author" content="Laralink" />
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
-    <meta name="language" content="English" />
-    <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://axisbuilt.com" />
-    <meta property="og:title" content="AxisBuilt - Architecture & Interior Design Template"/>
-    <meta property="og:description" content="AxisBuilt - Architecture & Interior Design HTML Website Template"/>
-    <meta property="og:image" content="assets/img/og-image.webp" />
-    <meta property="og:image:alt" content="AxisBuilt Architecture & Interior Design Template Preview"/>
-    <meta property="og:site_name" content="AxisBuilt" />
-    <meta property="og:locale" content="en_US" />
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://axisbuilt.com" />
+    <title>Motors - Car Dealer, Rental & Listing HTML website Template | Laralink</title>
+    <meta name="description" content="Motors - Car Dealer, Rental & Listing HTML Website Template. Professional and feature-rich template for car dealerships, vehicle rentals, and automotive listings.">
+    <meta name="keywords" content="car dealer, car rental, vehicle listing, automotive template, car dealership website, used cars, new cars, Motors, car marketplace, auto dealer, vehicle rental, car listing template, automobile">
+    <meta name="author" content="Laralink">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="language" content="English">
     <!-- Favicon and App Icons -->
-    <link rel="icon" type="image/png" href="assets/img/favicon.webp" />
-    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.webp" />
-    <!-- Preconnect to External Domains -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- Preload Critical CSS -->
-    <link rel="preload" href="assets/css/bootstrap.min.css" as="style" />
-    <link rel="preload" href="assets/css/style.css" as="style" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.webp">
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.webp">
     <!-- Deferred CSS Loading -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="print" onload="this.media = 'all'"/>
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css" media="print" onload="this.media = 'all'"/>
-    <link rel="stylesheet" href="assets/css/odometer.min.css" media="print" onload="this.media = 'all'"/>
-    <link rel="stylesheet" href="assets/css/swiper.min.css" media="print" onload="this.media = 'all'"/>
-    <link rel="stylesheet" href="assets/css/tom-select.min.css" media="print" onload="this.media = 'all'"/>
-    <link rel="stylesheet" href="assets/css/flatpickr.min.css" media="print" onload="this.media = 'all'"/>
-    <link rel="stylesheet" href="assets/css/style.css" media="print" onload="this.media = 'all'"/>
-    <!-- Noscript Fallback -->
-    <noscript>
-      <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-      <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
-      <link rel="stylesheet" href="assets/css/odometer.min.css" />
-      <link rel="stylesheet" href="assets/css/swiper.min.css" />
-      <link rel="stylesheet" href="assets/css/style.css" />
-    </noscript>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/tom-select.min.css">
+    <link rel="stylesheet" href="assets/css/flatpickr.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
     <!-- Start Preloader -->
@@ -165,7 +139,6 @@
     </div>
     <!-- End Header Search -->
     <!-- Start Main Content -->
-    <main role="main">
      <!-- Start Page Header Section -->
       <section class="cs_page_header_style_1 cs_bg_filed cs_gray_bg position-relative" data-src="assets/img/hero-img-3.jpg">
         <div class="container">
@@ -198,45 +171,45 @@
                       <input type="text" id="lastName" autocomplete="name" class="cs_shop_input"/>
                   </div>
                   <div class="col-lg-12">
-                    <label for="cs_shop_label">Company Name</label>
-                    <input type="text" class="cs_shop_input">
+                    <label for="companyName">Company Name</label>
+                    <input type="text" name="companyName" class="cs_shop_input">
                   </div>
-                  <div class="col-lg-12">
-                    <label for="cs_shop_label">Country / Region *</label>
-                    <select class="cs_shop_input">
+                  <div class="col-lg-12 cs_input_wrapper">
+                    <label for="country">Country / Region *</label>
+                    <select class="cs_select tom_select" name="country">
                       <option value="State">United Stated (US)</option>
                       <option value="Kindom">United Kindom</option>
                       <option value="Kanada">Kanada</option>
                     </select>
                   </div>
                   <div class="col-lg-12">
-                    <label class="cs_shop-label">Street address *</label>
-                    <input type="text" class="cs_shop_input cs_mb_16" placeholder="House number and street name">
-                    <input type="text" class="cs_shop_input" placeholder="Apartment, suite, unit, etc (optional) ">
+                    <label class="address">Street address *</label>
+                    <input type="text" id="address" class="cs_shop_input cs_mb_16" placeholder="House number and street name" autocomplete="address">
+                    <input type="text" name="address" class="cs_shop_input" placeholder="Apartment, suite, unit, etc (optional)" autocomplete="address">
                   </div>
                   <div class="col-lg-6">
-                    <label for="cs_shop_label">Postcode / ZIP*</label>
-                    <input type="text" class="cs_shop_input">
+                    <label for="postcode">Postcode / ZIP*</label>
+                    <input type="text" id="postcode" class="cs_shop_input">
                   </div>
                   <div class="col-lg-6">
-                    <label for="cs_shop_label">Town / City</label>
-                    <input type="text" class="cs_shop_input">
+                    <label for="city">Town / City</label>
+                    <input type="text" id="city" class="cs_shop_input">
                   </div>
                   <div class="col-lg-6">
-                    <label for="cs_shop_label">Province*</label>
-                    <input type="text" class="cs_shop_input">
+                    <label for="province">Province*</label>
+                    <input type="text" id="province" class="cs_shop_input">
                   </div>
                   <div class="col-lg-6">
-                    <label for="cs_shop_label">Phone</label>
-                    <input type="text" class="cs_shop_input">
+                    <label for="phone">Phone</label>
+                    <input type="text" id="phone" class="cs_shop_input">
                   </div>
                   <div class="col-lg-12">
-                    <label for="cs_shop_label">Your Email</label>
-                    <input type="email" class="cs_shop_input">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" class="cs_shop_input" autocomplete="email">
                   </div>
                   <div class="col-lg-12">
-                    <label for="cs_shop_label">Additional Information</label>
-                    <textarea cols="30" rows="6" class="cs_shop_input mb-0"></textarea>
+                    <label for="information">Additional Information</label>
+                    <textarea cols="30" rows="6" id="information" class="cs_shop_input mb-0"></textarea>
                   </div>
                   <div>
                     <button type="submit" class="cs_btn_style_1 cs_accent_bg cs_white_color">
@@ -282,34 +255,41 @@
                 </table>
               </div>
               <div class="cs_height_30 cs_height_lg_30"></div>
-              <div class="cs_payment_system">
-                <div class="form-check cs_fs_20 cs_medium cs_mb_10">
-                  <input type="radio" id="flexCheck" checked>
-                  <label for="flexCheck">Direct Bank Transfer</label>
-                </div>
-                <p class="">Bank Transfer is a secure and straightforward payment method that allows customers to send money directly from their bank.</p>
-                <div class="cs_radiobox">
-                  <input type="radio" id="flexCheck">
-                  <label for="flexCheck">Check Payment</label></div>
-                
-                <div class="cs_radiobox">
-                  <input type="radio" id="flexCheck">
-                  <label for="flexCheck">Cash On Delivery</label>
-                </div>
-                
-                <div class="cs_radiobox">
-                  <input type="radio" id="flexCheck">
-                  <label for="flexCheck">Pay pal</label>
-                </div>
-                </div>
+              <ul class="cs_payment_method_list cs_primary_color cs_payment_method_list">
+                <li>
+                  <div class="cs_radiobox">
+                    <input type="radio" name="paymentMethod" id="debitCardRadio">
+                    <label>Direct Bank Transfer</label>
+                  </div>
+                  <p class="cs_debit_card_box mb-0">
+                    Bank Transfer is a secure and straightforward payment method that allows customers to send money directly from their bank.
+                  </p>
+                </li>
+                <li>
+                  <div class="cs_radiobox">
+                    <input type="radio" name="paymentMethod">
+                    <label>Check Payment</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="cs_radiobox">
+                    <input type="radio" name="paymentMethod">
+                    <label>Cash On Delivery</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="cs_radiobox">
+                    <input type="radio" name="paymentMethod">
+                    <label>Pay pal</label>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
         <div class="cs_height_120 cs_height_lg_70"></div>
       </section>
     <!-- End Shop Check Out Section -->
-    </main>
-    <!-- End Main Content -->
     <!-- Start Footer Section -->
      <footer class="cs_footer_style_1 cs_primary_bg position-relative">
       <div class="cs_height_120 cs_height_lg_70"></div>
@@ -394,9 +374,9 @@
           <div class="cs_bottom_content">
             <div class="cs_copyright_text cs_fs_16 cs_white_color">Copyright & Design By @Autoluxis - <span class="cs_getting_year">2026</span></div>
             <ul class="cs_bottom_menu cs_mp_0 cs_white_color">
-              <li><a href="#">Faq</a></li>
+              <li><a href="faq.html">Faq</a></li>
               <li><a href="#">Careers</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -414,9 +394,9 @@
     <!-- JavaScript with defer for performance -->
     <script defer src="assets/js/jquery.min.js"></script>
     <script defer src="assets/js/swiper.min.js"></script>
-    <script defer src="assets/js/odometer.min.js"></script>
     <script defer src="assets/js/tom_select_complete.min.js"></script>
     <script defer src="assets/js/flatpickr.min.js"></script>
+    <script defer src="assets/js/zoomPlus.min.js"></script>
     <script defer src="assets/js/main.js"></script>
   </body>
 </html>

@@ -2,14 +2,19 @@
 Shoping Cart 
 ----------------------------------------------------------------*/
 
+.table-responsive {
+  width: 100%;
+}
+
 .cs_cart_table {
+  min-width: 700px;
   .cs_cart_table_media {
     display: flex;
     align-items: center;
     gap: 20px;
   }
   td,
-  h3 {
+  h2 {
     font-size: 18px;
     line-height: 1.5em;
     font-weight: 500;
@@ -139,7 +144,8 @@ Shoping Cart
   .cs_coupon-doce-form {
     display: flex;
     align-items: center;
-    gap: 30px;
+    flex-wrap: wrap;
+    gap: 20px 30px;
   }
 
   .cs_btn_style_1 {
@@ -148,7 +154,7 @@ Shoping Cart
 }
 
 .cs_shop-card {
-  border: 1px solid red;
+  border: 1px solid var(--gray-color3);
   padding: 30px;
 
   .cs_btn_style_1 {
@@ -193,8 +199,7 @@ Check Out
   }
 }
 
-.cs_shop_card,
-.cs_payment_system {
+.cs_shop_card {
   padding: 30px;
   background-color: var(--gray-color);
   border: 1px solid var(--gray-color2);

@@ -230,6 +230,9 @@
 .cs_gray_bg {
   background-color: var(--gray-color);
 }
+.cs_gray_bg2 {
+  background-color: var(--gray-color2);
+}
 
 .cs_black_bg {
   background-color: var(--black-color);
@@ -299,11 +302,6 @@
 /*=============================================  
   Bootstrap Classess 
 ===============================================*/
-// @media (min-width: 1400px) {
-//   .container {
-//     max-width: 1344px;
-//   }
-// }
 
 .cs_gap_y_40 {
   gap: 40px 0;
@@ -349,6 +347,10 @@
     border-color: var(--accent-color);
     background-color: var(--white-color);
     color: var(--accent-color);
+
+    svg {
+      animation: rotation 0.8s;
+    }
   }
   &.cs_white_bg {
     &:hover {
@@ -359,91 +361,31 @@
   }
 }
 
-.cs_btn_style_2 {
-  width: 180px;
-  height: 180px;
-  padding: 10px;
-  overflow: hidden;
-  transition: all 0.3s ease;
-
-  > * {
-    position: relative;
-    z-index: 1;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    inset: 1px;
-    background: var(--gray-color);
-    border-radius: inherit;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: var(--y);
-    left: var(--x);
-    transform: translate(-50%, -50%);
-    background: radial-gradient(var(--accent-color), transparent, transparent);
-    width: 200%;
-    height: 200%;
-    opacity: 1;
-    transition:
-      0.5s,
-      top 0s,
-      left 0s;
-    border-radius: inherit;
-  }
-
-  &:hover {
-    color: var(--accent-color);
-    transform: scale(1.02);
-  }
-
-  &.cs_type_1 {
-    border: 1px solid var(--gray-color2);
-    right: 40px;
-    top: calc(100% - 30px);
-
-    &::before,
-    &::after {
-      display: none;
-    }
-  }
-}
-
 .cs_text_btn_style_1 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
   padding-bottom: 3px;
-  border-bottom: 1px solid currentColor;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 0;
+    background-color: var(--accent-color);
+    left: 0;
+    top: 80%;
+    transition: all 0.3s ease;
+  }
 
   &:hover {
+    &::after {
+      width: 100%;
+    }
     color: var(--accent-color);
     opacity: 0.8;
-  }
-}
-
-.cs_text_btn_style_2 {
-  display: inline-block;
-  perspective: 500px;
-  color: var(--accent-color);
-
-  .cs_btn_text {
-    display: inline-block;
-  }
-
-  .cs_letter {
-    display: inline-block;
-    transform-origin: 50% 50%;
-    backface-visibility: hidden;
-  }
-
-  &:hover {
-    color: var(--accent-color);
   }
 }
 
@@ -490,8 +432,16 @@
     height: 60px;
     border-radius: 50%;
     border: 1px solid var(--accent-color);
+    animation: scale 03s infinite;
   }
   letter-spacing: 0.28px;
+
+  &:hover {
+    span {
+      animation-play-state: paused;
+    }
+    color: var(--accent-color);
+  }
 }
 /*=============================================
  Social Buttons Component
@@ -562,28 +512,11 @@
   align-items: center;
   font-family: var(--primary-font);
   gap: 9px;
+  font-weight: 600;
   letter-spacing: 1.4px;
   text-transform: uppercase;
   color: var(--accent-color);
   position: relative;
-
-  // .cs_lines {
-  //   display: flex;
-  //   flex-direction: column;
-  //   gap: 3px;
-
-  //   span:first-child {
-  //     width: 60px;
-  //     height: 2px;
-  //     background: var(--accent-color);
-  //   }
-
-  //   span:last-child {
-  //     width: 30px;
-  //     height: 2px;
-  //     background: var(--accent-color);
-  //   }
-  // }
 
   .cs_lines_right,
   .cs_lines_left {
@@ -664,7 +597,8 @@
 
 .cs_car_search_style_1,
 .cs_car_search_style_2,
-.cs_car_search_style_3 {
+.cs_car_search_style_3,
+.cs_check_out_form {
   .cs_input_wrapper {
     flex-shrink: 0;
     width: 102px;
@@ -706,8 +640,7 @@
     overflow: hidden;
 
     input {
-      min-width: 70px;
-      margin: 0 0 0 4px !important;
+      width: min(70px, 100%);
 
       &::placeholder {
         color: var(--primary-color);
@@ -731,7 +664,7 @@
   .ts-control input,
   .ts-dropdown {
     font-size: 16px;
-    line-height: 1.5625em;
+    line-height: 1.5625em !important;
     color: var(--secondary-color);
   }
   .ts-dropdown {
@@ -767,7 +700,7 @@
 
 .cs_car_search_style_2 {
   .cs_input_wrapper {
-    width: 280px;
+    width: min(280px, 100%);
     &::after {
       display: none;
     }
@@ -786,6 +719,7 @@
     padding: 17px 20px;
   }
 }
+
 .cs_car_search_style_3 {
   padding: 20px;
 
@@ -802,6 +736,23 @@
     .cs_search_form {
       gap: 20px 80px;
     }
+  }
+}
+
+.cs_check_out_form {
+  .cs_input_wrapper {
+    width: 100%;
+
+    label {
+      color: var(--secondary-color);
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+  .ts-wrapper {
+    border: 1px solid var(--gray-color3);
+    height: 55px;
+    padding: 15px 20px;
   }
 }
 
@@ -823,9 +774,10 @@
   border: none !important;
   outline: none !important;
   background: transparent;
-  font-size: 13.5px;
+  font-size: 16px;
   cursor: pointer;
   padding: 0;
+  color: var(--secondary-color);
 }
 .flatpickr-day {
   &:hover {
@@ -960,34 +912,151 @@
 }
 
 /*===========================================================  
-  Funfact Odometer
+  Radio checkbox
 =============================================================*/
-.cs_funfact_style_1 {
-  .cs_funfact_number {
-    display: flex;
-    align-items: center;
-    line-height: 1em;
 
-    > * {
-      line-height: 1em !important;
+.cs_checkbox {
+  display: inline-flex;
+  position: relative;
+  padding-left: 30px;
+  input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0;
+    &:checked {
+      + label {
+        &::before {
+          border-color: var(--accent-color);
+          background-color: var(--accent-color);
+        }
+        &::after {
+          opacity: 1;
+        }
+      }
     }
   }
-
-  .odometer-inside,
-  .odometer-digit,
-  .odometer-digit-inner,
-  .odometer-auto-theme,
-  .odometer {
-    line-height: 1em !important;
+  a {
+    color: var(--accent-color);
+    position: relative;
+    z-index: 3;
+    &:hover {
+      text-decoration: underline;
+    }
   }
-
-  .odometer.odometer-auto-theme,
-  .odometer.odometer-theme-default {
-    font-family: var(--primary-font);
-    line-height: inherit;
+  label {
+    margin: 0;
+    display: inline-block;
+    &::before {
+      content: "";
+      height: 17px;
+      width: 17px;
+      border: 1px solid var(--secondary-color);
+      position: absolute;
+      left: 0;
+      top: 7px;
+      border-radius: 3px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      height: 10px;
+      width: 6px;
+      border: 2px solid #fff;
+      left: 6px;
+      top: 9px;
+      border-left: 0;
+      border-top: 0;
+      transform: rotate(45deg);
+      opacity: 0;
+    }
   }
 }
 
+.cs_radiobox {
+  display: flex;
+  position: relative;
+  padding-left: 30px;
+  input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0;
+    &:checked {
+      + label {
+        &::before {
+          border-color: var(--accent-color);
+          background-color: var(--accent-color);
+        }
+        &::after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  a {
+    color: var(--accent-color);
+    position: relative;
+    z-index: 3;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  label {
+    margin: 0;
+    display: inline-block;
+    img {
+      margin-right: 10px;
+    }
+    &::before {
+      content: "";
+      height: 20px;
+      width: 20px;
+      border: 1px solid var(--secondary-color);
+      position: absolute;
+      left: 0;
+      top: 5px;
+      border-radius: 50%;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      height: 12px;
+      width: 12px;
+      background-color: var(--accent-color);
+      left: 4px;
+      top: 9px;
+      opacity: 0;
+      border-radius: 50%;
+    }
+  }
+}
+
+.cs_payment_method_list {
+  list-style: none;
+  padding: 0;
+  border: 1px solid var(--gray-color3);
+  background: var(--gray-color);
+  padding: 30px;
+  li {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.cs_debit_card_box {
+  display: none;
+  padding: 11px 0;
+}
 /*===========================================================  
   Responsive For Common Component & Hide Elements
 =============================================================*/
@@ -1002,13 +1071,13 @@
   Animations
 =============================================================*/
 
-@keyframes pulseBorder {
-  100% {
-    opacity: 0;
-    border-width: 30px;
-    transform: translate(-50%, -50%) scale(1.4);
-  }
-}
+// @keyframes pulseBorder {
+//   100% {
+//     opacity: 0;
+//     border-width: 30px;
+//     transform: translate(-50%, -50%) scale(1.4);
+//   }
+// }
 
 @keyframes scale {
   50% {

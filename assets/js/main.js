@@ -18,18 +18,13 @@
   | 05. Swiper Slider
   | 06. Search Modal Toggle
   | 07. Smooth Page Scroll(Lenis)
-  | 08. Counter Animation
-  | 09. Modal Video
-  | 10. Review
-  | 11. Tabs
-  | 12. Progress Bar
+  | 08. Modal Video
+  | 09. Review
+  | 10. Tabs
+  | 11. Progress Bar
   | 13. Accordian
-  | 14. Service Steps Animation
-  | 15. Card Hover
-  | 16. Scroll Up
-  | 17. Hobble Animation With Mouse Move
-  | 18. Animation With GSAP
-  | 19. Dynamic contact form
+  | 14. Scroll Up
+  | 15. Animation With GSAP
   |
   */
 
@@ -40,9 +35,6 @@
     return $(selector).length > 0;
   };
 
-  // $(window).on("load", function () {
-  //   preloader();
-  // });
   $(window).on("scroll", function () {
     stickyHeader();
     showScrollUp();
@@ -53,24 +45,18 @@
     stickyHeader();
     dynamicBackground();
     swiperInit();
-    modalToggle();
     smoothScroll();
-    counterInit();
     modalVideo();
-    review();
     tabs();
     accordian();
-    serviceSteps();
     scrollUp();
-    animationOnHover();
     progressBar();
-    cardHoverActive();
     dateTimePicker()
     imageZoom()
     shopGeneral()
-
+    paymentMethodToggle()
     // gsapAnimation();
-    dynamicContactForm();
+    
     $(".tom_select").each(function () {
       new TomSelect(this, {
         create: false,
@@ -421,16 +407,16 @@
   /*============================================================
     06. Search Modal Toggle
   ==============================================================*/
-  function modalToggle() {
-    $(".cs_open_modal").on("click", function () {
-      $(".cs_advanced_search_modal").addClass("active");
-      $("body").addClass("scroll_off");
-    });
-    $(".cs_close_modal").on("click", function () {
-      $(".cs_advanced_search_modal").removeClass("active");
-      $("body").removeClass("scroll_off");
-    });
-  }
+  // function modalToggle() {
+  //   $(".cs_open_modal").on("click", function () {
+  //     $(".cs_advanced_search_modal").addClass("active");
+  //     $("body").addClass("scroll_off");
+  //   });
+  //   $(".cs_close_modal").on("click", function () {
+  //     $(".cs_advanced_search_modal").removeClass("active");
+  //     $("body").removeClass("scroll_off");
+  //   });
+  // }
   /*============================================================
     07. Smooth Page Scroll
   ==============================================================*/
@@ -470,33 +456,9 @@
       requestAnimationFrame(raf);
     }
   }
+  
   /*============================================================
-    08. Counter Animation
-  ==============================================================*/
-  function counterInit() {
-    if (!$.exists(".odometer")) return;
-
-    const observer = new IntersectionObserver(
-      function (entries, observer) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            const el = $(entry.target);
-            el.html(el.data("count-to"));
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      {
-        threshold: 0.3,
-      },
-    );
-
-    $(".odometer").each(function () {
-      observer.observe(this);
-    });
-  }
-  /*============================================================
-    09. Modal Video
+    07. Modal Video
   ==============================================================*/
   function modalVideo() {
     if ($.exists(".cs_video_open")) {
@@ -536,17 +498,17 @@
     }
   }
   /*============================================================
-    10. Review
+    8. Review
   ==============================================================*/
-  function review() {
-    $(".cs_rating").each(function () {
-      var review = $(this).data("rating");
-      var reviewVal = review * 20 + "%";
-      $(this).find(".cs_rating_percentage").css("width", reviewVal);
-    });
-  }
+  // function review() {
+  //   $(".cs_rating").each(function () {
+  //     var review = $(this).data("rating");
+  //     var reviewVal = review * 20 + "%";
+  //     $(this).find(".cs_rating_percentage").css("width", reviewVal);
+  //   });
+  // }
   /*============================================================
-    11. Tabs
+    9. Tabs
   ===============================================================*/
   function tabs() {
     $(".cs_tab_links a").on("click", function (e) {
@@ -561,17 +523,16 @@
     });
   }
   /*--------------------------------------------------------------
-    12. Progress Bar
+    10. Progress Bar
   --------------------------------------------------------------*/
   function progressBar() {
     $(".cs_progress").each(function () {
-      console.log('hell');
       var progressPercentage = $(this).data("progress") + "%";
       $(this).find(".cs_progress_in").css("width", progressPercentage);
     });
   }
   /*=============================================================
-    13. Accordian
+    11. Accordian
   ===============================================================*/
   function accordian() {
     $(".cs_accordian").children(".cs_accordian_body").hide();
@@ -596,7 +557,7 @@
   }
 
    /*=============================================================
-    17. Date And Time Picker
+    12. Date And Time Picker
   ===============================================================*/
   function dateTimePicker() {
     flatpickr("#timePicker", {
@@ -611,62 +572,9 @@
       timeFormat: "m-d-Y",
     });
   }
-  /*===========================================================
-    14. Service Steps Animation
-  =============================================================*/
-  function serviceSteps() {
-    let tabInterval;
-    let currentIndex = 0;
-
-    const $tabs = $(".cs_service_menu_list li");
-    const $tabContents = $(".cs_service_thumbnails_wrapper");
-    const intervalTime = 5000;
-
-    if ($tabs.length > 0 && $tabContents.length > 0) {
-      function activateTab(index) {
-        $tabs.eq(index).addClass("active").siblings().removeClass("active");
-        $tabContents.eq(index).fadeIn(600).siblings().hide();
-      }
-
-      function startAutoplay() {
-        stopAutoplay();
-        tabInterval = setInterval(function () {
-          currentIndex = (currentIndex + 1) % $tabs.length;
-          activateTab(currentIndex);
-        }, intervalTime);
-      }
-
-      function stopAutoplay() {
-        if (tabInterval) clearInterval(tabInterval);
-      }
-
-      $tabs.on("click", function (e) {
-        e.preventDefault();
-        stopAutoplay();
-        currentIndex = $(this).index();
-        activateTab(currentIndex);
-        startAutoplay();
-      });
-
-      // Init
-      $tabContents.hide();
-      activateTab(currentIndex);
-      startAutoplay();
-    }
-  }
+ 
   /*==============================================================
-   15. Card Hover
-  ================================================================*/
-  function cardHoverActive() {
-    $(".cs_card_style_6").on("mouseenter", function () {
-      $(this)
-        .addClass("active")
-        .siblings(".cs_card_style_6")
-        .removeClass("active");
-    });
-  }
-  /*==============================================================
-    16. Scroll Up
+    13. Scroll Up
   ================================================================*/
   function scrollUp() {
     $(".cs_scrollup_btn").on("click", function (e) {
@@ -688,29 +596,9 @@
       $(".cs_scrollup_btn").removeClass("show");
     }
   }
+  
   /*==============================================================
-    17. Hobble Animation With Mouse Move
-  ================================================================*/
-  function animationOnHover() {
-    let cards = document.querySelectorAll(".animationonhover");
-
-    cards.forEach((tmpOnHover) => {
-      // Set initial value
-      tmpOnHover.style.setProperty("--x", "-1px");
-      tmpOnHover.style.setProperty("--y", "-1px");
-
-      tmpOnHover.onmousemove = function (e) {
-        let rect = tmpOnHover.getBoundingClientRect();
-        let x = e.clientX - rect.left;
-        let y = e.clientY - rect.top;
-
-        tmpOnHover.style.setProperty("--x", `${x}px`);
-        tmpOnHover.style.setProperty("--y", `${y}px`);
-      };
-    });
-  }
-  /*==============================================================
-    18. Animation With GSAP
+    14. Animation With GSAP
   ================================================================*/
   function gsapAnimation() {
     //Check if GSAP is loaded FIRST
@@ -1052,67 +940,31 @@
     console.log("GSAP animations initialized successfully");
   }
   /*===============================================================
-    19. zoom image
+    15. zoom image
   =================================================================*/
   function imageZoom() {
     $(".cs_zoom_plus").zoom({
       cursor: "zoom-in",
     });
   }
-  /*===============================================================
-    19. Dynamic contact form
-  =================================================================*/
-  function dynamicContactForm() {
-    if ($.exists("#cs_form")) {
-      const form = document.getElementById("cs_form");
-      const result = document.getElementById("cs_result");
-
-      form.addEventListener("submit", function (e) {
-        const formData = new FormData(form);
-        e.preventDefault();
-        var object = {};
-        formData.forEach((value, key) => {
-          object[key] = value;
-        });
-        var json = JSON.stringify(object);
-        result.innerHTML = "Please wait...";
-
-        fetch("https://api.web3forms.com/submit", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json",
-          },
-          body: json,
-        })
-          .then(async (response) => {
-            let json = await response.json();
-            if (response.status == 200) {
-              result.innerHTML = json.message;
-            } else {
-              console.log(response);
-              result.innerHTML = json.message;
-            }
-          })
-          .catch((error) => {
-            console.log(error);
-            result.innerHTML = "Something went wrong!";
-          })
-          .then(function () {
-            form.reset();
-            setTimeout(() => {
-              result.style.display = "none";
-            }, 5000);
-          });
-      });
-    }
+  
+  /*--------------------------------------------------------------
+    16. Payment Method Toggle
+  --------------------------------------------------------------*/
+  function paymentMethodToggle() {
+    $('input[name="paymentMethod"]').change(function () {
+      if ($(this).is(':checked') && $(this).attr('id') === 'debitCardRadio') {
+        $('.cs_debit_card_box').show();
+      } else {
+        $('.cs_debit_card_box').hide();
+      }
+    });
   }
 
   /*----------------------------------------------------------
     13. Shop General
    ------------------------------------------------------------*/
   function shopGeneral() {
-    // Quantity Increment and Decrement
     $('.cs_increment').click(function () {
       console.log('object');
       var countElement = $(this).siblings('.cs_quantity_input');

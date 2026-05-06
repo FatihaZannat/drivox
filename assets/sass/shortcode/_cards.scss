@@ -84,6 +84,8 @@
 
   .cs_card_icon {
     color: var(--accent-color);
+    width: 100px;
+    height: 100px;
   }
 
   .cs_btn_style_1 {
@@ -114,7 +116,6 @@
 
 .cs_card_style_3 {
   border: 1px solid var(--gray-color2);
-  transition: all 0.3s ease;
 
   .cs_card_img {
     overflow: hidden;
@@ -133,6 +134,11 @@
     padding: 30px 28px;
   }
 
+  .cs_card_title {
+    &:hover {
+      color: var(--accent-color);
+    }
+  }
   .cs_discount_badge {
     display: inline-block;
     padding: 10px;
@@ -162,11 +168,6 @@
   @media (max-width: 991px) {
     .cs_card_info {
       padding: 30px 12px;
-    }
-  }
-  &:hover {
-    .cs_card_title {
-      color: var(--accent-color);
     }
   }
 }
@@ -314,7 +315,7 @@
         &::after {
           content: "";
           width: 100%;
-          height: 2px;
+          height: 1px;
           background-color: var(--white-color);
           position: absolute;
           bottom: 0;
@@ -449,8 +450,9 @@
       letter-spacing: 3px;
     }
   }
-  &:hover {
-    .cs_card_title {
+
+  .cs_card_title {
+    &:hover {
       color: var(--accent-color);
     }
   }
@@ -477,6 +479,14 @@
     }
   }
 
+  .cs_text_btn_style_1 {
+    &::after {
+      background-color: var(--gray-color);
+    }
+    &:hover {
+      color: var(--gray-color);
+    }
+  }
   &::after,
   &::before {
     content: "";

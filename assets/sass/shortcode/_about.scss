@@ -1,3 +1,7 @@
+/*===============================================================
+ 13. About
+=================================================================*/
+
 .cs_about_style_1,
 .cs_about_style_2 {
   .cs_about_list {
@@ -130,9 +134,78 @@
       width: 100%;
       object-fit: cover;
     }
-
-    @media (max-width: 991px) {
+  }
+  @media (max-width: 991px) {
+    .cs_about_right {
+      padding-left: 0px;
+    }
+    .cs_about_left {
       padding-right: 0;
+    }
+  }
+}
+
+.cs_about_style_3 {
+  .cs_about_img {
+    position: relative;
+    margin-left: calc(-30vw + 50%);
+    // width: 50vw;
+    max-width: none;
+    img {
+      width: 100%;
+    }
+
+    .cs_player_btn_style_1 {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-color: var(--white-color);
+      span {
+        border: none;
+      }
+    }
+  }
+
+  .cs_right {
+    padding-left: 6%;
+  }
+
+  .cs_about_list {
+    list-style: none;
+    padding: 0;
+
+    li {
+      padding-left: 34px;
+      position: relative;
+
+      .cs_list_icon {
+        position: absolute;
+        left: 0;
+      }
+
+      &:not(:last-child) {
+        padding-bottom: 30px;
+      }
+    }
+  }
+
+  @media (max-width: 1199px) {
+    .cs_about_img {
+      margin-left: calc(-37vw + 50%);
+    }
+    .cs_about_list {
+      li {
+        &:not(:last-child) {
+          padding-bottom: 15px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    .cs_about_img {
+      margin-left: auto;
     }
   }
 }

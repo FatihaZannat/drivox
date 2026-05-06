@@ -1,3 +1,7 @@
+/*===============================================================
+ 12. Hero
+=================================================================*/
+
 .cs_hero_style_1 {
   padding: 160px 0 60px;
   position: relative;
@@ -47,6 +51,9 @@
     }
   }
   @media (max-width: 1400px) {
+    .container-fluid {
+      padding: 0 60px;
+    }
     .cs_hero_search {
       gap: 20px 30px;
 
@@ -58,6 +65,10 @@
           }
         }
       }
+    }
+
+    .cs_hero_img_wrapper {
+      right: -60px;
     }
   }
 
@@ -77,10 +88,18 @@
     .cs_hero_img_wrapper {
       position: initial;
       padding-left: 0;
+      padding-top: 25px;
     }
 
     .cs_hero_bg_shape {
       display: none;
+    }
+    padding-bottom: 0;
+  }
+
+  @media (max-width: 575px) {
+    .container-fluid {
+      padding: 0 20px;
     }
   }
 }
@@ -112,6 +131,7 @@
       display: flex;
       align-items: center;
       gap: 30px;
+      flex-wrap: wrap;
 
       .cs_btn_style_1 {
         &:first-child {
@@ -119,6 +139,10 @@
         }
       }
     }
+  }
+
+  @media (max-width: 991px) {
+    padding: 150px 0 250px;
   }
 }
 
